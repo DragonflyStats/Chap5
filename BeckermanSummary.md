@@ -1,5 +1,8 @@
 Beckerman - Conclusions
 =========================================================
+
+***MOVE TO CHAPTER 5B***
+
 - Diagnostic methods are useful for assessing the
 adequacy of assumptions underlying a modeling process
 and for identifying unexpected characteristics of
