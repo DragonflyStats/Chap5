@@ -1,17 +1,13 @@
-\documentclass[]{article}
 
-%opening
-\title{Mixed Model Influence Diagnostics}
-\author{Oliver Schabenberger, SAS}
 
+%{Mixed Model Influence Diagnostics}
+% Oliver Schabenberger, SAS}
+
+
+
+\documentclass[Chap5amain.tex]{subfiles}
 \begin{document}
 
-\maketitle
-
-
-\begin{abstract}
-Notes and Key Definitions from Schabenberger's paper
-\end{abstract}
 %------------------------------------------------------------%
 \section*{Residuals}
 
@@ -59,7 +55,7 @@ customer.
 interested in determining the influential customer. This requires that you can measure the influence
 of sets of observations on the analysis, not just influence of individual observations.
 \item The computation of case deletion diagnostics in the classical model is made simple by the fact that
-estimates of  and 2, which exclude the ith observation, can be computed without re-fitting the
+%estimates of  and 2, which exclude the ith observation, can be %computed without re-fitting the
 model. Such update formulas are available in the mixed model only if you assume that the covariance
 parameters are not affected by the removal of the observation in question. This is rarely a reasonable
 assumption.
@@ -100,7 +96,7 @@ model component is affected in light of the model being fit. For example, modeli
 intercept and random slope for each child or an unstructured covariance matrix will affect your conclusions
 about which children are influential on the analysis and how this influence manifests itself.
 %------------------------------------------------------------%
-\asection{Summary of Paper}
+\section{Summary of Paper}
 %Summary of Schabenberger
 Standard residual and influence diagnostics for linear models can be extended to LME models.
 The dependence of the fixed effects solutions on the covariance parameters has important ramifications on the perturbation analysis.	

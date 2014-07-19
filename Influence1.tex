@@ -1,25 +1,5 @@
-\documentclass[12pt, a4paper]{report}
-\usepackage{epsfig}
-\usepackage{subfigure}
-%\usepackage{amscd}
-\usepackage{amssymb}
-\usepackage{amsbsy}
-\usepackage{amsthm}
-%\usepackage[dvips]{graphicx}
-\usepackage{natbib}
-\bibliographystyle{chicago}
-
-\author{Kevin O'Brien}
-\title{Chap 5. Influence Measures}
-
-
-\makeindex
-
+\documentclass[Chap5amain.tex]{subfiles}
 \begin{document}
-\title
-\tableofcontents
-
-\chapter{Model Diagnostics}
 %---------------------------------------------------------------------------%
 %1.1 Introduction to Influence Analysis
 %1.2 Extension of techniques to LME Models
@@ -558,26 +538,6 @@ c_{ii} & \boldsymbol{c}_{i}^{\prime}\\
 All of these terms are a function of a row (or column) of $\boldsymbol{H}$ and $\boldsymbol{H}_{[i]}^{-1}$
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Matrix Notation for Case Deletion} %1.14
-
-
-\subsection{Case deletion notation} %1.14.1
-
-
-For notational simplicity, $\boldsymbol{A}(i)$ denotes an $n \times m$ matrix $\boldsymbol{A}$ with the $i$-th row
-removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes the $(i, j)-$th element of $\boldsymbol{A}$.
-
-
-\subsection{Partitioning Matrices} %1.14.2
-Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
-
-
-
-\printindex
-\bibliographystyle{chicago}
-\bibliography{DB-txfrbib}
 
 
 \end{document}
