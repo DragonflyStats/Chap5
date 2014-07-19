@@ -1,4 +1,4 @@
-6. CONCLUSIONS
+Beckerman - Conclusions
 =========================================================
 - Diagnostic methods are useful for assessing the
 adequacy of assumptions underlying a modeling process
@@ -21,11 +21,13 @@ must become part of the conclusions.
 - When perturbing error variances, the cause of the sensitivity
 can often be traced via hmax to a few influential observations,
 and in such cases the proposed methodology
-agrees well with case deletion. The usefulness of case
+agrees well with case deletion. 
+- The usefulness of case
 deletion, however, seems limited to providing an understanding
 only of certain aspects of the error component
 of a mixed model. For example, case deletion
 will not generally lead to the identification of influential
-groups associated with a variance component. As
+groups associated with a variance component. 
+- As
 briefly described in Section 3, the proposed methodology
 can be adapted easily to handle such concerns.
