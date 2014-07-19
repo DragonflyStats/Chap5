@@ -1,0 +1,20 @@
+
+\subsection{What is Influence} %1.1.5
+
+Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
+points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
+
+%-------%
+\subsection{Quantifying Influence}  %1.1.6
+
+The basic procedure for quantifying influence is simple as follows:
+
+\begin{itemize}
+\item Fit the model to the data and obtain estimates of all parameters.
+\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
+\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
+\end{itemize}
+
+\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
+
+\end{document}
