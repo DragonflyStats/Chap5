@@ -1,6 +1,6 @@
 \documentclass[Chap5amain.tex]{subfiles}
 \begin{document}
-\section{Important Definitions}
+%-------------------------------------------------------------------------------------------------%
 \section{Leverage and Influence}
 \subsection{Influence}
 The influence of an observation can be thought of in terms of how much the predicted scores for other observations would differ if the observation in question were not included. 
@@ -48,6 +48,8 @@ John Fox (1), in his booklet on regression diagnostics is rather cautious when i
 In your case the observations 7 and 16 could be considered as influential. Well, I would at least have a closer look at them. The observation 29 is not substantially different from a couple of other observations.
 
 (1) Fox, John. (1991). Regression Diagnostics: An Introduction. Sage Publications.
+
+\newpage
 \subsection{Leverage}
  leverage is a term used in connection with regression analysis and, in particular, in analyses aimed at identifying those observations that are far away from corresponding average predictor values. Leverage points do not necessarily have a large effect on the outcome of fitting regression models.
 
@@ -60,8 +62,6 @@ Modern computer packages for statistical analysis include, as part of their faci
 
 %-------------------------------------------------------------- %
 
-
-\end{document}
 \subsection{Residual}
 Residual (or error) represents unexplained (or residual) variation after fitting a regression model. It is the difference (or left over) between the observed value of the variable and the value suggested by the regression model.
 
@@ -95,7 +95,8 @@ Note that the sum of the residuals within a random sample is necessarily zero, a
 
 %------------------------------- %
 
-Other uses of the word "error" in statistics[edit]
+Other uses of the word "error" in statistics: 
+
 The use of the term "error" as discussed in the sections above is in the sense of a deviation of a value from a hypothetical unobserved value. At least two other uses also occur in statistics, both referring to observable prediction errors:
 
 \begin{itemize}
@@ -137,16 +138,17 @@ Below, the residual plots show three typical patterns. The first plot shows a ra
 
 \newpage
 \subsection{Key Definitions}
-Residual: The difference between the predicted value (based on the regression equation) and the actual, observed value.
+\begin{description}
+\item[ Residual] The difference between the predicted value (based on the regression equation) and the actual, observed value.
 
-Outlier: In linear regression, an outlier is an observation with large residual. In other words, it is an observation whose dependent-variable value is unusual given its value on the predictor variables. An outlier may indicate a sample peculiarity or may indicate a data entry error or other problem.
+\item[ Outlier] In linear regression, an outlier is an observation with large residual. In other words, it is an observation whose dependent-variable value is unusual given its value on the predictor variables. An outlier may indicate a sample peculiarity or may indicate a data entry error or other problem.
 
-Leverage: An observation with an extreme value on a predictor variable is a point with high leverage. Leverage is a measure of how far an independent variable deviates from its mean. High leverage points can have a great amount of effect on the estimate of regression coefficients.
+\item[ Leverage] An observation with an extreme value on a predictor variable is a point with high leverage. Leverage is a measure of how far an independent variable deviates from its mean. High leverage points can have a great amount of effect on the estimate of regression coefficients.
 
-Influence: An observation is said to be influential if removing the observation substantially changes the estimate of the regression coefficients.  Influence can be thought of as the product of leverage and outlierness.
+\item[ Influence] An observation is said to be influential if removing the observation substantially changes the estimate of the regression coefficients.  Influence can be thought of as the product of leverage and outlierness.
 
-Cook's distance (or Cook's D): A measure that combines the information of leverage and residual of the observation.
-
+\item[ Cook's distance ] A measure that combines the information of leverage and residual of the observation.
+\end{description}
 
 %--------------------- %
 \newpage
