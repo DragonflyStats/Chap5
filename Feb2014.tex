@@ -143,88 +143,7 @@ If the global measure suggests that the points in $U$ are influential, the natur
 \end{itemize}
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Residual diagnostics} %1.3
-For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
 
-
-
-	%--Marginal and Conditional Residuals
-	
-\subsection{Residuals diagnostics in mixed models}
-
-%schabenberger
-The marginal and conditional means in the linear mixed model are
-$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
-$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
-
-A residual is the difference between an observed quantity and its estimated or predicted value. In the mixed
-model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
-
-
-\subsection{Marginal and Conditional Residuals}
-
-A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-A conditional residual is the difference between the observed data and the predicted value of the observation,
-$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-
-In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-
-\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-
-However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-
-%1.5
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-
-
-
-
-
-
-\begin{equation}
-r_{mi}=x^{T}_{i}\hat{\beta}
-\end{equation}
-
-\subsection{Marginal Residuals}
-\begin{eqnarray}
-\hat{\beta} &=& (X^{T}R^{-1}X)^{-1}X^{T}R^{-1}Y \nonumber \\
-&=& BY \nonumber
-\end{eqnarray}
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Standardized and studentized residuals} %1.4
-	%--Studentized and Standardized Residuals
-
-To alleviate the problem caused by inconstant variance, the residuals are scaled (i.e. divided) by their standard deviations. This results in a \index{standardized residual}`standardized residual'. Because true standard deviations are frequently unknown, one can instead divide a residual by the estimated standard deviation to obtain the \index{studentized residual}`studentized residual. 
-
-\subsection{Standardization} %1.4.1
-
-A random variable is said to be standardized if the difference from its mean is scaled by its standard deviation. The residuals above have mean zero but their variance is unknown, it depends on the true values of $\theta$. Standardization is thus not possible in practice.
-
-\subsection{Studentization} %1.4.2
-Instead, you can compute studentized residuals by dividing a residual by an estimate of its standard deviation. 
-
-\subsection{Internal and External Studentization} %1.4.3
-If that estimate is independent of the $i-$th observation, the process is termed \index{external studentization}`external studentization'. This is usually accomplished by excluding the $i-$th observation when computing the estimate of its standard error. If the observation contributes to the
-standard error computation, the residual is said to be \index{internally studentization}internally studentized.
-
-Externally \index{studentized residual} studentized residual require iterative influence analysis or a profiled residuals variance.
-
-
-\subsection{Computation}%1.4.4
-
-The computation of internally studentized residuals relies on the diagonal entries of $\boldsymbol{V} (\hat{\theta})$ - $\boldsymbol{Q} (\hat{\theta})$, where $\boldsymbol{Q} (\hat{\theta})$ is computed as
-
-\[ \boldsymbol{Q} (\hat{\theta}) = \boldsymbol{X} ( \boldsymbol{X}^{\prime}\boldsymbol{Q} (\hat{\theta})^{-1}\boldsymbol{X})\boldsymbol{X}^{-1} \]
-
-\subsection{Pearson Residual}%1.4.5
-
-Another possible scaled residual is the \index{Pearson residual} `Pearson residual', whereby a residual is divided by the standard deviation of the dependent variable. The Pearson residual can be used when the variability of $\hat{\beta}$ is disregarded in the underlying assumptions.
-
-%---------------------------------------------------------------------------%
 \newpage
 \section{Covariance Parameters} %1.5
 The unknown variance elements are referred to as the covariance parameters and collected in the vector $\theta$.
@@ -359,24 +278,6 @@ The effect on the precision of estimates is separate from the effect on the poin
 have a small \index{Cook's distance}Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Likelihood Distance} %1.11
-The likelihood distance gives the amount by which the log-likelihood of the full data changes if one were
-to evaluate it at the reduced-data estimates. The important point is that $l(\psi_{(U)})$ is not the log-likelihood
-obtained by fitting the model to the reduced data set.
-
-It is obtained by evaluating the likelihood function based on the full data set (containing all n observations) at the reduced-data estimates.
-
-The likelihood distance is a global, summary measure, expressing the joint influence of the observations in
-the set $U$ on all parameters in $\psi$  that were subject to updating.
-%------------%
-
-\subsection{Likelihood Distance}
-
-The \index{likelihood distance} likelihood distance is a global, summary measure, expressing the joint influence of the observations in the set $U$ on all parameters in $\phi$  that were subject to updating.
-
-
 
 
 %---------------------------------------------------------------------------%
@@ -397,41 +298,7 @@ This can only be achieved in general is by omitting observations, then refitting
 \citet{schabenberger} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
 
 
-%----------------------------------------------------------------------------------------%
-\newpage
-\section{The CPJ Paper}%1.13
 
-\subsection{Case-Deletion results for Variance components}
-\citet{CPJ} examines case deletion results for estimates of the variance components, proposing the use of one-step estimates of variance components for examining case influence. The method describes focuses on REML estimation, but can easily be adapted to ML or other methods.
-
-This paper develops their global influences for the deletion of single observations in two steps: a one-step estimate for the REML (or ML) estimate of the variance components, and an ordinary case-deletion diagnostic for a weighted regression problem ( conditional on the estimated covariance matrix) for fixed effects.
-
-% Lesaffre's approach accords with that proposed by Christensen et al when applied in a repeated measurement context, with a large sample size.
-
-\subsection{CPJ Notation} %1.13.1
-
-\[ \boldsymbol{C} = \boldsymbol{H}^{-1} = \left[
-\begin{array}{cc}
-c_{ii} & \boldsymbol{c}_{i}^{\prime}\\
-\boldsymbol{c}_{i} &  \boldsymbol{C}_{[i]}
-\end{array} \right]
-\]
-
-\citet{CPJ} noted the following identity:
-
-\[ \boldsymbol{H}_{[i]}^{-1}  = \boldsymbol{C}_{[i]} - {1 \over c_{ii}}\boldsymbol{c}_{[i]}\boldsymbol{c}_{[i]}^{\prime} \]
-
-
-\citet{CPJ} use the following as building blocks for case deletion statistics.
-\begin{itemize}
-\item $\breve{x}_i$
-\item $\breve{z}_i$
-\item $\breve{z}_ij$
-\item $\breve{y}_i$
-\item $p_ii$
-\item $m_i$
-\end{itemize}
-All of these terms are a function of a row (or column) of $\boldsymbol{H}$ and $\boldsymbol{H}_{[i]}^{-1}$
 
 %---------------------------------------------------------------------------%
 \newpage
@@ -445,37 +312,6 @@ removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes 
 \subsection{Partitioning Matrices} %1.14.2
 Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
-
-
-\subsubsection{Proposition 1}
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-\begin{itemize}
-\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
 
 
 \newpage
