@@ -1,0 +1,90 @@
+
+\documentclass[12pt, a4paper]{report}
+\usepackage{natbib}
+\usepackage{vmargin}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{subfigure}
+%\usepackage{amscd}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+%\usepackage[dvips]{graphicx}
+\bibliographystyle{chicago}
+\renewcommand{\baselinestretch}{1.8}
+
+% left top textwidth textheight headheight % headsep footheight footskip
+\setmargins{3.0cm}{2.5cm}{15.5 cm}{23.5cm}{0.5cm}{0cm}{1cm}{1cm}
+
+\pagenumbering{arabic}
+
+
+\begin{document}
+\author{Kevin O'Brien}
+
+
+\tableofcontents \setcounter{tocdepth}{3}
+\section{Why use LMEs?}
+The LME model  approach has seen increased use as a framework for method comparison studies in recent years (Lai $\&$ Shaio, Carstensen and Choudhary as examples). In part this is due to the increased profile of LME models, and furthermore the availability of capable software. Additionally LME based approaches may utilise the diagnostic and influence analysis techniques that have been developed in recent times.
+Variance Ratios
+
+The approach proposed by Roy deals with the question of agreement, and indeed interchangeability, as developed by Bland and Altman's corpus of work.  In the view of Dunn, a question relevant to many practitioners is which of the two methods is more precise.
+
+The relationship between precision and the within-item and between-item variability must be established. Roy establishes the equivalence of repeatability and within-item variability, and hence precision.  The method with the smaller within-item variability can be deemed to be the more precise.
+A useful approach is to compute the confidence intervals for the ratio of within-item standard deviations (equivalent to the ratio of repeatability coefficients), which can be interpreted in the usual manner.
+In fact, the ratio of within-item standard deviations, with the attendant confidence interval,  can be determined using a single R command: intervals().
+
+Pinheiro and Bates (pg 93-95) give a description of how confidence intervals for the variance components are computed. Furthermore a complete set of confidence intervals can be computed to complement the variance component estimates.
+What is required is the computation of the variance ratios of within-item and between-item standard deviations.
+A naïve approach would be to compute the variance ratios by relevant F distribution quantiles. However, the question arises as to the appropriate degrees of freedom.
+Limits of agreement are easily computable using the LME framework. While we will not be considering this analysis, a demonstration will be provided in the example.
+
+ANOVAs  for  Original Fits
+The likelihood Ratio test is very simple to implement in R. All that is required it to specify the reference model and the relevant nested mode as arguments to the command anova().
+
+
+
+\section{One Tailed testing}
+
+\section{Profile Likelihood}
+Normal-based confidence intervals for a parameter of interest are inaccurate when the sampling distribution of the estimate is nonnormal. The technique known as profile likelihood can produce confidence intervals with better coverage. It may be used when the model includes only the variable of interest or several other variables in addition. Profile-likelihood confidence intervals are particularly useful in nonlinear models.
+
+
+Profile likelihood confidence intervals are based on the log-likelihood function.  For a single parameter, likelihood theory shows that the 2 points 1.92 units down from the maximum of the log-likelihood function provide a $95\%$ confidence interval when there is no extrabinomial variation (i.e. c = 1)..  The value 1.92 is half of the chi-square value of 3.84 with 1 degree of freedom.
+
+Thus, the same confidence interval can be computed with the deviance by adding 3.84 to the minimum of the deviance function, where the deviance is the log-likelihood multiplied by -2 minus the -2 log likelihood value of the saturated model.
+
+\section{Computation of the variance ratio.}
+
+The suitable calculation of confidence limits for this variance ratio are to be computed using the profile likelihood.
+
+The R package \texttt{profilelikelihood} can be used to...
+
+I am currently looking at using the profile likelihood approach to compute Confidence intervals for LME models.
+
+Specifically I am interested in the Variance Ratios of the two variance-covariance matrices ( D and G).
+
+I have found this package ProfileLikelihood, that looks quite promissing
+
+http://cran.r-project.org/web/packages/ProfileLikelihood/ProfileLikelihood.pdf
+
+Particularly the command profilelikelihood.lme()
+
+
+%http://lme4.r-forge.r-project.org/slides/2011-03-16-Amsterdam/3Profiling.pdf
+
+%http://lme4.r-forge.r-project.org/slides/2009-07-21-Seewiesen/4PrecisionD.pdf
+"The omission of standard errors on variance components is intentional.
+The distribution of an estimator of a variance component is highly
+skewed and obtaining an estimate of the standard deviation of a skewed
+distribution is not very useful.  A much better approach is based on
+profiling the objective function." (Douglas Bates May 2012)
+
+http://lme4.R-forge.R-project.org/slides/2012-03-22-Paris/Profiling.pdf
+
+
+
+%\addcontentsline{toc}{section}{Bibliography}
+
+%\bibliography{transferbib}
+\end{document}
