@@ -60,46 +60,6 @@
 %---------------------------------------------------------------------------%
 
 
-\subsection{What is Influence} %1.1.5
-
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-%-------%
-\subsection{Quantifying Influence}  %1.1.6
-
-The basic procedure for quantifying influence is simple as follows:
-
-\begin{itemize}
-\item Fit the model to the data and obtain estimates of all parameters.
-\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
-\end{itemize}
-
-\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Extension of techniques to LME Models} %1.2
-
-Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-
-Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-
-While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-
-If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-
-\begin{itemize}
-\item the estimates of fixed effects,
-\item the estimates of the precision of the fixed effects,
-\item the estimates of the covariance parameters,
-\item the estimates of the precision of the covariance parameters,
-\item fitted and predicted values.
-\end{itemize}
-
-
 %---------------------------------------------------------------------------%
 \newpage
 \section{Residual diagnostics} %1.3
@@ -138,45 +98,6 @@ However, using conditional residuals for diagnostics presents difficulties, as t
 
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
-
-
-
-
-\subsubsection{Proposition 1}
-
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-
-\begin{itemize}
-\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
 
 
 

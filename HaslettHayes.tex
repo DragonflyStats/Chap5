@@ -1,0 +1,48 @@
+\documentclass[]{article}
+
+%opening
+\title{Haslett-Hayes - Residuals}
+\author{Haslett-Hayes}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Haslett-Hayes
+\end{abstract}
+%------------------------------------------------------------%
+\section*{Haslett and Hayes - Residuals}
+Haslett and Hayes (1998) and Haslett (1999) considered the case of an LME model with correlated covariance structure.
+
+\subsection{Residual Diagnostics in LME models}
+\begin{itemize}
+\item A \textbf{residual} is the difference between the observed quantity and the predicted value. In LME models a distinction is made between marginal residuals and conditional residuals.
+
+\item A \textbf{Marginal residual} is the difference between the observed data and the estimated marginal mean (Schabenberger  pg3)
+The computation of case deletion diagnostics in the classical model is made simple by the fact that important estimates can be computed without refitting the model. 
+
+\item Such update formulae are available in the mixed model only if you assume that the covariance parameters are not affect by the removal of the observation in question. Schabenberger remarks that this is not a reasonable assumption.
+
+\end{itemize}
+
+
+Basic procedure for quantifying influence is simple
+
+\begin{enumerate}
+\item  	Fit the model to the data
+\item   	Remove one or more data points from the analysis and compute updated estimates of model parameters
+\item  	Based on the full and reduced data estimates, contrast quantities of interest to determine how the absence of the observations changed the analysis.
+\end{enumerate}
+The likelihood distance is a global summary measure expressing the joint influence of the observations in the set U on all parameters in $\Psi$ that were subject to updating.
+ 
+
+%------------------------------------------------------------%
+\subsection*{Conditional Residuals}
+
+\subsection*{Marginal Residuals}
+
+
+
+%------------------------------------------------------------%
+\end{document}

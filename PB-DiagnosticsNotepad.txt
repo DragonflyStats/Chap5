@@ -1,0 +1,20 @@
+% Pinheiro Bates 20000
+
+%---------------------------------------------------%
+3 Diagnostics
+
+3.1 Identifying outliers with a LME model object
+The process is slightly dierent than with standard LME model objects, since the
+influence function does not work on lme model objects. 
+Given mod.lme, we can use
+the plot function to identify outliers.
+%---------------------------------------------------%
+3.2 Diagnostics for Random Effects
+Empirical best linear unbiased predictors EBLUPS provide the a useful way of diag-
+nosing random eects.
+
+EBLUPs are also known as \textit{shrinkage estimators} because they tend to be smaller
+than the estimated eects would be if they were computed by treating a random factor
+as if it was fixed (West et al )
+
+%---------------------------------------------------%
