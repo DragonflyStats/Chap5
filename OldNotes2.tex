@@ -21,12 +21,6 @@
 %1.15 CPJ's Three Propositions
 %1.16 Other measures of Influence
 %---------------------------------------------------------------------------%
-\section{Introduction}%1.1
-In classical linear models model diagnostics have been become a required part of any statistical analysis, and the methods are commonly available in statistical packages and standard textbooks on applied regression. However it has been noted by several papers that model diagnostics do not often accompany LME model analyses.
-Model diagnostic techniques determine whether or not the distributional assumptions are satisfied, and to assess the influence of unusual observations.
-
-\subsection{Model Data Agreement} %1.1.1
-\citet{schabenberger} describes the examination of model-data agreement as comprising several elements; residual analysis, goodness of fit, collinearity diagnostics and influence analysis.
 
 \subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
 %http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
@@ -41,36 +35,6 @@ The linear mixed effects model is a useful methodology for fitting a wide range 
 Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
 Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
 Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
-
-\subsection{Influence Statistics for LME models} %1.1.4
-Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
-\begin{itemize}
-\item overall measures compare changes in objective functions: (restricted) likelihood distance (Cook and Weisberg 1982, Ch. 5.2)
-\item influence on parameter estimates: Cook's  (Cook 1977, 1979), MDFFITS (Belsley, Kuh, and Welsch 1980, p. 32)
-\item influence on precision of estimates: CovRatio and CovTrace
-\item influence on fitted and predicted values: PRESS residual, PRESS statistic (Allen 1974), DFFITS (Belsley, Kuh, and Welsch 1980, p. 15)
-\item outlier properties: internally and externally studentized residuals, leverage
-\end{itemize}
-%---------------------------------------------------------------------------%
-
-
-\subsection{What is Influence} %1.1.5
-
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-%-------%
-\subsection{Quantifying Influence}  %1.1.6
-
-The basic procedure for quantifying influence is simple as follows:
-
-\begin{itemize}
-\item Fit the model to the data and obtain estimates of all parameters.
-\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
-\end{itemize}
-
-\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
 
 
 %---------------------------------------------------------------------------%
@@ -92,12 +56,6 @@ If the global measure suggests that the points in $U$ are influential, the natur
 \item the estimates of the precision of the covariance parameters,
 \item fitted and predicted values.
 \end{itemize}
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Residual diagnostics} %1.3
-For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
 
 
 
@@ -183,33 +141,6 @@ The unknown variance elements are referred to as the covariance parameters and c
 % - where is it used again?
 % - Has this got anything to do with CovTrace etc?
 %---------------------------------------------------------------------------%
-\newpage
-\section{Case Deletion Diagnostics} %1.6
-
-\citet{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components.
-
-\subsection{Deletion Diagnostics}
-
-Since the pioneering work of Cook in 1977, deletion measures have been applied to many statistical models for identifying influential observations.
-
-Deletion diagnostics provide a means of assessing the influence of an observation (or groups of observations) on inference on the estimated parameters of LME models.
-
-Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
-
-Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
-
-The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
-
-\section{Effects on fitted and predicted values}
-\begin{equation}
-\hat{e_{i}}_{(U)} = y_{i} - x\hat{\beta}_{(U)}
-\end{equation}
-
-\subsection{Case Deletion Diagnostics for Mixed Models}
-
-\citet{Christiansen} notes the case deletion diagnostics techniques have not been applied to linear mixed effects models and seeks to develop methodologies in that respect.
-
-\citet{Christiansen} develops these techniques in the context of REML
 
 \subsection{Methods and Measures}
 The key to making deletion diagnostics useable is the development of efficient computational formulas, allowing one to obtain the \index{case deletion diagnostics} case deletion diagnostics by making use of basic building blocks, computed only once for the full model.
@@ -245,92 +176,7 @@ An overall influence statistic measures the change in the objective function bei
 OLS regression, the residual sums of squares serves that purpose. In linear mixed models fit by
 \index{maximum likelihood} maximum likelihood (ML) or \index{restricted maximum likelihood} restricted maximum likelihood (REML), an overall influence measure is the \index{likelihood distance} likelihood distance [Cook and Weisberg ].
 
-%--------------------------------------------------------------------------%
-\newpage
-\section{Terminology for Case Deletion diagnostics} %1.8
 
-\citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
-'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
-
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Cook's Distance} %1.9
-
-\subsection{Cook's Distance}%1.19.1 
-Cooks Distance ($D_{i}$) is an overall measure of the combined impact of the $i$th case of all estimated regression coefficients. It uses the same structure for measuring the combined impact of the differences in the estimated regression coefficients when the $k$th case is deleted. $D_{(k)}$ can be calculated without fitting
-a new regression coefficient each time an observation is deleted.
-
-
-\citet{cook77} greatly expanded the study of residuals and influence measures. Cook's key observation was the effects of deleting each observation in turn could be computed without undue additional computational expense. Consequently deletion diagnostics have become an integral part of assessing linear models.
-
-\index{Cook's distance}Cook's Distance is a well known diagnostic technique used in classical linear models, extended to LME models.  For LME models, two formulations exist; a \index{Cook's distance}Cook's distance that examines the change in fixed fixed parameter estimates, and another that examines the change in random effects parameter estimates. The outcome of either Cook's distance is a scaled change in either $\beta$ or $\theta$.
-
-\subsection{Cooks's Distance}%1.9.2
-\index{Cook's distance} Cook's $D$ statistics (i.e. colloquially Cook's Distance) is a measure of the influence of observations in subset $U$ on a vector of parameter estimates \citep{cook77}.
-
-\[ \delta_{(U)} = \hat{\beta} - \hat{\beta}_{(U)}\]
-
-If V is known, Cook's D can be calibrated according to a chi-square distribution with degrees of freedom equal to the rank of $\boldsymbol{X}$ \citep{cpj92}.
-
-
-\subsection{Cook's Distance}%1.9.3
-\index{Cook's Distance}
-In classical linear regression, a commonly used meausre of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
-
-For linear mixed effects models, Cook's distance can be extended to model influence diagnostics by definining.
-
-\[ C_{\beta i} = {(\hat{\beta} - \hat{\beta}_{[i]})^{T}(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}) (\hat{\beta} - \hat{\beta}_{[i]}) \over p}\]
-
-It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Cook's Distance for LMEs} %1.10
-Diagnostic methods for fixed effects are generally analogues of methods used in classical linear models.
-Diagnostic methods for variance components are based on `one-step' methods. \citet{cook86} gives a completely general method for assessing the influence of local departures from assumptions in statistical models.
-
-For fixed effects parameter estimates in LME models, the \index{Cook's distance} Cook's distance can be extended to measure influence on these fixed effects.
-
-\[
-\mbox{CD}_{i}(\beta) = \frac{(c_{ii} - r_{ii}) \times t^2_{i}}{r_{ii} \times p}
-\]
-
-For random effect estimates, the \index{Cook's distance} Cook's distance is
-
-\[
-\mbox{CD}_{i}(b) = g{\prime}_{(i)} (I_{r} + \mbox{var}(\hat{b})D)^{-2}\mbox{var}(\hat{b})g_{(i)}.
-\]
-Large values for Cook's distance indicate observations for special attention.
-
-\subsection{Change in the precision of estimates}
-
-The effect on the precision of estimates is separate from the effect on the point estimates. Data points that
-have a small \index{Cook's distance}Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Likelihood Distance} %1.11
-The likelihood distance gives the amount by which the log-likelihood of the full data changes if one were
-to evaluate it at the reduced-data estimates. The important point is that $l(\psi_{(U)})$ is not the log-likelihood
-obtained by fitting the model to the reduced data set.
-
-It is obtained by evaluating the likelihood function based on the full data set (containing all n observations) at the reduced-data estimates.
-
-The likelihood distance is a global, summary measure, expressing the joint influence of the observations in
-the set $U$ on all parameters in $\psi$  that were subject to updating.
-%------------%
-
-\subsection{Likelihood Distance}
-
-The \index{likelihood distance} likelihood distance is a global, summary measure, expressing the joint influence of the observations in the set $U$ on all parameters in $\phi$  that were subject to updating.
-
-
-
-
-%---------------------------------------------------------------------------%
 \newpage
 \section{Iterative and non-iterative influence analysis} %1.13
 \citet{schabenberger} highlights some of the issue regarding implementing mixed model diagnostics.
@@ -348,171 +194,9 @@ This can only be achieved in general is by omitting observations, then refitting
 \citet{schabenberger} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
 
 
-%----------------------------------------------------------------------------------------%
-\newpage
-\section{The CPJ Paper}%1.13
-
-\subsection{Case-Deletion results for Variance components}
-\citet{CPJ} examines case deletion results for estimates of the variance components, proposing the use of one-step estimates of variance components for examining case influence. The method describes focuses on REML estimation, but can easily be adapted to ML or other methods.
-
-This paper develops their global influences for the deletion of single observations in two steps: a one-step estimate for the REML (or ML) estimate of the variance components, and an ordinary case-deletion diagnostic for a weighted regression problem ( conditional on the estimated covariance matrix) for fixed effects.
-
-% Lesaffre's approach accords with that proposed by Christensen et al when applied in a repeated measurement context, with a large sample size.
-
-\subsection{CPJ Notation} %1.13.1
-
-\[ \boldsymbol{C} = \boldsymbol{H}^{-1} = \left[
-\begin{array}{cc}
-c_{ii} & \boldsymbol{c}_{i}^{\prime}\\
-\boldsymbol{c}_{i} &  \boldsymbol{C}_{[i]}
-\end{array} \right]
-\]
-
-\citet{CPJ} noted the following identity:
-
-\[ \boldsymbol{H}_{[i]}^{-1}  = \boldsymbol{C}_{[i]} - {1 \over c_{ii}}\boldsymbol{c}_{[i]}\boldsymbol{c}_{[i]}^{\prime} \]
-
-
-\citet{CPJ} use the following as building blocks for case deletion statistics.
-\begin{itemize}
-\item $\breve{x}_i$
-\item $\breve{z}_i$
-\item $\breve{z}_ij$
-\item $\breve{y}_i$
-\item $p_ii$
-\item $m_i$
-\end{itemize}
-All of these terms are a function of a row (or column) of $\boldsymbol{H}$ and $\boldsymbol{H}_{[i]}^{-1}$
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Matrix Notation for Case Deletion} %1.14
-
-\subsection{Case deletion notation} %1.14.1
-
-For notational simplicity, $\boldsymbol{A}(i)$ denotes an $n \times m$ matrix $\boldsymbol{A}$ with the $i$-th row
-removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes the $(i, j)-$th element of $\boldsymbol{A}$.
-
-\subsection{Partitioning Matrices} %1.14.2
-Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
-
-
-\subsubsection{Proposition 1}
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-\begin{itemize}
-\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
-
-
-\newpage
-\section{Measures of Influence} %1.16
-
-The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
-
-Influence arises at two stages of the LME model. Firstly when $V$ is estimated by $\hat{V}$, and subsequent
-estimations of the fixed and random regression coefficients $\beta$ and $u$, given $\hat{V}$.
-
-
-\subsection{DFFITS} %1.16.1
-DFFITS is a statistical measured designed to a show how influential an observation is in a statistical model. It is closely related to the studentized residual.
-\begin{displaymath} DFFITS = {\widehat{y_i} -
-\widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} \end{displaymath}
-
-
-\subsection{PRESS} %1.16.2
-The prediction residual sum of squares (PRESS) is an value associated with this calculation. When fitting linear models, PRESS can be used as a criterion for model selection, with smaller values indicating better model fits.
-\begin{equation}
-PRESS = \sum(y-y^{(k)})^2
-\end{equation}
-
-
-\begin{itemize}
-\item $e_{-Q} = y_{Q} - x_{Q}\hat{\beta}^{-Q}$
-\item $PRESS_{(U)} = y_{i} - x\hat{\beta}_{(U)}$
-\end{itemize}
-
-\subsection{DFBETA} %1.16.3
-\begin{eqnarray}
-DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
-&=& B(Y-Y_{\bar{a}}
-\end{eqnarray}
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
 %-------------------------------------------------------------------------------------------------Chapter 2	------------------------%
 %-------------------------------------------------------------------------------------------------------------------------------------%
 %-------------------------------------------------------------------------------------------------------------------------------------%
-
-\chapter{Zewotir's Paper}
-
-% 2.1 Efficient Updating Theorem
-% 2.2 Zewotir Measures of Influence in LME Models (section 4 of paper)
-% 2.3 Computation and Notation 
-% 2.4 Measures 2
-%2.5 Haslett Analysis
-
-\section{Efficient Updating Theorem} %2.1
-\citet{Zewotir} describes the basic theorem of efficient updating.
-\begin{itemize}
-\item \[ m_i = {1 \over c_{ii}}\]
-%\item
-%item
-%\item
-\end{itemize}
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\section{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-\item Variance components
-\item Fixed effects parameters
-\item Prediction of the response variable and of random effects
-\item likelihood function
-\end{itemize}
-
-\subsection{Cook's Distance}
-\begin{itemize}
-\item For variance components $\gamma$: $CD(\gamma)_i$,
-\item For fixed effect parameters $\beta$: $CD(\beta)_i$,
-\item For random effect parameters $\boldsymbol{u}$: $CD(u)_i$,
-\item For linear functions of $\hat{beta}$: $CD(\psi)_i$
-\end{itemize}
-
-\newpage
-\subsubsection{Random Effects}
-
-A large value for $CD(u)_i$ indicates that the $i-$th observation is influential in predicting random effects.
-
-\subsubsection{linear functions}
-
-$CD(\psi)_i$ does not have to be calculated unless $CD(\beta)_i$ is large.
-
-
-\subsection{Information Ratio}
 
 
 %--------------------------------------------------------------%
@@ -534,26 +218,6 @@ compute an estimate for $\boldsymbol{V}$ and then compute the projector matrix $
 
 Diagnostic tool for variance components
 \[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
-
-\subsection{Variance Ratio} %2.4.2
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Cook-Weisberg statistic} %2.4.3
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Andrews-Pregibon statistic} %2.4.4
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
-
-
-%---------------------------------------------------------------------------%
 \newpage
 \section{Haslett's Analysis} %2.5
 For fixed effect linear models with correlated error structure Haslett (1999) showed that the effects on
