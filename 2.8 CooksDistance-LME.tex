@@ -1,7 +1,38 @@
-\documentclass[00-ResidualsMain.tex]{subfiles}
+\documentclass[Main.tex]{subfiles}
 \begin{document}
 	%---------------------------------------------------------------------------%
 \newpage
+
+\subsection{Cook's Distance}
+\begin{itemize}
+	\item For variance components $\gamma$: $CD(\gamma)_i$,
+	\item For fixed effect parameters $\beta$: $CD(\beta)_i$,
+	\item For random effect parameters $\boldsymbol{u}$: $CD(u)_i$,
+	\item For linear functions of $\hat{beta}$: $CD(\psi)_i$
+\end{itemize}
+
+\newpage
+\subsubsection{Random Effects}
+
+A large value for $CD(u)_i$ indicates that the $i-$th observation is influential in predicting random effects.
+
+\subsubsection{linear functions}
+
+$CD(\psi)_i$ does not have to be calculated unless $CD(\beta)_i$ is large.
+
+
+\subsection{Information Ratio}
+
+
+%--------------------------------------------------------------%
+\newpage
+\section{Computation and Notation } %2.3
+with $\boldsymbol{V}$ unknown, a standard practice for estimating $\boldsymbol{X \beta}$ is the estime the variance components $\sigma^2_j$,
+compute an estimate for $\boldsymbol{V}$ and then compute the projector matrix $A$, $\boldsymbol{X \hat{\beta}}  = \boldsymbol{AY}$.
+
+
+\citet{Zewotir} remarks that $\boldsymbol{D}$ is a block diagonal with the $i-$th block being $u \boldsymbol{I}$
+%--------------------------------------------------------------%
 \section{Cook's Distance for LMEs} %1.10
 
 

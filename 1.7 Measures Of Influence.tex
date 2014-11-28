@@ -1,7 +1,126 @@
-\documentclass[Chap5amain.tex]{subfiles}
+\documentclass[Main.tex]{subfiles}
 \begin{document}
-	%---------------------------------------------------------------------------%
 	
+	\subsection{What is Influence} %1.1.5
+	
+	Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
+	points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis (Schabenberger).
+	
+	%-------%
+	\subsection{Quantifying Influence}  %1.1.6
+	
+	The basic procedure for quantifying influence is simple as follows:
+	
+	\begin{itemize}
+		\item Fit the model to the data and obtain estimates of all parameters.
+		\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
+		\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
+	\end{itemize}
+	
+	Cook (1986) introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
+	
+	
+	%--------------------------------------------------------------%
+	\newpage
+	\section{Measures 2} %2.4
+	
+	
+	\subsection{Cook's Distance} %2.4.1
+	\begin{itemize}
+		\item For variance components $\gamma$
+	\end{itemize}
+	
+	
+	Diagnostic tool for variance components
+	\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
+	
+	
+	\subsection{Variance Ratio} %2.4.2
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+	
+	\subsection{Cook-Weisberg statistic} %2.4.3
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+	
+	\subsection{Andrews-Pregibon statistic} %2.4.4
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
+	The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
+	
+	
+	
+	
+	%---------------------------------------------------------------------------%
+	%-------------------------------------------------------------------------------------------------------------------------------------%
+	\section{Zewotir Measures of Influence in LME Models}%2.2
+	%Zewotir page 161
+	Zewotir describes a number of approaches to model diagnostics, investigating each of the following;
+	\begin{itemize}
+		\item Variance components
+		\item Fixed effects parameters
+		\item Prediction of the response variable and of random effects
+		\item likelihood function
+	\end{itemize}
+	
+	
+	\newpage
+	\subsubsection{Random Effects}
+	
+	A large value for $CD(u)_i$ indicates that the $i-$th observation is influential in predicting random effects.
+	
+	\subsubsection{linear functions}
+	
+	$CD(\psi)_i$ does not have to be calculated unless $CD(\beta)_i$ is large.
+	
+	
+	\subsection{Information Ratio}
+	
+	
+	%--------------------------------------------------------------%
+	\newpage
+	\section{Computation and Notation } %2.3
+	with $\boldsymbol{V}$ unknown, a standard practice for estimating $\boldsymbol{X \beta}$ is the estime the variance components $\sigma^2_j$,
+	compute an estimate for $\boldsymbol{V}$ and then compute the projector matrix $A$, $\boldsymbol{X \hat{\beta}}  = \boldsymbol{AY}$.
+	
+	
+	Zewotir remarks that $\boldsymbol{D}$ is a block diagonal with the $i-$th block being $u \boldsymbol{I}$
+	%--------------------------------------------------------------%
+	\newpage
+	\section{Measures 2} %2.4
+	
+	\subsection{Cook's Distance} %2.4.1
+	\begin{itemize}
+		\item For variance components $\gamma$
+	\end{itemize}
+	
+	Diagnostic tool for variance components
+	\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
+	
+	\subsection{Variance Ratio} %2.4.2
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+	\subsection{Cook-Weisberg statistic} %2.4.3
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+	\subsection{Andrews-Pregibon statistic} %2.4.4
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
+	The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
+	
+\newpage	
 \section{Measures of Influence} %1.16
 
 The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
