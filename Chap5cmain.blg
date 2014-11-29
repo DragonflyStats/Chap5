@@ -1,0 +1,19 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Chap5cmain.aux
+The style file: chicago.bst
+Illegal, another \bibstyle command---line 45 of file Chap5cmain.aux
+ : \bibstyle
+ :          {chicago}
+I'm skipping whatever remains of this command
+Database file #1: DB-txfrbib.bib
+I was expecting a `,' or a `}'---line 869 of file DB-txfrbib.bib
+ :  
+ :  pages = "2039�-2046"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1122 of file DB-txfrbib.bib
+ :   
+ :   YEAR =         "2003"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty booktitle in schabenberger
+(There were 3 error messages)

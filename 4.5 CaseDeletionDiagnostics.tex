@@ -13,6 +13,117 @@
  % The methods are illustrated using examples.
 
 %------------------------------------------------------------------------------------------------------%
+%---------------------------------------------------------------------------%
+\newpage
+\section{Case Deletion Diagnostics} %1.6
+
+
+\citet{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components.
+
+
+\subsection{Deletion Diagnostics}
+
+
+Since the pioneering work of Cook in 1977, deletion measures have been applied to many statistical models for identifying influential observations.
+
+
+Deletion diagnostics provide a means of assessing the influence of an observation (or groups of observations) on inference on the estimated parameters of LME models.
+
+
+Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
+
+
+Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
+
+
+The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
+
+
+\subsection{Effects on fitted and predicted values}
+\begin{equation}
+\hat{e_{i}}_{(U)} = y_{i} - x\hat{\beta}_{(U)}
+\end{equation}
+
+
+
+
+
+
+A general method for comparing nested models fit by maximum liklihood is the liklihood ratio 
+test. This test can be used for models fit by REML (restricted maximum liklihood), but only if the 
+fixed terms in the two models are invariant, and both models have been fit by REML. Otherwise, 
+the argument: method=”ML” must be employed (ML = maximum liklihood). 
+
+Example of a liklihood ratio test used to compare two models: 
+
+!"%;=0%1&=*#(?5"&=*#(B8"
+
+The output will contain a p-value, and this should be used in conjunction with the AIC scores to 
+judge which model is preferred. Lower AIC scores are better. 
+
+Generally, liklihood ratio tests should be used to evaluate the significance of terms on the 
+random effects portion of two nested models, and should not be used to determine the 
+significance of the fixed effects. 
+
+A simple way to more reliably test for the significance of fixed effects in an LME model is to use 
+conditional F-tests, as implemented with the simple “anova” function. 
+
+Example: 
+"
+!"%;=0%1&=*#(?8"
+
+will give the most reliable test of the fixed effects included in model1. 
+
+
+
+
+
+\subsection{Methods and Measures}
+The key to making deletion diagnostics useable is the development of efficient computational formulas, allowing one to obtain the \index{case deletion diagnostics} case deletion diagnostics by making use of basic building blocks, computed only once for the full model.
+
+
+\citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
+	\item Cook's distance for LME models,
+	\item \index{likelihood distance} likelihood distance,
+	\item the variance (information) ration,
+	\item the \index{Cook-Weisberg statistic} Cook-Weisberg statistic,
+	\item the \index{Andrews-Prebigon statistic} Andrews-Prebigon statistic.
+\end{itemize}
+
+
+
+
+
+
+%--------------------------------------------------------------------------%
+\newpage
+\section{Terminology for Case Deletion diagnostics} %1.8
+
+
+\citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
+'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
+
+
+
+
+
+
+%---------------------------------------------------------------------------%
+\newpage
+\newpage
+\section{Likelihood Distance} %1.11
+The likelihood distance gives the amount by which the log-likelihood of the full data changes if one were
+to evaluate it at the reduced-data estimates. The important point is that $l(\psi_{(U)})$ is not the log-likelihood
+obtained by fitting the model to the reduced data set.
+
+
+It is obtained by evaluating the likelihood function based on the full data set (containing all n observations) at the reduced-data estimates.
+
+
+The likelihood distance is a global, summary measure, expressing the joint influence of the observations in
+the set $U$ on all parameters in $\psi$  that were subject to updating.
+%------------%
+
 
 \subsection{Case Deletion Diagnostics for Mixed Models}
 

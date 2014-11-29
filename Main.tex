@@ -1,25 +1,55 @@
-\documentclass[a4paper,12pt]{article}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{eurosym}
-\usepackage{vmargin}
-\usepackage{amsmath}
-\usepackage{graphics}
+\documentclass[12pt, a4paper]{report}
 \usepackage{epsfig}
-\usepackage{amssymb}
 \usepackage{subfigure}
-\usepackage{subfiles}
-\usepackage{fancyhdr}
+%\usepackage{amscd}
+\usepackage{amssymb}
 \usepackage{framed}
-%opening
-\title{Residual Analysis for LME Models in the MCS context}
-\author{Kevin O'Brien}
+\usepackage{subfiles}
+\usepackage{amsbsy}
+\usepackage{amsthm}
+%\usepackage[dvips]{graphicx}
+\usepackage{natbib}
+\usepackage{subfiles}
+\bibliographystyle{chicago}
+\usepackage{vmargin}
+\usepackage{index}
+% left top textwidth textheight headheight
+% headsep footheight footskip
+\setmargins{3.0cm}{2.5cm}{15.5 cm}{22cm}{0.5cm}{0cm}{1cm}{1cm}
+\renewcommand{\baselinestretch}{1.5}
+\pagenumbering{arabic}
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{ill}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}{Axiom}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{notation}{Notation}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem{example}{Example}[section]
+\renewcommand{\thenotation}{}
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\title{Research notes: linear mixed effects models}
+\author{ } \date{ }
 
+
+\makeindex
 \begin{document}
+	\author{Kevin O'Brien}
+	\title{November 2011 Version A}
 	
-	\maketitle
-
-\addcontentsline{toc}{section}{Bibliography}
-\bigskip
+	
+	\addcontentsline{toc}{section}{Bibliography}
+	
+	
+	\tableofcontents \setcounter{tocdepth}{1}
+	
 \begin{framed} 
 \begin{itemize}
 	\item \texttt{R} command and \texttt{R} object - Typewriter Font
@@ -28,19 +58,19 @@
 \end{itemize}
 \end{framed}
 \newpage
-\subfile{01-InfluenceIntro.tex}
-\subfile{02-CondMargResidual.tex}
-
-\subfile{00-Influence-OLS.tex}
-\subfile{02-CooksDistance-OLS.tex}
-\subfile{CooksDistance-LME.tex}
+%%\subfile{01-InfluenceIntro.tex}
+%\subfile{02-CondMargResidual.tex}
+%
+%\subfile{00-Influence-OLS.tex}
+%\subfile{02-CooksDistance-OLS.tex}
+%\subfile{CooksDistance-LME.tex}
 
 %\subfile{Influence-OLS.tex}
-\subfile{Influence-LME.tex}
-\subfile{SchabenSummary.tex}
-
-\subfile{12-CPJpropositions.tex}
-
+%\subfile{Influence-LME.tex}
+%\subfile{SchabenSummary.tex}
+%
+%\subfile{12-CPJpropositions.tex}
+%
 
 %===================================================================%
 \newpage
@@ -141,7 +171,7 @@ A plot ofthe per-observation diagnostics individual subject log-likelihood contr
 
 %====================================================================%
 \newpage
-\subfile{LikelihoodDistances.tex}
+%\subfile{LikelihoodDistances.tex}
 
 
 \newpage
