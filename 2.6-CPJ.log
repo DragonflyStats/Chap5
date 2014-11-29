@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  28 NOV 2014 20:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  28 NOV 2014 23:33
 entering extended mode
 **2.6-CPJ.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\2.6-CPJ.tex
@@ -247,44 +247,42 @@ Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 224.
 
 Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 229.
 
+[7] [8] [9]
 
-Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 245.
+Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 316.
 
-[7]
 
-Package natbib Warning: Citation `Christiansen' on page 8 undefined on input li
-ne 266.
+Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 331.
 
-[8]
 
-Package natbib Warning: Citation `Christiansen' on page 9 undefined on input li
-ne 268.
+Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 336.
 
+[10] [11]
 
 Package natbib Warning: There were undefined citations.
 
-[9] (C:\Users\Kevin\Documents\GitHub\Chap5\2.6-CPJ.aux) ) 
+[12] (C:\Users\Kevin\Documents\GitHub\Chap5\2.6-CPJ.aux) ) 
 Here is how much of TeX's memory you used:
- 2372 strings out of 493921
- 30839 string characters out of 3144875
+ 2371 strings out of 493921
+ 30825 string characters out of 3144875
  81841 words of memory out of 3000000
- 5635 multiletter control sequences out of 15000+200000
+ 5634 multiletter control sequences out of 15000+200000
  12265 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,10n,28p,440b,143s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on 2.6-CPJ.pdf (9 pages, 113692 bytes).
+ 43i,10n,28p,363b,143s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on 2.6-CPJ.pdf (12 pages, 115193 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

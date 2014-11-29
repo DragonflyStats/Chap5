@@ -67,4 +67,48 @@
 		\item  For example, modeling these data with a random intercept and random slope for each child or an unstructured covariance matrix will affect your conclusions about which children are inﬂuential on the analysis and how this influence manifests itself.
 	\end{itemize}
 	
+
+%--------------------------------------------------------------------------%
+\newpage
+\section{Terminology for Case Deletion diagnostics} %1.8
+
+\citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
+'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
+
+
+\newpage
+\section{Iterative and non-iterative influence analysis} %1.13
+\citet{schabenberger} highlights some of the issue regarding implementing mixed model diagnostics.
+
+A measure of total influence requires updates of all model parameters.
+
+however, this doesnt increase the procedures execution time by the same degree.
+\subsection{Iterative Influence Analysis}
+
+%----schabenberger page 8
+For linear models, the implementation of influence analysis is straightforward.
+However, for LME models, the process is more complex. Update formulas for the fixed effects are available only when the covariance parameters are assumed to be known. A measure of total influence requires updates of all model parameters.
+This can only be achieved in general is by omitting observations, then refitting the model.
+
+\citet{schabenberger} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
+
+
+
+
+\chapter{Zewotir's Paper}
+
+% 2.1 Efficient Updating Theorem
+% 2.2 Zewotir Measures of Influence in LME Models (section 4 of paper)
+% 2.3 Computation and Notation 
+% 2.4 Measures 2
+%2.5 Haslett Analysis
+
+\section{Efficient Updating Theorem} %2.1
+\citet{Zewotir} describes the basic theorem of efficient updating.
+\begin{itemize}
+	\item \[ m_i = {1 \over c_{ii}}\]
+	%\item
+	%item
+	%\item
+\end{itemize}
 \end{document}

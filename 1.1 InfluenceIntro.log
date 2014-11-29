@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  28 NOV 2014 22:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  28 NOV 2014 23:27
 entering extended mode
 **1.1*InfluenceIntro.tex
 ("C:\Users\Kevin\Documents\GitHub\Chap5\1.1 InfluenceIntro.tex"
@@ -194,64 +194,92 @@ LaTeX Font Info:    ... okay on input line 2.
 )
 
 Package natbib Warning: Citation `schabenberger' on page 1 undefined on input l
-ine 6.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 14.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
+ine 8.
 
 
-Package natbib Warning: Citation `cook86' on page 1 undefined on input line 19.
+Package natbib Warning: Citation `CPJ' on page 1 undefined on input line 18.
 
+
+Package natbib Warning: Citation `Zewotir' on page 1 undefined on input line 21
+.
 
 [1
 
 {C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
+
 
 Package natbib Warning: Citation `schabenberger' on page 2 undefined on input l
-ine 33.
+ine 39.
 
-[2] [3]
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+[2]
+
+Package natbib Warning: Citation `cook86' on page 3 undefined on input line 52.
+
+
+[3]
+
+Package natbib Warning: Citation `Beckman' on page 4 undefined on input line 61
+.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package natbib Warning: Citation `west' on page 4 undefined on input line 63.
+Package natbib Warning: Citation `schabenberger' on page 4 undefined on input l
+ine 81.
 
 [4]
 
-Package natbib Warning: Citation `Beckman' on page 5 undefined on input line 90
-.
+Package natbib Warning: Citation `cook86' on page 5 undefined on input line 94.
+
 
 [5]
+
+Package natbib Warning: Citation `schabenberger' on page 6 undefined on input l
+ine 108.
+
+[6] [7]
+
+Package natbib Warning: Citation `west' on page 8 undefined on input line 138.
+
+[8]
+
+Package natbib Warning: Citation `Beckman' on page 9 undefined on input line 16
+5.
+
+[9]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [6] [7] [8]
+ [10] [11] [12]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [9]
+ [13]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [10] [11]
-Overfull \hbox (17.21007pt too wide) in paragraph at lines 229--229
+ [14] [15]
+Overfull \hbox (17.21007pt too wide) in paragraph at lines 304--304
 []\OT1/cmr/bx/n/14.4 ITERATIVE VS. NON-IT-ER-A-TIVE IN-FLU-ENCE ANAL-
  []
 
@@ -264,17 +292,34 @@ Missing character: There is no ù in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-[12]
+[16] [17]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no í in font cmr12!
+ [18]
+Missing character: There is no ≈ in font cmr12!
+Missing character: There is no ∑ in font cmr12!
+Missing character: There is no Œ in font cmr12!
+Missing character: There is no £ in font cmr12!
+ [19] [20] [21] [22] [23] [24]
+Overfull \hbox (7.82762pt too wide) in paragraph at lines 457--458
+\OT1/cmr/m/n/12 dence el-lip-soid that rep-re-sents a re-gion of plau-si-ble va
+l-ues for the pa-ram-e-ters.[clarification
+ []
+
 
 Package natbib Warning: There were undefined citations.
 
-[13] ("C:\Users\Kevin\Documents\GitHub\Chap5\1.1 InfluenceIntro.aux") ) 
+[25] ("C:\Users\Kevin\Documents\GitHub\Chap5\1.1 InfluenceIntro.aux") ) 
 Here is how much of TeX's memory you used:
- 2360 strings out of 493921
- 30827 string characters out of 3144875
+ 2364 strings out of 493921
+ 30862 string characters out of 3144875
  80841 words of memory out of 3000000
- 5630 multiletter control sequences out of 15000+200000
- 10150 words of font info for 38 fonts, out of 3000000 for 9000
+ 5633 multiletter control sequences out of 15000+200000
+ 10319 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,4n,28p,676b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Prog
@@ -282,11 +327,13 @@ ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program 
 Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "1.1 InfluenceIntro.pdf" (13 pages, 95601 bytes).
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "1.1 InfluenceIntro.pdf" (25 pages, 131946 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
