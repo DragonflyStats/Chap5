@@ -1,5 +1,5 @@
 % CPJ.tex
-\documentclass[Chap5amain.tex]{subfiles}
+\documentclass[Main.tex]{subfiles}
 \begin{document}
 \newpage
 \section{CPJ's Three Propositions} %1.15
@@ -52,77 +52,6 @@ removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes 
 Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
 
 %---------------------------------------------------------------------------%
-\newpage
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
-
-
-\subsubsection{Proposition 1}
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-\begin{itemize}
-	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
-\newpage
-%-----------------------------%
-
-
-
-
-\subsubsection{Proposition 1}
-
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-
-\begin{itemize}
-	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
-
-
-
-
 
 %----------------------------------------------------------------------------------------%
 \newpage
@@ -221,40 +150,7 @@ removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes 
 \subsection{Partitioning Matrices} %1.14.2
 Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
 
-
-\subsubsection{Proposition 1}
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-\begin{itemize}
-\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
-
-
-%----------------------------------------------------------------------------------------%
 \newpage
 \section{The CPJ Paper}%1.13
 
@@ -291,36 +187,6 @@ c_{ii} & \boldsymbol{c}_{i}^{\prime}\\
 All of these terms are a function of a row (or column) of $\boldsymbol{H}$ and $\boldsymbol{H}_{[i]}^{-1}$
 
 %---------------------------------------------------------------------------%
-\newpage
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
-
-
-\subsubsection{Proposition 1}
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-\begin{itemize}
-\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
 
 %----------------------------------------------------------------------------------------%
 \newpage
@@ -357,36 +223,6 @@ c_{ii} & \boldsymbol{c}_{i}^{\prime}\\
 	\item $m_i$
 \end{itemize}
 All of these terms are a function of a row (or column) of $\boldsymbol{H}$ and $\boldsymbol{H}_{[i]}^{-1}$
-
-\section{CPJ's Three Propositions} %1.15
-%-----------------------------%
-
-
-\subsubsection{Proposition 1}
-
-\[
-\boldsymbol{V}^{-1} =
-\left[ \begin{array}{cc}
-\nu^{ii} & \lambda_{i}^{\prime}  \\
-\lambda_{i} & \Lambda_{[i]}
-\end{array}\right] \]
-
-
-\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
-
-%-----------------------------%
-\subsection{Proposition 2}
-
-\begin{itemize}
-	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
-	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
-	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
-\end{itemize}
-%-----------------------------%
-\subsection{Proposition 3}
-This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
-
-%-----------------------------------------------------------------------------------------------------------------------------------%
 
 
 \newpage
@@ -465,21 +301,21 @@ c_{ii} & \boldsymbol{c}_{i}^{\prime}\\
 \end{itemize}
 All of these terms are a function of a row (or column) of $\boldsymbol{H}$ and $\boldsymbol{H}_{[i]}^{-1}$
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Matrix Notation for Case Deletion} %1.14
-
-\subsection{Case deletion notation} %1.14.1
-
-For notational simplicity, $\boldsymbol{A}(i)$ denotes an $n \times m$ matrix $\boldsymbol{A}$ with the $i$-th row
-removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes the $(i, j)-$th element of $\boldsymbol{A}$.
-
-\subsection{Partitioning Matrices} %1.14.2
-Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
-
-%---------------------------------------------------------------------------%
 \newpage
 \section{CPJ's Three Propositions} %1.15
+%-----------------------------%
+\subsubsection{Proposition 1}
+
+\[
+\boldsymbol{V}^{-1} =
+\left[ \begin{array}{cc}
+\nu^{ii} & \lambda_{i}^{\prime}  \\
+\lambda_{i} & \Lambda_{[i]}
+\end{array}\right] \]
+
+
+\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
+
 %-----------------------------%
 
 
@@ -503,10 +339,155 @@ Without loss of generality, matrices can be partitioned as if the $i-$th omitted
 	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
 	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
 \end{itemize}
+%---------------------------------------------------------------------------%
+\newpage
+\section{CPJ's Three Propositions} %1.15
+%-----------------------------%
+
+
+\subsection{Proposition 2}
+
+\begin{itemize}
+	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
+	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
+	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
+\end{itemize}
+
 %-----------------------------%
 \subsection{Proposition 3}
 This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
+
+
 %-------------------------------------------------------------------------------------------------Chapter 2	------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
+
+%-----------------------------------------------------------------------------------------------------------------------------------%
+\section{CPJ's Three Propositions} %1.15
+%-----------------------------%
+
+
+\subsubsection{Proposition 1}
+
+\[
+\boldsymbol{V}^{-1} =
+\left[ \begin{array}{cc}
+\nu^{ii} & \lambda_{i}^{\prime}  \\
+\lambda_{i} & \Lambda_{[i]}
+\end{array}\right] \]
+
+
+\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
+
+%-----------------------------%
+\subsection{Proposition 2}
+
+\begin{itemize}
+	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
+	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
+	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
+\end{itemize}
+%-----------------------------%
+\subsection{Proposition 3}
+This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
+
+%-----------------------------------------------------------------------------------------------------------------------------------%
+
+\newpage
+\section{CPJ's Three Propositions} %1.15
+%-----------------------------%
+
+
+\subsubsection{Proposition 1}
+
+\[
+\boldsymbol{V}^{-1} =
+\left[ \begin{array}{cc}
+\nu^{ii} & \lambda_{i}^{\prime}  \\
+\lambda_{i} & \Lambda_{[i]}
+\end{array}\right] \]
+
+
+\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
+
+%-----------------------------%
+\subsection{Proposition 2}
+
+\begin{itemize}
+	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
+	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
+	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
+\end{itemize}
+%-----------------------------%
+\subsection{Proposition 3}
+This proposition is similar to the formula for the one-step Newtown Raphson estimate of the logistic regression coefficients given by Pregibon (1981) and discussed in Cook Weisberg.
+
+%-----------------------------------------------------------------------------------------------------------------------------------%
+
+\newpage
+\section{CPJ's Three Propositions} %1.15
+%-----------------------------%
+
+
+\subsubsection{Proposition 1}
+
+\[
+\boldsymbol{V}^{-1} =
+\left[ \begin{array}{cc}
+\nu^{ii} & \lambda_{i}^{\prime}  \\
+\lambda_{i} & \Lambda_{[i]}
+\end{array}\right] \]
+
+
+\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
+
+%-----------------------------%
+\subsection{Proposition 2}
+
+\begin{itemize}
+	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
+	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
+	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
+\end{itemize}
+
+%-----------------------------------------------------------------------------------------------------------------------------------%
+\newpage
+%-----------------------------%
+
+
+
+
+\subsubsection{Proposition 1}
+
+
+\[
+\boldsymbol{V}^{-1} =
+\left[ \begin{array}{cc}
+\nu^{ii} & \lambda_{i}^{\prime}  \\
+\lambda_{i} & \Lambda_{[i]}
+\end{array}\right] \]
+
+
+
+
+\[\boldsymbol{V}_{[i]}^{-1} = \boldsymbol{\Lambda}_{[i]} - { \lambda_{i} \lambda_{i} ^{\prime} \over \lambda_{i} } \]
+
+
+%-----------------------------%
+\subsection{Proposition 2}
+
+
+\begin{itemize}
+	\item[(i)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{X}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}$
+	\item[(ii)] = $(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y})^{-1}$
+	\item[(iii)] $ \boldsymbol{X}_{[i]}^{T}\boldsymbol{V}^{-1}_{[i]}\boldsymbol{Y}_{[i]}$ = $\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{Y}$
+\end{itemize}
+
+
+
+%-----------------------------------------------------------------------------------------------------------------------------------%
+
+
+
+
+
+%----------------------------------------------------------------------------------------%
 \end{document}

@@ -1,36 +1,29 @@
-\indexentry {local influence}{7}
-\indexentry {standardized residual}{10}
-\indexentry {studentized residual}{10}
-\indexentry {external studentization}{10}
-\indexentry {internally studentization}{10}
-\indexentry {studentized residual}{10}
-\indexentry {Pearson residual}{11}
-\indexentry {case deletion diagnostics}{13}
-\indexentry {Cook's distance}{13}
-\indexentry {case deletion diagnostics}{14}
-\indexentry {likelihood distance}{14}
-\indexentry {Cook-Weisberg statistic}{14}
-\indexentry {Andrews-Prebigon statistic}{14}
-\indexentry {likelihood distance}{16}
-\indexentry {iterative influence analysis}{17}
-\indexentry {non-iterative influence analysis}{17}
-\indexentry {standardized residual}{20}
-\indexentry {studentized residual}{20}
-\indexentry {external studentization}{20}
-\indexentry {internally studentization}{20}
-\indexentry {studentized residual}{20}
-\indexentry {Pearson residual}{21}
-\indexentry {standardized residual}{25}
-\indexentry {studentized residual}{25}
-\indexentry {external studentization}{25}
-\indexentry {internally studentization}{25}
-\indexentry {studentized residual}{25}
-\indexentry {Pearson residual}{26}
-\indexentry {local influence}{31}
-\indexentry {case deletion diagnostics}{32}
-\indexentry {likelihood distance}{32}
-\indexentry {Cook-Weisberg statistic}{32}
-\indexentry {Andrews-Prebigon statistic}{32}
-\indexentry {maximum likelihood}{33}
-\indexentry {restricted maximum likelihood}{33}
-\indexentry {likelihood distance}{33}
+\indexentry {local influence}{4}
+\indexentry {standardized residual}{5}
+\indexentry {studentized residual}{5}
+\indexentry {external studentization}{5}
+\indexentry {internally studentization}{5}
+\indexentry {studentized residual}{5}
+\indexentry {Pearson residual}{6}
+\indexentry {likelihood distance}{7}
+\indexentry {standardized residual}{11}
+\indexentry {studentized residual}{11}
+\indexentry {external studentization}{11}
+\indexentry {internally studentization}{11}
+\indexentry {studentized residual}{11}
+\indexentry {Pearson residual}{12}
+\indexentry {standardized residual}{14}
+\indexentry {studentized residual}{14}
+\indexentry {external studentization}{14}
+\indexentry {internally studentization}{14}
+\indexentry {studentized residual}{14}
+\indexentry {Pearson residual}{15}
+\indexentry {local influence}{20}
+\indexentry {case deletion diagnostics}{21}
+\indexentry {likelihood distance}{21}
+\indexentry {Cook-Weisberg statistic}{21}
+\indexentry {Andrews-Prebigon statistic}{21}
+\indexentry {maximum likelihood}{22}
+\indexentry {restricted maximum likelihood}{22}
+\indexentry {likelihood distance}{22}
+\indexentry {local influence}{23}

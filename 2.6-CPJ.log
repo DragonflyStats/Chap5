@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 07:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 09:39
 entering extended mode
 **2.6-CPJ.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\2.6-CPJ.tex
@@ -21,8 +21,8 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
 )
-Preamble taken from file `Chap5amain.tex'
-(C:\Users\Kevin\Documents\GitHub\Chap5\Chap5amain.tex
+Preamble taken from file `Main.tex'
+(C:\Users\Kevin\Documents\GitHub\Chap5\Main.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
@@ -110,15 +110,26 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip49
+\fb@frw=\dimen109
+\fb@frh=\dimen110
+\FrameRule=\dimen111
+\FrameSep=\dimen112
+)
+(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty
+Package: subfiles 2012/05/23 Federico Garcia
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
-\ex@=\dimen109
+\ex@=\dimen113
 )
-\pmbraise@=\dimen110
+\pmbraise@=\dimen114
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
 Package: amsthm 2004/08/06 v2.20
@@ -127,27 +138,24 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headfont=\toks21
 \thm@notefont=\toks22
 \thm@headpunct=\toks23
-\thm@preskip=\skip49
-\thm@postskip=\skip50
-\thm@headsep=\skip51
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
 \dth@everypar=\toks24
 )
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\natbib\natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip52
-\bibsep=\skip53
+\bibhang=\skip53
+\bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count93
-)
-(C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty
-Package: subfiles 2012/05/23 Federico Garcia
 )
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\ieeepes\vmargin.sty
 Package: vmargin 1999/06/01
 
 Package `vmargin', V2.2, <1999/06/01>
-\PaperWidth=\dimen111
-\PaperHeight=\dimen112
+\PaperWidth=\dimen115
+\PaperHeight=\dimen116
 ) (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\index\index.sty
 Package: index 2004/01/20 v4.2beta Improved index support (dmj)
 \@indexbox=\insert233
@@ -161,7 +169,7 @@ Package: index 2004/01/20 v4.2beta Improved index support (dmj)
 \c@example=\count99
 \idxtitle@default=\toks26
 \tf@default=\write3
-Package index Info: Writing index file 2.6-CPJ.idx on input line 40.
+Package index Info: Writing index file 2.6-CPJ.idx on input line 42.
 ))
 (C:\Users\Kevin\Documents\GitHub\Chap5\2.6-CPJ.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -180,13 +188,13 @@ LaTeX Font Info:    ... okay on input line 3.
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
-\scratchdimen=\dimen113
+\scratchdimen=\dimen117
 \scratchbox=\box26
 \nofMPsegments=\count101
 \nofMParguments=\count102
 \everyMPshowfont=\toks27
 \MPscratchCnt=\count103
-\MPscratchDim=\dimen114
+\MPscratchDim=\dimen118
 \MPnumerator=\count104
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks28
@@ -217,70 +225,69 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 33.
- [2] [3] [4]
-[5]
+ [2] [3]
 
-Package natbib Warning: Citation `CPJ' on page 6 undefined on input line 133.
-
-
-Package natbib Warning: Citation `CPJ' on page 6 undefined on input line 153.
+Package natbib Warning: Citation `CPJ' on page 4 undefined on input line 62.
 
 
-Package natbib Warning: Citation `CPJ' on page 6 undefined on input line 161.
-
-[6]
-
-Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 181.
+Package natbib Warning: Citation `CPJ' on page 4 undefined on input line 82.
 
 
-Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 196.
+Package natbib Warning: Citation `CPJ' on page 4 undefined on input line 90.
+
+[4]
+
+Package natbib Warning: Citation `CPJ' on page 5 undefined on input line 110.
 
 
-Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 201.
-
-[7] [8] [9]
-
-Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 262.
+Package natbib Warning: Citation `CPJ' on page 5 undefined on input line 125.
 
 
-Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 277.
+Package natbib Warning: Citation `CPJ' on page 5 undefined on input line 130.
+
+[5] [6]
+
+Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 158.
 
 
-Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 282.
-
-[10] [11]
-
-Package natbib Warning: Citation `CPJ' on page 12 undefined on input line 330.
+Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 173.
 
 
-Package natbib Warning: Citation `CPJ' on page 12 undefined on input line 345.
+Package natbib Warning: Citation `CPJ' on page 7 undefined on input line 178.
+
+[7]
+
+Package natbib Warning: Citation `CPJ' on page 8 undefined on input line 196.
 
 
-Package natbib Warning: Citation `CPJ' on page 12 undefined on input line 350.
-
-[12] [13] [14]
-
-Package natbib Warning: Citation `CPJ' on page 15 undefined on input line 437.
+Package natbib Warning: Citation `CPJ' on page 8 undefined on input line 211.
 
 
-Package natbib Warning: Citation `CPJ' on page 15 undefined on input line 452.
+Package natbib Warning: Citation `CPJ' on page 8 undefined on input line 216.
+
+[8] [9]
+
+Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 273.
 
 
-Package natbib Warning: Citation `CPJ' on page 15 undefined on input line 457.
+Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 288.
 
-[15] [16]
+
+Package natbib Warning: Citation `CPJ' on page 10 undefined on input line 293.
+
+[10] [11] [12] [13] [14] [15] [16]
 
 Package natbib Warning: There were undefined citations.
 
 [17] (C:\Users\Kevin\Documents\GitHub\Chap5\2.6-CPJ.aux) ) 
 Here is how much of TeX's memory you used:
- 2371 strings out of 493921
- 30825 string characters out of 3144875
- 81841 words of memory out of 3000000
- 5634 multiletter control sequences out of 15000+200000
+ 2423 strings out of 493921
+ 31526 string characters out of 3144875
+ 83231 words of memory out of 3000000
+ 5682 multiletter control sequences out of 15000+200000
  12265 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,10n,28p,358b,143s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,10n,28p,350b,171s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x8
 6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files (x86)/M
@@ -291,7 +298,7 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on 2.6-CPJ.pdf (17 pages, 121626 bytes).
+Output written on 2.6-CPJ.pdf (17 pages, 121320 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
