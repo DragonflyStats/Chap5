@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 11:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 12:53
 entering extended mode
 **1.3-Influence1.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\1.3-Influence1.tex
@@ -200,118 +200,87 @@ LaTeX Font Info:    ... okay on input line 2.
 \everyMPtoPDFconversion=\toks28
 )
 
-Package natbib Warning: Citation `schabenberger' on page 1 undefined on input l
-ine 27.
-
-
 Package natbib Warning: Citation `Christensen' on page 1 undefined on input lin
-e 42.
+e 23.
 
 
-Package natbib Warning: Citation `Zewotir' on page 1 undefined on input line 46
+Package natbib Warning: Citation `Zewotir' on page 1 undefined on input line 27
+.
+
+
+Package natbib Warning: Citation `CPJ' on page 1 undefined on input line 33.
+
+
+Package natbib Warning: Citation `Zewotir' on page 1 undefined on input line 36
 .
 
 [1
 
 {C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 53.
+
+Package natbib Warning: Citation `CPJ' on page 2 undefined on input line 42.
+
+
+Package natbib Warning: Citation `Zewotir' on page 2 undefined on input line 45
+.
+
+[2]
+
+Package natbib Warning: Citation `Beckman' on page 3 undefined on input line 53
+.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 57.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 53.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+ [3]
 
-
-Package natbib Warning: Citation `schabenberger' on page 2 undefined on input l
-ine 68.
-
-[2]
-
-Package natbib Warning: Citation `cook86' on page 3 undefined on input line 85.
-
-
-[3]
-
-Package natbib Warning: Citation `Beckman' on page 4 undefined on input line 98
+Package natbib Warning: Citation `Beckman' on page 4 undefined on input line 76
 .
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
+[4] [5]
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4] [5]
-[6] [7] [8] [9] [10] [11] [12] [13] [14] [15] [16]
-
-Package natbib Warning: Citation `schabenberger' on page 17 undefined on input 
-line 412.
-
-
-Package natbib Warning: Citation `CPJ' on page 17 undefined on input line 422.
-
-
-Package natbib Warning: Citation `Zewotir' on page 17 undefined on input line 4
-25.
-
-[17]
-
-Package natbib Warning: Citation `schabenberger' on page 18 undefined on input 
-line 443.
-
-[18]
-
-Package natbib Warning: Citation `cook86' on page 19 undefined on input line 45
+Package natbib Warning: Citation `Beckman' on page 6 undefined on input line 13
 6.
 
-[19]
+[6] [7] [8]
 
-Package natbib Warning: Citation `Beckman' on page 20 undefined on input line 4
-65.
-
-[20]
-
-Package natbib Warning: Citation `Christiansen' on page 21 undefined on input l
-ine 486.
+Package natbib Warning: Citation `Christiansen' on page 9 undefined on input li
+ne 227.
 
 
-Package natbib Warning: Citation `Christiansen' on page 21 undefined on input l
-ine 488.
+Package natbib Warning: Citation `Christiansen' on page 9 undefined on input li
+ne 229.
 
 
-Package natbib Warning: Citation `Zewotir' on page 21 undefined on input line 4
-93.
+Package natbib Warning: Citation `Zewotir' on page 9 undefined on input line 23
+4.
 
-[21]
-
-Package natbib Warning: Citation `schabenberger' on page 22 undefined on input 
-line 523.
-
-
-Package natbib Warning: Citation `cook86' on page 22 undefined on input line 53
-6.
-
-[22]
-
-Package natbib Warning: Citation `Beckman' on page 23 undefined on input line 5
-45.
-
-[23]
+[9]
 
 Package natbib Warning: There were undefined citations.
 
-[24] (C:\Users\Kevin\Documents\GitHub\Chap5\1.3-Influence1.aux) ) 
+[10] (C:\Users\Kevin\Documents\GitHub\Chap5\1.3-Influence1.aux) ) 
 Here is how much of TeX's memory you used:
- 2435 strings out of 493921
- 31730 string characters out of 3144875
- 83231 words of memory out of 3000000
- 5691 multiletter control sequences out of 15000+200000
- 13140 words of font info for 48 fonts, out of 3000000 for 9000
+ 2430 strings out of 493921
+ 31667 string characters out of 3144875
+ 82231 words of memory out of 3000000
+ 5687 multiletter control sequences out of 15000+200000
+ 12534 words of font info for 46 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,9n,28p,502b,163s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,9n,28p,503b,143s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Fi
 les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
@@ -320,14 +289,12 @@ es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files (x86)
 /MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 1.3-Influence1.pdf (24 pages, 163824 bytes).
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 1.3-Influence1.pdf (10 pages, 116719 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

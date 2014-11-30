@@ -1,12 +1,7 @@
 \documentclass[Main.tex]{subfiles}
 \begin{document}
 	
-	\subsection{What is Influence} %1.1.5
-	
-	Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-	points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis (Schabenberger).
-	
-	%-------%
+
 	\subsection{Quantifying Influence}  %1.1.6
 	
 	The basic procedure for quantifying influence is simple as follows:
@@ -19,7 +14,43 @@
 	
 	Cook (1986) introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
 	
+	%--------------------------------------------------------------%
+	\newpage
+	\section{Measures 2} %2.4
 	
+	\subsection{Cook's Distance} %2.4.1
+	\begin{itemize}
+		\item For variance components $\gamma$
+	\end{itemize}
+	
+	Diagnostic tool for variance components
+	\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
+	
+	
+	\subsection{Variance Ratio} %2.4.2
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+	\subsection{Variance Ratio} %2.4.2
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+	\subsection{Cook-Weisberg statistic} %2.4.3
+	\begin{itemize}
+		\item For fixed effect parameters $\beta$.
+	\end{itemize}
+	
+
+	\subsection{Andrews-Pregibon statistic} %2.4.4
+		\begin{itemize}
+			\item For fixed effect parameters $\beta$.
+		\end{itemize}
+		The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
+		The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
+
+		
 	%--------------------------------------------------------------%
 	\newpage
 	\section{Measures 2} %2.4
@@ -35,26 +66,9 @@
 	\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
 	
 	
-	\subsection{Variance Ratio} %2.4.2
-	\begin{itemize}
-		\item For fixed effect parameters $\beta$.
-	\end{itemize}
 	
 	
-	\subsection{Cook-Weisberg statistic} %2.4.3
-	\begin{itemize}
-		\item For fixed effect parameters $\beta$.
-	\end{itemize}
-	
-	
-	\subsection{Andrews-Pregibon statistic} %2.4.4
-	\begin{itemize}
-		\item For fixed effect parameters $\beta$.
-	\end{itemize}
-	The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-	The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
-	
-	
+
 	
 	
 	%---------------------------------------------------------------------------%
@@ -91,36 +105,6 @@
 	
 	
 	Zewotir remarks that $\boldsymbol{D}$ is a block diagonal with the $i-$th block being $u \boldsymbol{I}$
-	%--------------------------------------------------------------%
-	\newpage
-	\section{Measures 2} %2.4
-	
-	\subsection{Cook's Distance} %2.4.1
-	\begin{itemize}
-		\item For variance components $\gamma$
-	\end{itemize}
-	
-	Diagnostic tool for variance components
-	\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
-	
-	\subsection{Variance Ratio} %2.4.2
-	\begin{itemize}
-		\item For fixed effect parameters $\beta$.
-	\end{itemize}
-	
-	\subsection{Cook-Weisberg statistic} %2.4.3
-	\begin{itemize}
-		\item For fixed effect parameters $\beta$.
-	\end{itemize}
-	
-	\subsection{Andrews-Pregibon statistic} %2.4.4
-	\begin{itemize}
-		\item For fixed effect parameters $\beta$.
-	\end{itemize}
-	The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-	The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
-	
-\newpage	
 \section{Measures of Influence} %1.16
 
 The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
@@ -135,23 +119,6 @@ DFFITS is a statistical measured designed to a show how influential an observati
 \widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} \end{displaymath}
 
 
-\subsection{PRESS} %1.16.2
-The prediction residual sum of squares (PRESS) is an value associated with this calculation. When fitting linear models, PRESS can be used as a criterion for model selection, with smaller values indicating better model fits.
-\begin{equation}
-PRESS = \sum(y-y^{(k)})^2
-\end{equation}
-
-
-\begin{itemize}
-\item $e_{-Q} = y_{Q} - x_{Q}\hat{\beta}^{-Q}$
-\item $PRESS_{(U)} = y_{i} - x\hat{\beta}_{(U)}$
-\end{itemize}
-
-\subsection{DFBETA} %1.16.3
-\begin{eqnarray}
-DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
-&=& B(Y-Y_{\bar{a}}
-\end{eqnarray}
 %-------------------------------------------------------------------------------------------------------------------------------------%
 \subsection{Influence Statistics for LME models} %1.1.4
 Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
@@ -165,29 +132,7 @@ Influence statistics can be coarsely grouped by the aspect of estimation that is
 %---------------------------------------------------------------------------%
 
 
-\subsection{Variance Ratio} %2.4.2
-\begin{itemize}
-	\item For fixed effect parameters $\beta$.
-\end{itemize}
 
-\subsection{Cook-Weisberg statistic} %2.4.3
-\begin{itemize}
-	\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Andrews-Pregibon statistic} %2.4.4
-\begin{itemize}
-	\item For fixed effect parameters $\beta$.
-\end{itemize}
-The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
-
-
-%---------------------------------------------------------------------------%
-
-
-
-\newpage
 \section{Measures of Influence} %1.16
 
 The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
@@ -196,16 +141,25 @@ Influence arises at two stages of the LME model. Firstly when $V$ is estimated b
 estimations of the fixed and random regression coefficients $\beta$ and $u$, given $\hat{V}$.
 
 
+\subsection{DFBETA} %1.16.3
+\begin{eqnarray}
+	DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
+	&=& B(Y-Y_{\bar{a}}
+\end{eqnarray}
+%-------------------------------------------------------------------------------------------------------------------------------------%
+
 \subsection{DFFITS} %1.16.1
 DFFITS is a statistical measured designed to a show how influential an observation is in a statistical model. It is closely related to the studentized residual.
 \begin{displaymath} DFFITS = {\widehat{y_i} -
-	\widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} \end{displaymath}
+		\widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} \end{displaymath}
 
+
+%================================================ %
 
 \subsection{PRESS} %1.16.2
 The prediction residual sum of squares (PRESS) is an value associated with this calculation. When fitting linear models, PRESS can be used as a criterion for model selection, with smaller values indicating better model fits.
 \begin{equation}
-PRESS = \sum(y-y^{(k)})^2
+	PRESS = \sum(y-y^{(k)})^2
 \end{equation}
 
 
@@ -216,18 +170,19 @@ PRESS = \sum(y-y^{(k)})^2
 
 \subsection{DFBETA} %1.16.3
 \begin{eqnarray}
-DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
-&=& B(Y-Y_{\bar{a}}
+	DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
+	&=& B(Y-Y_{\bar{a}}
 \end{eqnarray}
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------Chapter 2	------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
 
-%-------------------------------------------------------------------------------------------------Chapter 3------------------------%
 %-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
+\subsection{Influential Observations : DFBeta and DFBetas}
+% http://stats.stackexchange.com/questions/22161/how-to-read-cooks-distance-plots
+Cook's distance refers to how far, on average, predicted y-values will move if the observation in question is dropped from the data set. dfbeta refers to how much a parameter estimate changes if the observation in question is dropped from the data set. Note that with k covariates, there will be k+1 dfbetas (the intercept,$\beta_0$, and 1 $\beta$ for each covariate). Cook's distance is presumably more important to you if you are doing predictive modeling, whereas dfbeta is more important in explanatory modeling.
 
+
+\newpage
+
+
+\newpage
 %-------------------------------------------------------------------------------------------------------------------------------------%
 \end{document}

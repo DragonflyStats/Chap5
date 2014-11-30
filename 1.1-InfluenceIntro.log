@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 11:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 14:19
 entering extended mode
 **1.1-InfluenceIntro.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\1.1-InfluenceIntro.tex
@@ -200,71 +200,53 @@ LaTeX Font Info:    ... okay on input line 2.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks28
 )
-Chapter 1.
 
 Package natbib Warning: Citation `schabenberger' on page 1 undefined on input l
-ine 27.
+ine 23.
 
-[1
-
-
-{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-
-Package natbib Warning: Citation `schabenberger' on page 2 undefined on input l
-ine 35.
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 34.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 48.
- [2] [3]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 34.
+ [1
 
-Package natbib Warning: Citation `cook86' on page 4 undefined on input line 86.
+{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-
-
-Package natbib Warning: Citation `CPJ' on page 4 undefined on input line 93.
+Package natbib Warning: Citation `cook86' on page 2 undefined on input line 40.
 
 
-Package natbib Warning: Citation `Zewotir' on page 4 undefined on input line 96
+[2]
+
+Package natbib Warning: Citation `cook86' on page 3 undefined on input line 78.
+
+
+
+Package natbib Warning: Citation `cook86' on page 3 undefined on input line 91.
+
+
+[3]
+
+Package natbib Warning: Citation `cook86' on page 4 undefined on input line 103
 .
 
 [4] [5]
-
-Package natbib Warning: Citation `Beckman' on page 6 undefined on input line 11
-9.
-
-LaTeX Font Info:    Try loading font information for U+msa on input line 123.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 123.
+LaTeX Font Info:    Try loading font information for U+msb on input line 127.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-Package natbib Warning: Citation `schabenberger' on page 6 undefined on input l
-ine 139.
-
-[6]
-
-Package natbib Warning: Citation `cook86' on page 7 undefined on input line 152
-.
-
-[7] [8]
-
-Package natbib Warning: Citation `Beckman' on page 9 undefined on input line 16
-7.
-
-[9]
+) [6]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [10] [11] [12]
-Overfull \hbox (17.21007pt too wide) in paragraph at lines 244--244
+ [7]
+[8] [9]
+Overfull \hbox (25.31006pt too wide) in paragraph at lines 202--202
 []\OT1/cmr/bx/n/14.4 ITERATIVE VS. NON-IT-ER-A-TIVE IN-FLU-ENCE ANAL-
  []
 
@@ -277,34 +259,27 @@ Missing character: There is no ù in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-[13] [14] [15]
-Missing character: There is no ≈ in font cmr12!
-Missing character: There is no ∑ in font cmr12!
-Missing character: There is no Œ in font cmr12!
-Missing character: There is no £ in font cmr12!
- [16] [17]
+[10] [11]
 
 Package natbib Warning: There were undefined citations.
 
-[18] (C:\Users\Kevin\Documents\GitHub\Chap5\1.1-InfluenceIntro.aux) ) 
+(C:\Users\Kevin\Documents\GitHub\Chap5\1.1-InfluenceIntro.aux) ) 
 Here is how much of TeX's memory you used:
- 2417 strings out of 493921
- 31583 string characters out of 3144875
- 82231 words of memory out of 3000000
- 5683 multiletter control sequences out of 15000+200000
- 10756 words of font info for 40 fonts, out of 3000000 for 9000
+ 2408 strings out of 493921
+ 31492 string characters out of 3144875
+ 83231 words of memory out of 3000000
+ 5675 multiletter control sequences out of 15000+200000
+ 9803 words of font info for 37 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,4n,28p,676b,169s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 1.1-InfluenceIntro.pdf (18 pages, 102209 bytes).
+ 43i,4n,28p,676b,171s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on 1.1-InfluenceIntro.pdf (11 pages, 72538 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 54 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,78 +18,116 @@
 %1.15 CPJ's Three Propositions
 %1.16 Other measures of Influence
 
-\section{Introduction}%1.1
-In classical linear models model diagnostics have been become a required part of any statistical analysis, and the methods are commonly available in statistical packages and standard textbooks on applied regression. However it has been noted by several papers that model diagnostics do not often accompany LME model analyses.
-Model diagnostic techniques determine whether or not the distributional assumptions are satisfied, and to assess the influence of unusual observations.
+	%---------------------------------------------------------------------------%
+	\subsection{Influence Analysis for LME Models} %1.1.3
+	The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{Christensen} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
+	
+	
+	Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
+	Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
+	Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
+	
+	
+	
+	\subsection{Influence Analysis for LME Models} %1.1.3
+	The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
+	
+	Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
+	Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
+	Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
+	
+	
+	
+	\subsection{Influence Analysis for LME Models} %1.1.3
+	The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
+	
+	Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
+	Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
+	Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
+	
+		\newpage
+		\subsection{Extension of techniques to LME Models} %1.2
+		
+		Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
+		
+		Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
+		
+		While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
+		
+		If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
+		
+		\begin{itemize}
+			\item the estimates of fixed effects,
+			\item the estimates of the precision of the fixed effects,
+			\item the estimates of the covariance parameters,
+			\item the estimates of the precision of the covariance parameters,
+			\item fitted and predicted values.
+		\end{itemize}
+		
+		
+		
+		
+	
+	\newpage
+	\subsection{Extension of techniques to LME Models} %1.2
+	
+	Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
+	
+	Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
+	
+	While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
+	
+	If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
+	
+	\begin{itemize}
+		\item the estimates of fixed effects,
+		\item the estimates of the precision of the fixed effects,
+		\item the estimates of the covariance parameters,
+		\item the estimates of the precision of the covariance parameters,
+		\item fitted and predicted values.
+	\end{itemize}
+	
+%	
+%	%---------------------------------------------------------------------------%
+%	
+%	\newpage
+%	\subsection{Extension of techniques to LME Models} %1.2
+%	
+%	Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
+%	
+%	Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
+%	
+%	While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
+%	
+%	If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
+%	
+%	\begin{itemize}
+%		\item the estimates of fixed effects,
+%		\item the estimates of the precision of the fixed effects,
+%		\item the estimates of the covariance parameters,
+%		\item the estimates of the precision of the covariance parameters,
+%		\item fitted and predicted values.
+%	\end{itemize}
+	
+	
+	%---------------------------------------------------------------------------%
+	\newpage
+	\subsection{Influence Statistics for LME models} %1.1.4
+	Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
+	\begin{itemize}
+		\item overall measures compare changes in objective functions: (restricted) likelihood distance (Cook and Weisberg 1982, Ch. 5.2)
+		\item influence on parameter estimates: Cook's  (Cook 1977, 1979), MDFFITS (Belsley, Kuh, and Welsch 1980, p. 32)
+		\item influence on precision of estimates: CovRatio and CovTrace
+		\item influence on fitted and predicted values: PRESS residual, PRESS statistic (Allen 1974), DFFITS (Belsley, Kuh, and Welsch 1980, p. 15)
+		\item outlier properties: internally and externally studentized residuals, leverage
+	\end{itemize}
+	%---------------------------------------------------------------------------%
+	
+	
 
 
-\subsection{Model Data Agreement} %1.1.1
-\citet{schabenberger} describes the examination of model-data agreement as comprising several elements; residual analysis, goodness of fit, collinearity diagnostics and influence analysis.
-
-
-\subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-
-
-The general idea of quantifying the influence of one or more observations relies on computing parameter estimates based on all data points, removing the cases in question from the data, refitting the model, and computing statistics based on the change between full-data and reduced-data estimation.
-
-
-
-
-
-
-\subsection{Influence Analysis for LME Models} %1.1.3
-The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{Christensen} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
-
-
-Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
-Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
-Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
-
-
-\subsection{Influence Statistics for LME models} %1.1.4
-Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
-\begin{itemize}
-\item overall measures compare changes in objective functions: (restricted) likelihood distance (Cook and Weisberg 1982, Ch. 5.2)
-\item influence on parameter estimates: Cook's  (Cook 1977, 1979), MDFFITS (Belsley, Kuh, and Welsch 1980, p. 32)
-\item influence on precision of estimates: CovRatio and CovTrace
-\item influence on fitted and predicted values: PRESS residual, PRESS statistic (Allen 1974), DFFITS (Belsley, Kuh, and Welsch 1980, p. 15)
-\item outlier properties: internally and externally studentized residuals, leverage
-\end{itemize}
-%---------------------------------------------------------------------------%
-
-
-
-
-\subsection{What is Influence} %1.1.5
-
-
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-
-%-------%
-\subsection{Quantifying Influence}  %1.1.6
-
-
-The basic procedure for quantifying influence is simple as follows:
-
-
-\begin{itemize}
-\item Fit the model to the data and obtain estimates of all parameters.
-\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
-\end{itemize}
-
-
-\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
-
-
-
-
-%---------------------------------------------------------------------------%
 \newpage
-\section{Extension of techniques to LME Models} %1.2
+\subsection{Extension of techniques to LME Models} %1.2
 
 
 Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
@@ -118,136 +156,6 @@ If the global measure suggests that the points in $U$ are influential, the natur
 
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Standardized and studentized residuals} %1.4
-    %--Studentized and Standardized Residuals
-
-
-To alleviate the problem caused by inconstant variance, the residuals are scaled (i.e. divided) by their standard deviations. This results in a \index{standardized residual}`standardized residual'. Because true standard deviations are frequently unknown, one can instead divide a residual by the estimated standard deviation to obtain the \index{studentized residual}`studentized residual.
-
-
-\subsection{Standardization} %1.4.1
-
-
-A random variable is said to be standardized if the difference from its mean is scaled by its standard deviation. The residuals above have mean zero but their variance is unknown, it depends on the true values of $\theta$. Standardization is thus not possible in practice.
-
-
-\subsection{Studentization} %1.4.2
-Instead, you can compute studentized residuals by dividing a residual by an estimate of its standard deviation.
-
-
-\subsection{Internal and External Studentization} %1.4.3
-If that estimate is independent of the $i-$th observation, the process is termed \index{external studentization}`external studentization'. This is usually accomplished by excluding the $i-$th observation when computing the estimate of its standard error. If the observation contributes to the
-standard error computation, the residual is said to be \index{internally studentization}internally studentized.
-
-
-Externally \index{studentized residual} studentized residual require iterative influence analysis or a profiled residuals variance.
-
-
-
-
-\subsection{Computation}%1.4.4
-
-
-The computation of internally studentized residuals relies on the diagonal entries of $\boldsymbol{V} (\hat{\theta})$ - $\boldsymbol{Q} (\hat{\theta})$, where $\boldsymbol{Q} (\hat{\theta})$ is computed as
-
-
-\[ \boldsymbol{Q} (\hat{\theta}) = \boldsymbol{X} ( \boldsymbol{X}^{\prime}\boldsymbol{Q} (\hat{\theta})^{-1}\boldsymbol{X})\boldsymbol{X}^{-1} \]
-
-
-\subsection{Pearson Residual}%1.4.5
-
-
-Another possible scaled residual is the \index{Pearson residual} `Pearson residual', whereby a residual is divided by the standard deviation of the dependent variable. The Pearson residual can be used when the variability of $\hat{\beta}$ is disregarded in the underlying assumptions.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Covariance Parameters} %1.5
-The unknown variance elements are referred to as the covariance parameters and collected in the vector $\theta$.
-% - where is this coming from?
-% - where is it used again?
-% - Has this got anything to do with CovTrace etc?
-
-
-
-\section{Residual diagnostics} %1.3
-For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
-
-
-
-
-
-
-%--Marginal and Conditional Residuals
-
-
-\subsection{Residuals diagnostics in mixed models}
-
-
-%schabenberger
-The marginal and conditional means in the linear mixed model are
-$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
-$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
-
-
-A residual is the difference between an observed quantity and its estimated or predicted value. In the mixed
-model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$.
-
-
-
-
-\subsection{Marginal and Conditional Residuals}
-
-
-A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-A conditional residual is the difference between the observed data and the predicted value of the observation,
-$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-
-
-In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-
-
-\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-
-
-However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-
-
-%1.5
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{equation}
-r_{mi}=x^{T}_{i}\hat{\beta}
-\end{equation}
-
-
-\subsection{Marginal Residuals}
-\begin{eqnarray}
-\hat{\beta} &=& (X^{T}R^{-1}X)^{-1}X^{T}R^{-1}Y \nonumber \\
-&=& BY \nonumber
-\end{eqnarray}
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Residual diagnostics} %1.3
-For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
-
-
-
 %--Marginal and Conditional Residuals
 
 \subsection{Residuals diagnostics in mixed models}
@@ -261,61 +169,12 @@ A residual is the difference between an observed quantity and its estimated or p
 model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
 
 
-\subsection{Marginal and Conditional Residuals}
-
-A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-A conditional residual is the difference between the observed data and the predicted value of the observation,
-$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-
-In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-
-\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-
-However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-
-%1.5
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-
-
-
-
-
-
-\begin{equation}
-r_{mi}=x^{T}_{i}\hat{\beta}
-\end{equation}
-
-\subsection{Marginal Residuals}
-\begin{eqnarray}
-\hat{\beta} &=& (X^{T}R^{-1}X)^{-1}X^{T}R^{-1}Y \nonumber \\
-&=& BY \nonumber
-\end{eqnarray}
-%---------------------------------------------------------------------------%
 \newpage
-\section{Standardized and studentized residuals} %1.4
+\subsection{Standardized and studentized residuals} %1.4
 %--Studentized and Standardized Residuals
 
 To alleviate the problem caused by inconstant variance, the residuals are scaled (i.e. divided) by their standard deviations. This results in a \index{standardized residual}`standardized residual'. Because true standard deviations are frequently unknown, one can instead divide a residual by the estimated standard deviation to obtain the \index{studentized residual}`studentized residual. 
 
-\subsection{Standardization} %1.4.1
-
-A random variable is said to be standardized if the difference from its mean is scaled by its standard deviation. The residuals above have mean zero but their variance is unknown, it depends on the true values of $\theta$. Standardization is thus not possible in practice.
-
-\subsection{Studentization} %1.4.2
-Instead, you can compute studentized residuals by dividing a residual by an estimate of its standard deviation. 
-
-\subsection{Internal and External Studentization} %1.4.3
-If that estimate is independent of the $i-$th observation, the process is termed \index{external studentization}`external studentization'. This is usually accomplished by excluding the $i-$th observation when computing the estimate of its standard error. If the observation contributes to the
-standard error computation, the residual is said to be \index{internally studentization}internally studentized.
-
-Externally \index{studentized residual} studentized residual require iterative influence analysis or a profiled residuals variance.
-
-
-\subsection{Computation}%1.4.4
-
-The computation of internally studentized residuals relies on the diagonal entries of $\boldsymbol{V} (\hat{\theta})$ - $\boldsymbol{Q} (\hat{\theta})$, where $\boldsymbol{Q} (\hat{\theta})$ is computed as
-
-\[ \boldsymbol{Q} (\hat{\theta}) = \boldsymbol{X} ( \boldsymbol{X}^{\prime}\boldsymbol{Q} (\hat{\theta})^{-1}\boldsymbol{X})\boldsymbol{X}^{-1} \]
 
 
 %--------------------------------------------------%
@@ -337,43 +196,6 @@ The computation of internally studentized residuals relies on the diagonal entri
 %---------------------------------------------------------------------------%
 \newpage
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Standardized and studentized residuals} %1.4
-%--Studentized and Standardized Residuals
-
-To alleviate the problem caused by inconstant variance, the residuals are scaled (i.e. divided) by their standard deviations. This results in a \index{standardized residual}`standardized residual'. Because true standard deviations are frequently unknown, one can instead divide a residual by the estimated standard deviation to obtain the \index{studentized residual}`studentized residual. 
-
-\subsection{Standardization} %1.4.1
-
-A random variable is said to be standardized if the difference from its mean is scaled by its standard deviation. The residuals above have mean zero but their variance is unknown, it depends on the true values of $\theta$. Standardization is thus not possible in practice.
-
-\subsection{Studentization} %1.4.2
-Instead, you can compute studentized residuals by dividing a residual by an estimate of its standard deviation. 
-
-\subsection{Internal and External Studentization} %1.4.3
-If that estimate is independent of the $i-$th observation, the process is termed \index{external studentization}`external studentization'. This is usually accomplished by excluding the $i-$th observation when computing the estimate of its standard error. If the observation contributes to the
-standard error computation, the residual is said to be \index{internally studentization}internally studentized.
-
-Externally \index{studentized residual} studentized residual require iterative influence analysis or a profiled residuals variance.
-
-
-\subsection{Computation}%1.4.4
-
-The computation of internally studentized residuals relies on the diagonal entries of $\boldsymbol{V} (\hat{\theta})$ - $\boldsymbol{Q} (\hat{\theta})$, where $\boldsymbol{Q} (\hat{\theta})$ is computed as
-
-\[ \boldsymbol{Q} (\hat{\theta}) = \boldsymbol{X} ( \boldsymbol{X}^{\prime}\boldsymbol{Q} (\hat{\theta})^{-1}\boldsymbol{X})\boldsymbol{X}^{-1} \]
-
-\subsection{Pearson Residual}%1.4.5
-
-Another possible scaled residual is the \index{Pearson residual} `Pearson residual', whereby a residual is divided by the standard deviation of the dependent variable. The Pearson residual can be used when the variability of $\hat{\beta}$ is disregarded in the underlying assumptions.
-
-%---------------------------------------------------------------------------%
-
-\newpage
-%--------------------------------------------------------------------Diagnostics%
-\section{Diagnostics}
-
 %http://www.artifex.org/~meiercl/R_statistics_guide.pdf
 \subsection{Identifying outliers with a LME model object}
 
@@ -384,19 +206,13 @@ identify outliers.
 \subsection{Diagnostics for Random Effects}
 Empirical best linear unbiased predictors EBLUPS provide the a useful way of diagnosing random effects.
 
-EBLUPs are also known as ``shrinkage estimators" because they tend to be smaller than the estimated effects would be if they were computed by treating a random factor as if it was fixed (West etal )
+EBLUPs are also known as ``shrinkage estimators" because they tend to be smaller than the estimated effects would be if they were computed by treating a random factor as if it was fixed (West et al )
 
 
 
 
 \newpage
-%---------------------------------------------------------------------------%
-\section{Introduction}%1.1
-In classical linear models model diagnostics have been become a required part of any statistical analysis, and the methods are commonly available in statistical packages and standard textbooks on applied regression. However it has been noted by several papers that model diagnostics do not often accompany LME model analyses.
-Model diagnostic techniques determine whether or not the distributional assumptions are satisfied, and to assess the influence of unusual observations.
 
-\subsection{Model Data Agreement} %1.1.1
-\citet{schabenberger} describes the examination of model-data agreement as comprising several elements; residual analysis, goodness of fit, collinearity diagnostics and influence analysis.
 
 \subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
 %http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
@@ -404,68 +220,6 @@ Model diagnostic techniques determine whether or not the distributional assumpti
 The general idea of quantifying the influence of one or more observations relies on computing parameter estimates based on all data points, removing the cases in question from the data, refitting the model, and computing statistics based on the change between full-data and reduced-data estimation. 
 
 
-
-\subsection{Influence Analysis for LME Models} %1.1.3
-The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
-
-Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
-Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
-Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
-
-\subsection{Influence Statistics for LME models} %1.1.4
-Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
-\begin{itemize}
-	\item overall measures compare changes in objective functions: (restricted) likelihood distance (Cook and Weisberg 1982, Ch. 5.2)
-	\item influence on parameter estimates: Cook's  (Cook 1977, 1979), MDFFITS (Belsley, Kuh, and Welsch 1980, p. 32)
-	\item influence on precision of estimates: CovRatio and CovTrace
-	\item influence on fitted and predicted values: PRESS residual, PRESS statistic (Allen 1974), DFFITS (Belsley, Kuh, and Welsch 1980, p. 15)
-	\item outlier properties: internally and externally studentized residuals, leverage
-\end{itemize}
-%---------------------------------------------------------------------------%
-
-
-\subsection{What is Influence} %1.1.5
-
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-%-------%
-\subsection{Quantifying Influence}  %1.1.6
-
-The basic procedure for quantifying influence is simple as follows:
-
-\begin{itemize}
-	\item Fit the model to the data and obtain estimates of all parameters.
-	\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-	\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
-\end{itemize}
-
-\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Extension of techniques to LME Models} %1.2
-
-Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-
-Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-
-While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-
-If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-
-\begin{itemize}
-	\item the estimates of fixed effects,
-	\item the estimates of the precision of the fixed effects,
-	\item the estimates of the covariance parameters,
-	\item the estimates of the precision of the covariance parameters,
-	\item fitted and predicted values.
-\end{itemize}
-
-
-%---------------------------------------------------------------------------%
-\newpage
 
 
 \subsection{Case Deletion Diagnostics for Mixed Models}
@@ -493,62 +247,6 @@ Cook 1986 introduced methods for local influence assessment. These methods provi
 The local-influence approach to influence assessment is quitedifferent from the case deletion approach, comparisons are of
 interest.
 
-
-
-\newpage
-\section{Extension of techniques to LME Models} %1.2
-
-Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-
-Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-
-While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-
-If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-
-\begin{itemize}
-	\item the estimates of fixed effects,
-	\item the estimates of the precision of the fixed effects,
-	\item the estimates of the covariance parameters,
-	\item the estimates of the precision of the covariance parameters,
-	\item fitted and predicted values.
-\end{itemize}
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Residual diagnostics} %1.3
-For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
-
-
-
-%--Marginal and Conditional Residuals
-
-\subsection{Residuals diagnostics in mixed models}
-
-%schabenberger
-The marginal and conditional means in the linear mixed model are
-$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
-$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
-
-A residual is the difference between an observed quantity and its estimated or predicted value. In the mixed
-model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
-
-
-\subsection{Marginal and Conditional Residuals}
-
-A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-A conditional residual is the difference between the observed data and the predicted value of the observation,
-$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-
-In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-
-\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-
-However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-
-%1.5
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
 
 
 
