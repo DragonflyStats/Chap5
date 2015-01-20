@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 14:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  20 JAN 2015 21:38
 entering extended mode
 **5.2-HaslettDillane.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\5.2-HaslettDillane.tex
@@ -200,12 +200,8 @@ LaTeX Font Info:    ... okay on input line 2.
 \makeMPintoPDFobject=\count105
 \everyMPtoPDFconversion=\toks28
 )
-
-Package natbib Warning: Citation `McCullSearle' on page 1 undefined on input li
-ne 10.
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 17.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 17.
@@ -217,41 +213,44 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package natbib Warning: Citation `cook82' on page 1 undefined on input line 46.
 
 
-
-Package natbib Warning: Citation `Haslett99' on page 1 undefined on input line 
-73.
-
-
-Package natbib Warning: Citation `HaslettHayes' on page 1 undefined on input li
-ne 75.
-
 [1
 
 {C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
+(C:\Users\Kevin\Documents\GitHub\Chap5\5.2-HaslettDillane.bbl [3]
+Missing character: There is no ï in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ½ in font cmr12!
+Missing character: There is no ï in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ½ in font cmr12!
+)
 
 Package natbib Warning: There were undefined citations.
 
-[3] (C:\Users\Kevin\Documents\GitHub\Chap5\5.2-HaslettDillane.aux) ) 
+[4
+
+] (C:\Users\Kevin\Documents\GitHub\Chap5\5.2-HaslettDillane.aux) ) 
 Here is how much of TeX's memory you used:
- 2393 strings out of 493921
- 31204 string characters out of 3144875
- 84231 words of memory out of 3000000
- 5662 multiletter control sequences out of 15000+200000
- 9367 words of font info for 36 fonts, out of 3000000 for 9000
+ 2406 strings out of 493921
+ 31516 string characters out of 3144875
+ 84378 words of memory out of 3000000
+ 5671 multiletter control sequences out of 15000+200000
+ 10320 words of font info for 39 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,7n,28p,361b,109s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x8
-6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 5.2-HaslettDillane.pdf (3 pages, 88366 bytes).
+ 43i,7n,28p,361b,136s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on 5.2-HaslettDillane.pdf (4 pages, 105003 bytes).
 PDF statistics:
- 44 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

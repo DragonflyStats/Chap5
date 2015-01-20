@@ -34,67 +34,63 @@
 \indexentry {internally studentization}{38}
 \indexentry {studentized residual}{38}
 \indexentry {Pearson residual}{39}
-\indexentry {case deletion diagnostics}{51}
-\indexentry {Cook's distance}{51}
-\indexentry {local influence}{54}
-\indexentry {local influence}{55}
+\indexentry {case deletion diagnostics}{53}
+\indexentry {Cook's distance}{53}
+\indexentry {local influence}{56}
 \indexentry {local influence}{57}
-\indexentry {standardized residual}{58}
-\indexentry {studentized residual}{58}
-\indexentry {case deletion diagnostics}{60}
-\indexentry {likelihood distance}{60}
-\indexentry {Cook-Weisberg statistic}{60}
-\indexentry {Andrews-Prebigon statistic}{60}
-\indexentry {iterative influence analysis}{65}
-\indexentry {non-iterative influence analysis}{65}
-\indexentry {maximum likelihood}{66}
-\indexentry {restricted maximum likelihood}{66}
-\indexentry {likelihood distance}{66}
+\indexentry {local influence}{59}
+\indexentry {standardized residual}{60}
+\indexentry {studentized residual}{60}
+\indexentry {case deletion diagnostics}{62}
+\indexentry {likelihood distance}{62}
+\indexentry {Cook-Weisberg statistic}{62}
+\indexentry {Andrews-Prebigon statistic}{62}
+\indexentry {iterative influence analysis}{67}
+\indexentry {non-iterative influence analysis}{67}
+\indexentry {maximum likelihood}{68}
+\indexentry {restricted maximum likelihood}{68}
+\indexentry {likelihood distance}{68}
 \indexentry {iterative influence analysis}{2}
 \indexentry {non-iterative influence analysis}{2}
-\indexentry {case deletion diagnostics}{22}
-\indexentry {Cook's distance}{22}
 \indexentry {case deletion diagnostics}{23}
-\indexentry {likelihood distance}{23}
-\indexentry {Cook-Weisberg statistic}{23}
-\indexentry {Andrews-Prebigon statistic}{24}
+\indexentry {Cook's distance}{23}
 \indexentry {case deletion diagnostics}{24}
-\indexentry {Cook's distance}{24}
+\indexentry {likelihood distance}{24}
+\indexentry {Cook-Weisberg statistic}{24}
+\indexentry {Andrews-Prebigon statistic}{25}
 \indexentry {case deletion diagnostics}{25}
 \indexentry {Cook's distance}{25}
-\indexentry {Cook's Distance}{28}
-\indexentry {Cook's distance}{28}
-\indexentry {Cook's distance}{30}
-\indexentry {Cook's distance}{30}
-\indexentry {Cook's distance}{31}
-\indexentry {Cook's distance}{31}
-\indexentry {Cook's distance}{31}
-\indexentry {Cook's Distance}{31}
+\indexentry {case deletion diagnostics}{26}
+\indexentry {Cook's distance}{26}
+\indexentry {Cook's Distance}{29}
+\indexentry {Cook's distance}{29}
 \indexentry {Cook's distance}{31}
 \indexentry {Cook's distance}{31}
 \indexentry {Cook's distance}{32}
 \indexentry {Cook's distance}{32}
+\indexentry {Cook's distance}{32}
+\indexentry {Cook's Distance}{32}
+\indexentry {Cook's distance}{32}
+\indexentry {Cook's distance}{32}
 \indexentry {Cook's distance}{33}
 \indexentry {Cook's distance}{33}
-\indexentry {Cook's Distance}{33}
 \indexentry {Cook's distance}{34}
-\indexentry {maximum likelihood}{36}
-\indexentry {restricted maximum likelihood}{36}
-\indexentry {likelihood distance}{36}
-\indexentry {Cook's distance}{38}
-\indexentry {Cook's distance}{38}
-\indexentry {Cook's distance}{38}
-\indexentry {Cook's Distance}{39}
-\indexentry {Cook's distance}{40}
-\indexentry {Cook's distance}{40}
-\indexentry {Cook's distance}{40}
+\indexentry {Cook's distance}{34}
+\indexentry {Cook's Distance}{34}
+\indexentry {Cook's distance}{35}
+\indexentry {maximum likelihood}{39}
+\indexentry {restricted maximum likelihood}{39}
+\indexentry {likelihood distance}{39}
+\indexentry {Cook's distance}{41}
+\indexentry {Cook's distance}{41}
+\indexentry {Cook's distance}{41}
+\indexentry {Cook's Distance}{42}
 \indexentry {Cook's distance}{43}
 \indexentry {Cook's distance}{43}
 \indexentry {Cook's distance}{43}
-\indexentry {Cook's distance}{43}
-\indexentry {Cook's distance}{44}
-\indexentry {likelihood distance}{68}
-\indexentry {likelihood distance}{69}
-\indexentry {likelihood distance}{70}
-\indexentry {likelihood distance}{71}
-\indexentry {likelihood distance}{71}
+\indexentry {Cook's distance}{48}
+\indexentry {Cook's distance}{48}
+\indexentry {Cook's distance}{48}
+\indexentry {Cook's distance}{48}
+\indexentry {Cook's distance}{49}
+\indexentry {likelihood distance}{75}

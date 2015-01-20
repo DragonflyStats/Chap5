@@ -1,4 +1,6 @@
-
+\documentclass[Main.tex]{subfiles}
+\begin{document}
+	
 \section{Application to MCS} %4.1
 
 
@@ -91,7 +93,7 @@ Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
 
 Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
 
-
+\begin{framed}
 \begin{verbatim}
 Call: lm(formula = D ~ A)
 
@@ -101,7 +103,7 @@ Coefficients: (Intercept)            A
 
 
 \end{verbatim}
-
+\end{framed}
 
 
 
@@ -115,6 +117,5 @@ When considering the regression of case-wise differences and averages, we write
 \begin{equation}
 D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
 \end{equation}
-
-
+\bibliography{DB-txfrbib}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 11:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  20 JAN 2015 21:29
 entering extended mode
 **2.5-CooksDistance-OLS.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\2.5-CooksDistance-OLS.tex
@@ -220,19 +220,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
  [5]
 
-Package natbib Warning: Citation `cook77' on page 6 undefined on input line 108
-.
-
-
 Package natbib Warning: Citation `cpj92' on page 6 undefined on input line 114.
 
 
-[6] [7]
-
-Package natbib Warning: Citation `cook77' on page 8 undefined on input line 199
-.
-
-[8]
+[6] [7] [8]
 
 Package natbib Warning: Citation `cpj92' on page 9 undefined on input line 203.
 
@@ -250,32 +241,34 @@ Missing character: There is no ’ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no ˆ in font cmr12!
 Missing character: There is no ’ in font cmr12!
-
+ (C:\Users\Kevin\Documents\GitHub\Chap5\2.5-CooksDistance-OLS.bbl [10])
 
 Package natbib Warning: There were undefined citations.
 
-[10] (C:\Users\Kevin\Documents\GitHub\Chap5\2.5-CooksDistance-OLS.aux) ) 
+[11
+
+] (C:\Users\Kevin\Documents\GitHub\Chap5\2.5-CooksDistance-OLS.aux) ) 
 Here is how much of TeX's memory you used:
- 2426 strings out of 493921
- 31697 string characters out of 3144875
- 83231 words of memory out of 3000000
- 5684 multiletter control sequences out of 15000+200000
- 12612 words of font info for 46 fonts, out of 3000000 for 9000
+ 2433 strings out of 493921
+ 31896 string characters out of 3144875
+ 83258 words of memory out of 3000000
+ 5688 multiletter control sequences out of 15000+200000
+ 13218 words of font info for 48 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,5n,28p,553b,148s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program
- Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files 
-(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 2.5-CooksDistance-OLS.pdf (10 pages, 117337 bytes).
+<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on 2.5-CooksDistance-OLS.pdf (11 pages, 120667 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
+ 74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

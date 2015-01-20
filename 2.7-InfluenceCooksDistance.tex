@@ -1,3 +1,6 @@
+\documentclass[Main.tex]{subfiles}
+\begin{document}
+\newpage
 \section{Influence analysis} %1.7
 
 Likelihood based estimation methods, such as ML and REML, are sensitive to unusual observations. Influence diagnostics are formal techniques that assess the influence of observations on parameter estimates for $\beta$ and $\theta$. A common technique is to refit the model with an observation or group of observations omitted.
@@ -81,3 +84,7 @@ Large values for Cook's distance indicate observations for special attention.
 
 The effect on the precision of estimates is separate from the effect on the point estimates. Data points that
 have a small \index{Cook's distance} Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
+
+
+\bibliography{DB-txfrbib}
+\end{document}

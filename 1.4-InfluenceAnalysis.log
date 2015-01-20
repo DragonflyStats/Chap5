@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 11:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  20 JAN 2015 21:36
 entering extended mode
 **1.4-InfluenceAnalysis.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\1.4-InfluenceAnalysis.tex
@@ -238,43 +238,32 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
  [2] [3]
+[4] [5] (C:\Users\Kevin\Documents\GitHub\Chap5\1.4-InfluenceAnalysis.bbl
+[6]
+Missing character: There is no ï in font cmr12!
+Missing character: There is no ¿ in font cmr12!
+Missing character: There is no ½ in font cmr12!
+) [7
 
-Package natbib Warning: Citation `west' on page 4 undefined on input line 44.
-
-[4]
-
-Package natbib Warning: Citation `schabenberger' on page 5 undefined on input l
-ine 52.
-
-
-Package natbib Warning: Citation `schabenberger' on page 5 undefined on input l
-ine 68.
-
-[5]
-
-Package natbib Warning: Citation `west' on page 6 undefined on input line 78.
-
-
-Package natbib Warning: There were undefined citations.
-
-[6] (C:\Users\Kevin\Documents\GitHub\Chap5\1.4-InfluenceAnalysis.aux) ) 
+] (C:\Users\Kevin\Documents\GitHub\Chap5\1.4-InfluenceAnalysis.aux) ) 
 Here is how much of TeX's memory you used:
- 2408 strings out of 493921
- 31520 string characters out of 3144875
- 82231 words of memory out of 3000000
- 5675 multiletter control sequences out of 15000+200000
- 9803 words of font info for 37 fonts, out of 3000000 for 9000
+ 2419 strings out of 493921
+ 31784 string characters out of 3144875
+ 82330 words of memory out of 3000000
+ 5682 multiletter control sequences out of 15000+200000
+ 10756 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  43i,4n,28p,538b,181s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Prog
-ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on 1.4-InfluenceAnalysis.pdf (6 pages, 70595 bytes).
+<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on 1.4-InfluenceAnalysis.pdf (7 pages, 84679 bytes).
 PDF statistics:
- 41 PDF objects out of 1000 (max. 8388607)
+ 50 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

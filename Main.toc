@@ -1,0 +1,270 @@
+\contentsline {section}{Bibliography}{1}
+\contentsline {subsection}{\numberline {0.0.1}What is Influence}{11}
+\contentsline {section}{\numberline {0.1}Introduction}{11}
+\contentsline {subsection}{\numberline {0.1.1}What is Influence}{11}
+\contentsline {subsection}{\numberline {0.1.2}Quantifying Influence}{11}
+\contentsline {subsection}{\numberline {0.1.3}Model Data Agreement}{12}
+\contentsline {subsection}{\numberline {0.1.4}Influence Diagnostics: Basic Idea and Statistics}{12}
+\contentsline {subsection}{\numberline {0.1.5}Overall Influence}{12}
+\contentsline {subsection}{\numberline {0.1.6}Quantifying Influence}{13}
+\contentsline {subsection}{\numberline {0.1.7}Quantifying Influence}{13}
+\contentsline {subsection}{\numberline {0.1.8}Quantifying Influence}{14}
+\contentsline {subsection}{\numberline {0.1.9}Residual diagnostics}{15}
+\contentsline {subsection}{\numberline {0.1.10}Summary of Paper}{19}
+\contentsline {subsection}{\numberline {0.1.11}ITERATIVE VS. NONITERATIVE INFLUENCE ANALYSIS}{20}
+\contentsline {subsection}{\numberline {0.1.12}Residual Plots}{22}
+\contentsline {subsection}{\numberline {0.1.13}Introduction}{22}
+\contentsline {subsection}{\numberline {0.1.14}Residual}{23}
+\contentsline {subsection}{\numberline {0.1.15}Residual}{23}
+\contentsline {subsection}{\numberline {0.1.16}Influence Diagnostics: Basic Idea and Statistics}{24}
+\contentsline {subsection}{\numberline {0.1.17}Standardization}{24}
+\contentsline {subsection}{\numberline {0.1.18}Studentization}{24}
+\contentsline {subsection}{\numberline {0.1.19}Internal and External Studentization}{25}
+\contentsline {subsection}{\numberline {0.1.20}Computation}{25}
+\contentsline {subsection}{\numberline {0.1.21}Standardized and studentized residuals}{26}
+\contentsline {subsection}{\numberline {0.1.22}Standardization}{26}
+\contentsline {subsection}{\numberline {0.1.23}Studentization}{26}
+\contentsline {subsection}{\numberline {0.1.24}Internal and External Studentization}{26}
+\contentsline {subsection}{\numberline {0.1.25}Computation}{26}
+\contentsline {subsection}{\numberline {0.1.26}Pearson Residual}{27}
+\contentsline {subsection}{\numberline {0.1.27}Standardized and studentized residuals}{28}
+\contentsline {subsection}{\numberline {0.1.28}Standardization}{28}
+\contentsline {subsection}{\numberline {0.1.29}Studentization}{28}
+\contentsline {subsection}{\numberline {0.1.30}Internal and External Studentization}{28}
+\contentsline {subsection}{\numberline {0.1.31}Computation}{28}
+\contentsline {subsection}{\numberline {0.1.32}Pearson Residual}{29}
+\contentsline {subsection}{\numberline {0.1.33}Pearson Residual}{30}
+\contentsline {subsection}{\numberline {0.1.34}Covariance Parameters}{31}
+\contentsline {section}{\numberline {0.2}Standardized and studentized residuals}{32}
+\contentsline {subsection}{\numberline {0.2.1}Standardization}{32}
+\contentsline {subsection}{\numberline {0.2.2}Studentization}{32}
+\contentsline {subsection}{\numberline {0.2.3}Internal and External Studentization}{32}
+\contentsline {subsection}{\numberline {0.2.4}Computation}{32}
+\contentsline {subsection}{\numberline {0.2.5}Studentization}{34}
+\contentsline {section}{\numberline {0.3}Standardized and studentized residuals}{35}
+\contentsline {subsection}{\numberline {0.3.1}Standardization}{35}
+\contentsline {subsection}{\numberline {0.3.2}Studentization}{35}
+\contentsline {subsection}{\numberline {0.3.3}Internal and External Studentization}{35}
+\contentsline {subsection}{\numberline {0.3.4}Computation}{35}
+\contentsline {section}{\numberline {0.4}Covariance Parameters}{37}
+\contentsline {section}{\numberline {0.5}Standardized and studentized residuals}{38}
+\contentsline {subsection}{\numberline {0.5.1}Standardization}{38}
+\contentsline {subsection}{\numberline {0.5.2}Studentization}{38}
+\contentsline {subsection}{\numberline {0.5.3}Internal and External Studentization}{38}
+\contentsline {subsection}{\numberline {0.5.4}Computation}{38}
+\contentsline {subsection}{\numberline {0.5.5}Pearson Residual}{39}
+\contentsline {subsection}{\numberline {0.5.6}Marginal and Conditional Residuals}{41}
+\contentsline {subsection}{\numberline {0.5.7}Marginal Residuals}{41}
+\contentsline {subsection}{\numberline {0.5.8}Marginal and Conditional Residuals}{42}
+\contentsline {subsection}{\numberline {0.5.9}Marginal Residuals}{42}
+\contentsline {subsection}{\numberline {0.5.10}Marginal and Conditional Residuals}{42}
+\contentsline {section}{\numberline {0.6}Residual diagnostics}{46}
+\contentsline {subsection}{\numberline {0.6.1}Residuals diagnostics in mixed models}{46}
+\contentsline {subsection}{\numberline {0.6.2}Marginal and Conditional Residuals}{46}
+\contentsline {subsection}{\numberline {0.6.3}Marginal Residuals}{47}
+\contentsline {section}{\numberline {0.7}Conditional and Marginal Residuals}{47}
+\contentsline {section}{\numberline {0.8}Residual diagnostics}{49}
+\contentsline {subsection}{\numberline {0.8.1}Residuals diagnostics in mixed models}{50}
+\contentsline {subsection}{\numberline {0.8.2}Marginal and Conditional Residuals}{50}
+\contentsline {subsection}{\numberline {0.8.3}Marginal Residuals}{50}
+\contentsline {subsection}{\numberline {0.8.4}Confounded Residuals}{51}
+\contentsline {section}{\numberline {0.9}Case Deletion Diagnostics}{53}
+\contentsline {subsection}{\numberline {0.9.1}Deletion Diagnostics}{53}
+\contentsline {section}{\numberline {0.10}Effects on fitted and predicted values}{53}
+\contentsline {subsection}{\numberline {0.10.1}Influence Analysis for LME Models}{54}
+\contentsline {subsection}{\numberline {0.10.2}Influence Analysis for LME Models}{54}
+\contentsline {subsection}{\numberline {0.10.3}Influence Analysis for LME Models}{55}
+\contentsline {subsection}{\numberline {0.10.4}Extension of techniques to LME Models}{56}
+\contentsline {subsection}{\numberline {0.10.5}Extension of techniques to LME Models}{57}
+\contentsline {subsection}{\numberline {0.10.6}Influence Statistics for LME models}{58}
+\contentsline {subsection}{\numberline {0.10.7}Extension of techniques to LME Models}{59}
+\contentsline {subsection}{\numberline {0.10.8}Residuals diagnostics in mixed models}{59}
+\contentsline {subsection}{\numberline {0.10.9}Standardized and studentized residuals}{60}
+\contentsline {subsection}{\numberline {0.10.10}Residual Analysis for Linear Models, LME models and GLMs}{60}
+\contentsline {subsection}{\numberline {0.10.11}Identifying outliers with a LME model object}{61}
+\contentsline {subsection}{\numberline {0.10.12}Diagnostics for Random Effects}{61}
+\contentsline {subsection}{\numberline {0.10.13}Influence Diagnostics: Basic Idea and Statistics}{62}
+\contentsline {subsection}{\numberline {0.10.14}Case Deletion Diagnostics for Mixed Models}{62}
+\contentsline {subsection}{\numberline {0.10.15}Methods and Measures}{62}
+\contentsline {subsection}{\numberline {0.10.16}Cook's 1986 paper on Local Influence}{62}
+\contentsline {section}{\numberline {0.11}Leverage and Influence}{63}
+\contentsline {subsection}{\numberline {0.11.1}Influence}{63}
+\contentsline {subsection}{\numberline {0.11.2}Interpreting Cook's Distance}{63}
+\contentsline {subsection}{\numberline {0.11.3}Leverage}{63}
+\contentsline {subsubsection}{Calculation of Leverage (h)}{64}
+\contentsline {subsection}{\numberline {0.11.4}Summary of Influence Statistics}{64}
+\contentsline {section}{\numberline {0.12}Influence analysis}{66}
+\contentsline {section}{\numberline {0.13}Iterative and non-iterative influence analysis}{67}
+\contentsline {subsection}{\numberline {0.13.1}Iterative Influence Analysis}{67}
+\contentsline {section}{\numberline {0.14}Influence analysis}{68}
+\contentsline {subsection}{\numberline {0.14.1}Cook's 1986 paper on Local Influence}{68}
+\contentsline {subsection}{\numberline {0.14.2}Overall Influence}{68}
+\contentsline {subsection}{\numberline {0.14.3}Quantifying Influence}{73}
+\contentsline {section}{\numberline {0.15}Measures 2}{74}
+\contentsline {subsection}{\numberline {0.15.1}Cook's Distance}{74}
+\contentsline {subsection}{\numberline {0.15.2}Variance Ratio}{74}
+\contentsline {subsection}{\numberline {0.15.3}Variance Ratio}{74}
+\contentsline {subsection}{\numberline {0.15.4}Cook-Weisberg statistic}{74}
+\contentsline {subsection}{\numberline {0.15.5}Andrews-Pregibon statistic}{74}
+\contentsline {section}{\numberline {0.16}Measures 2}{75}
+\contentsline {subsection}{\numberline {0.16.1}Cook's Distance}{75}
+\contentsline {section}{\numberline {0.17}Zewotir Measures of Influence in LME Models}{75}
+\contentsline {subsubsection}{Random Effects}{76}
+\contentsline {subsubsection}{linear functions}{76}
+\contentsline {subsection}{\numberline {0.17.1}Information Ratio}{76}
+\contentsline {section}{\numberline {0.18}Computation and Notation }{77}
+\contentsline {section}{\numberline {0.19}Measures of Influence}{77}
+\contentsline {subsection}{\numberline {0.19.1}DFFITS}{77}
+\contentsline {subsection}{\numberline {0.19.2}Influence Statistics for LME models}{77}
+\contentsline {section}{\numberline {0.20}Measures of Influence}{78}
+\contentsline {subsection}{\numberline {0.20.1}DFBETA}{78}
+\contentsline {subsection}{\numberline {0.20.2}DFFITS}{78}
+\contentsline {subsection}{\numberline {0.20.3}PRESS}{79}
+\contentsline {subsection}{\numberline {0.20.4}DFBETA}{79}
+\contentsline {subsection}{\numberline {0.20.5}Influential Observations : DFBeta and DFBetas}{79}
+\contentsline {section}{\numberline {0.21}Iterative and non-iterative influence analysis}{2}
+\contentsline {subsection}{\numberline {0.21.1}Iterative Influence Analysis}{2}
+\contentsline {section}{\numberline {0.22}Efficient Updating Theorem}{2}
+\contentsline {section}{\numberline {0.23}Zewotir Measures of Influence in LME Models}{2}
+\contentsline {chapter}{\numberline {1}Zewotir's Paper}{4}
+\contentsline {section}{\numberline {1.1}Efficient Updating Theorem}{4}
+\contentsline {section}{\numberline {1.2}Zewotir Measures of Influence in LME Models}{4}
+\contentsline {subsection}{\numberline {1.2.1}Cook's Distance}{4}
+\contentsline {subsubsection}{Random Effects}{6}
+\contentsline {subsubsection}{linear functions}{6}
+\contentsline {subsection}{\numberline {1.2.2}Information Ratio}{6}
+\contentsline {section}{\numberline {1.3}Computation and Notation }{7}
+\contentsline {section}{\numberline {1.4}Haslett's Analysis}{8}
+\contentsline {section}{\numberline {1.5}Demidenko's I Influence}{8}
+\contentsline {chapter}{\numberline {2}Zewotir's Paper}{9}
+\contentsline {section}{\numberline {2.1}Efficient Updating Theorem}{9}
+\contentsline {section}{\numberline {2.2}Zewotir Measures of Influence in LME Models}{9}
+\contentsline {subsection}{\numberline {2.2.1}Cook's Distance}{9}
+\contentsline {subsubsection}{Random Effects}{11}
+\contentsline {subsubsection}{linear functions}{11}
+\contentsline {subsection}{\numberline {2.2.2}Information Ratio}{11}
+\contentsline {section}{\numberline {2.3}Computation and Notation }{12}
+\contentsline {section}{\numberline {2.4}Measures 2}{13}
+\contentsline {subsection}{\numberline {2.4.1}Cook's Distance}{13}
+\contentsline {subsection}{\numberline {2.4.2}Variance Ratio}{13}
+\contentsline {subsection}{\numberline {2.4.3}Cook-Weisberg statistic}{13}
+\contentsline {subsection}{\numberline {2.4.4}Andrews-Pregibon statistic}{13}
+\contentsline {section}{\numberline {2.5}Haslett's Analysis}{14}
+\contentsline {chapter}{\numberline {3}Zewotir's Paper}{15}
+\contentsline {section}{\numberline {3.1}Efficient Updating Theorem}{15}
+\contentsline {section}{\numberline {3.2}Zewotir Measures of Influence in LME Models}{15}
+\contentsline {subsection}{\numberline {3.2.1}Cook's Distance}{15}
+\contentsline {subsubsection}{Random Effects}{17}
+\contentsline {subsubsection}{linear functions}{17}
+\contentsline {subsection}{\numberline {3.2.2}Information Ratio}{17}
+\contentsline {section}{\numberline {3.3}Computation and Notation }{18}
+\contentsline {section}{\numberline {3.4}Haslett's Analysis}{19}
+\contentsline {section}{\numberline {3.5}Demidenko's I Influence}{19}
+\contentsline {subsection}{\numberline {3.5.1}Case Deletion Diagnostics}{23}
+\contentsline {subsection}{\numberline {3.5.2}Effects on fitted and predicted values}{23}
+\contentsline {subsection}{\numberline {3.5.3}Case Deletion Diagnostics for Mixed Models}{23}
+\contentsline {subsection}{\numberline {3.5.4}Methods and Measures}{24}
+\contentsline {subsection}{\numberline {3.5.5}Matrix Notation for Case Deletion}{25}
+\contentsline {subsection}{\numberline {3.5.6}Case deletion notation}{25}
+\contentsline {subsection}{\numberline {3.5.7}Partitioning Matrices}{25}
+\contentsline {subsection}{\numberline {3.5.8}Case Deletion Diagnostics}{25}
+\contentsline {subsection}{\numberline {3.5.9}Case Deletion Diagnostics for Mixed Models}{25}
+\contentsline {subsection}{\numberline {3.5.10}Terminology for Case Deletion diagnostics}{26}
+\contentsline {subsection}{\numberline {3.5.11}Case Deletion Diagnostics}{26}
+\contentsline {subsection}{\numberline {3.5.12}Deletion Diagnostics}{26}
+\contentsline {subsection}{\numberline {3.5.13}Terminology for Case Deletion diagnostics}{27}
+\contentsline {subsection}{\numberline {3.5.14}Cook's Distance}{27}
+\contentsline {subsubsection}{Random Effects}{28}
+\contentsline {subsubsection}{linear functions}{28}
+\contentsline {subsection}{\numberline {3.5.15}Information Ratio}{28}
+\contentsline {subsection}{\numberline {3.5.16}Cooks's Distance}{29}
+\contentsline {section}{\numberline {3.6}Cook's Distance for LMEs}{31}
+\contentsline {section}{\numberline {3.7}Cook's Distance for LMEs}{31}
+\contentsline {subsection}{\numberline {3.7.1}Cook's Distance}{31}
+\contentsline {subsection}{\numberline {3.7.2}Change in the precision of estimates}{33}
+\contentsline {subsection}{\numberline {3.7.3}Change in the precision of estimates}{33}
+\contentsline {section}{\numberline {3.8}Cook's Distance}{34}
+\contentsline {subsection}{\numberline {3.8.1}Cook's Distance}{34}
+\contentsline {subsection}{\numberline {3.8.2}Cook's Distance}{34}
+\contentsline {subsection}{\numberline {3.8.3}Cooks's Distance}{35}
+\contentsline {subsection}{\numberline {3.8.4}Cook's Distance}{35}
+\contentsline {subsubsection}{Interpretation}{35}
+\contentsline {subsection}{\numberline {3.8.5}Cook's Distance}{36}
+\contentsline {section}{\numberline {3.9}Influence analysis}{39}
+\contentsline {subsection}{\numberline {3.9.1}Cook's 1986 paper on Local Influence}{39}
+\contentsline {subsection}{\numberline {3.9.2}Overall Influence}{39}
+\contentsline {section}{\numberline {3.10}Terminology for Case Deletion diagnostics}{40}
+\contentsline {section}{\numberline {3.11}Cook's Distance}{41}
+\contentsline {subsection}{\numberline {3.11.1}Cook's Distance}{41}
+\contentsline {subsection}{\numberline {3.11.2}Cooks's Distance}{41}
+\contentsline {subsection}{\numberline {3.11.3}Cook's Distance}{42}
+\contentsline {section}{\numberline {3.12}Cook's Distance for LMEs}{43}
+\contentsline {subsection}{\numberline {3.12.1}Change in the precision of estimates}{43}
+\contentsline {subsection}{\numberline {3.12.2}Cook's Distance}{46}
+\contentsline {subsubsection}{Random Effects}{47}
+\contentsline {subsubsection}{linear functions}{47}
+\contentsline {subsection}{\numberline {3.12.3}Information Ratio}{47}
+\contentsline {section}{\numberline {3.13}Computation and Notation }{48}
+\contentsline {section}{\numberline {3.14}Cook's Distance for LMEs}{48}
+\contentsline {subsection}{\numberline {3.14.1}Change in the precision of estimates}{49}
+\contentsline {section}{\numberline {3.15}CPJ's Three Propositions}{50}
+\contentsline {section}{\numberline {3.16}The CPJ Paper}{51}
+\contentsline {subsection}{\numberline {3.16.1}Case-Deletion results for Variance components}{51}
+\contentsline {subsection}{\numberline {3.16.2}CPJ Notation}{51}
+\contentsline {section}{\numberline {3.17}Matrix Notation for Case Deletion}{53}
+\contentsline {subsection}{\numberline {3.17.1}Case deletion notation}{53}
+\contentsline {subsection}{\numberline {3.17.2}Partitioning Matrices}{53}
+\contentsline {section}{\numberline {3.18}The CPJ Paper}{54}
+\contentsline {subsection}{\numberline {3.18.1}Case-Deletion results for Variance components}{54}
+\contentsline {subsection}{\numberline {3.18.2}CPJ Notation}{54}
+\contentsline {section}{\numberline {3.19}The CPJ Paper}{56}
+\contentsline {subsection}{\numberline {3.19.1}Case-Deletion results for Variance components}{56}
+\contentsline {subsection}{\numberline {3.19.2}CPJ Notation}{56}
+\contentsline {section}{\numberline {3.20}Matrix Notation for Case Deletion}{58}
+\contentsline {subsection}{\numberline {3.20.1}Case deletion notation}{58}
+\contentsline {subsection}{\numberline {3.20.2}Partitioning Matrices}{58}
+\contentsline {section}{\numberline {3.21}The CPJ Paper}{59}
+\contentsline {subsection}{\numberline {3.21.1}Case-Deletion results for Variance components}{59}
+\contentsline {subsection}{\numberline {3.21.2}CPJ Notation}{59}
+\contentsline {section}{\numberline {3.22}The CPJ Paper}{61}
+\contentsline {subsection}{\numberline {3.22.1}Case-Deletion results for Variance components}{61}
+\contentsline {subsection}{\numberline {3.22.2}CPJ Notation}{61}
+\contentsline {section}{\numberline {3.23}CPJ's Three Propositions}{63}
+\contentsline {subsubsection}{Proposition 1}{63}
+\contentsline {subsection}{\numberline {3.23.1}Proposition 2}{63}
+\contentsline {subsection}{\numberline {3.23.2}Proposition 3}{63}
+\contentsline {section}{\numberline {3.24}The CPJ Paper}{64}
+\contentsline {subsection}{\numberline {3.24.1}Case-Deletion results for Variance components}{64}
+\contentsline {subsection}{\numberline {3.24.2}CPJ Notation}{64}
+\contentsline {section}{\numberline {3.25}CPJ's Three Propositions}{66}
+\contentsline {subsubsection}{Proposition 1}{66}
+\contentsline {subsubsection}{Proposition 1}{66}
+\contentsline {subsection}{\numberline {3.25.1}Proposition 2}{66}
+\contentsline {section}{\numberline {3.26}CPJ's Three Propositions}{67}
+\contentsline {subsection}{\numberline {3.26.1}Proposition 2}{67}
+\contentsline {subsection}{\numberline {3.26.2}Proposition 3}{67}
+\contentsline {section}{\numberline {3.27}CPJ's Three Propositions}{67}
+\contentsline {subsubsection}{Proposition 1}{67}
+\contentsline {subsection}{\numberline {3.27.1}Proposition 2}{67}
+\contentsline {subsection}{\numberline {3.27.2}Proposition 3}{68}
+\contentsline {section}{\numberline {3.28}CPJ's Three Propositions}{69}
+\contentsline {subsubsection}{Proposition 1}{69}
+\contentsline {subsection}{\numberline {3.28.1}Proposition 2}{69}
+\contentsline {subsection}{\numberline {3.28.2}Proposition 3}{69}
+\contentsline {section}{\numberline {3.29}CPJ's Three Propositions}{70}
+\contentsline {subsubsection}{Proposition 1}{70}
+\contentsline {subsection}{\numberline {3.29.1}Proposition 2}{70}
+\contentsline {subsubsection}{Proposition 1}{71}
+\contentsline {subsection}{\numberline {3.29.2}Proposition 2}{71}
+\contentsline {subsection}{\numberline {3.29.3}Likelihood Distance}{73}
+\contentsline {section}{\numberline {3.30}Likelihood Distance}{75}
+\contentsline {subsection}{\numberline {3.30.1}Likelihood Distance}{75}
+\contentsline {subsection}{\numberline {3.30.2}Restricted Likelihood Distances}{76}
+\contentsline {subsection}{\numberline {3.30.3}Key Definitions}{77}
+\contentsline {subsection}{\numberline {3.30.4}Leverage}{78}
+\contentsline {subsection}{\numberline {3.30.5}Leverage in LME models}{78}
+\contentsline {section}{\numberline {3.31}Case Deletion Diagnostics for LME models}{79}
+\contentsline {section}{\numberline {3.32}Haslett's Analysis}{81}
+\contentsline {subsection}{\numberline {3.32.1}Residual Diagnostics in LME models}{81}
+\contentsline {section}{\numberline {3.33}Case Deletion Diagnostics for LME models}{82}
+\contentsline {section}{\numberline {3.34}Turkan's LMEs}{83}
