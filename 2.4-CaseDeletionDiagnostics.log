@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  29 NOV 2014 13:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  24 JAN 2015 14:30
 entering extended mode
 **2.4-CaseDeletionDiagnostics.tex
 (C:\Users\Kevin\Documents\GitHub\Chap5\2.4-CaseDeletionDiagnostics.tex
@@ -193,28 +193,78 @@ LaTeX Font Info:    ... okay on input line 2.
 \everyMPtoPDFconversion=\toks28
 )
 
-Package natbib Warning: Citation `CPJ' on page 1 undefined on input line 21.
+Package natbib Warning: Citation `HaslettDillane' on page 1 undefined on input 
+line 19.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 24.
+
+Package natbib Warning: Citation `McCullSearle' on page 1 undefined on input li
+ne 21.
+
+
+Package natbib Warning: Citation `Christensen' on page 1 undefined on input lin
+e 24.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 26.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package natbib Warning: Citation `Christiansen' on page 1 undefined on input li
-ne 33.
+Package natbib Warning: Citation `schabenberger' on page 1 undefined on input l
+ine 48.
 
 
-Package natbib Warning: Citation `Christiansen' on page 1 undefined on input li
-ne 35.
+Package natbib Warning: Citation `schabenberger' on page 1 undefined on input l
+ine 55.
+
+
+Package natbib Warning: Citation `schabenberger' on page 1 undefined on input l
+ine 61.
 
 [1
 
 {C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+
+Package natbib Warning: Citation `schabenberger' on page 2 undefined on input l
+ine 83.
+
+
+Package natbib Warning: Citation `HaslettDillane' on page 2 undefined on input 
+line 85.
+
+
+Package natbib Warning: Citation `HaslettDillane' on page 2 undefined on input 
+line 90.
+
+
+Package natbib Warning: Citation `Haslett99' on page 2 undefined on input line 
+94.
+
+
+Package natbib Warning: Citation `HaslettHayes' on page 2 undefined on input li
+ne 96.
+
+
+Package natbib Warning: Citation `cook82' on page 2 undefined on input line 105
+.
+
+[2]
+
+Package natbib Warning: Citation `CPJ' on page 3 undefined on input line 125.
+
+
+Package natbib Warning: Citation `Christiansen' on page 3 undefined on input li
+ne 137.
+
+
+Package natbib Warning: Citation `Christiansen' on page 3 undefined on input li
+ne 139.
+
+[3]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
@@ -229,48 +279,49 @@ Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
 
-Package natbib Warning: Citation `Zewotir' on page 2 undefined on input line 75
-.
+Package natbib Warning: Citation `Zewotir' on page 4 undefined on input line 17
+9.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 76.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 180.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 76.
- [2]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 180.
+ [4]
 
-Package natbib Warning: Citation `CPJ' on page 3 undefined on input line 104.
-
-
-Package natbib Warning: Citation `Christiansen' on page 3 undefined on input li
-ne 110.
+Package natbib Warning: Citation `CPJ' on page 5 undefined on input line 208.
 
 
-Package natbib Warning: Citation `Christiansen' on page 3 undefined on input li
-ne 112.
-
-[3]
-
-Package natbib Warning: Citation `preisser' on page 4 undefined on input line 1
-19.
+Package natbib Warning: Citation `Christiansen' on page 5 undefined on input li
+ne 214.
 
 
-Package natbib Warning: Citation `CPJ' on page 4 undefined on input line 125.
+Package natbib Warning: Citation `Christiansen' on page 5 undefined on input li
+ne 216.
 
-[4]
+[5]
+
+Package natbib Warning: Citation `preisser' on page 6 undefined on input line 2
+23.
+
+
+Package natbib Warning: Citation `CPJ' on page 6 undefined on input line 229.
+
+[6]
 
 Package natbib Warning: There were undefined citations.
 
-[5] (C:\Users\Kevin\Documents\GitHub\Chap5\2.4-CaseDeletionDiagnostics.aux) ) 
+[7] (C:\Users\Kevin\Documents\GitHub\Chap5\2.4-CaseDeletionDiagnostics.aux) ) 
 Here is how much of TeX's memory you used:
- 2371 strings out of 493921
- 31018 string characters out of 3144875
- 80841 words of memory out of 3000000
- 5635 multiletter control sequences out of 15000+200000
- 11659 words of font info for 43 fonts, out of 3000000 for 9000
+ 2381 strings out of 493921
+ 31149 string characters out of 3144875
+ 82841 words of memory out of 3000000
+ 5644 multiletter control sequences out of 15000+200000
+ 12265 words of font info for 45 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 43i,5n,28p,460b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,7n,28p,460b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
@@ -278,10 +329,11 @@ ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program F
 iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on 2.4-CaseDeletionDiagnostics.pdf (5 pages, 86713 bytes).
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on 2.4-CaseDeletionDiagnostics.pdf (7 pages, 105342 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 58 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

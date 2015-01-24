@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  30 OCT 2014 17:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  24 JAN 2015 13:37
 entering extended mode
 **03-residualdiagnostics.tex
 
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\03-residualdiagnostics.t
-ex
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\03-residualdiagnos
+tics.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -24,7 +24,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@in@stream=\read1
 )
 Preamble taken from file `residuals.tex'
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\residuals.tex
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\residuals.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -153,8 +153,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 )))
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\03-residualdiagnostics.a
-ux
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\03-residualdiagnos
+tics.aux
 
 LaTeX Warning: Label `fig:alcotob' multiply defined.
 
@@ -201,8 +201,8 @@ Missing character: There is no € in font cmtt10!
 Missing character: There is no “ in font cmtt10!
  [1
 
-{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-<alcotob.jpeg, id=14, 1445.4pt x 785.93625pt>
+{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<alcotob.jpeg, id=11, 1445.4pt x 785.93625pt>
 File: alcotob.jpeg Graphic file (type jpg)
  <use alcotob.jpeg>
 Package pdftex.def Info: alcotob.jpeg used on input line 106.
@@ -212,7 +212,7 @@ Overfull \hbox (141.00143pt too wide) in paragraph at lines 106--107
  [][] 
  []
 
-<alcotob2.jpeg, id=15, 1445.4pt x 785.93625pt>
+<alcotob2.jpeg, id=12, 1445.4pt x 785.93625pt>
 File: alcotob2.jpeg Graphic file (type jpg)
  <use alcotob2.jpeg>
 Package pdftex.def Info: alcotob2.jpeg used on input line 113.
@@ -222,8 +222,9 @@ Overfull \hbox (141.00143pt too wide) in paragraph at lines 113--114
  [][] 
  []
 
-[3] [4 <C:/Users/Kevin/Documents/GitHub/ResidualAnalysiswithR/alcotob.jpeg>]
-[5 <C:/Users/Kevin/Documents/GitHub/ResidualAnalysiswithR/alcotob2.jpeg>]
+[2] [3 <C:/Users/Kevin/Documents/GitHub/Chap5/ResidualAnalysiswithR/alcotob.jpe
+g>] [4 <C:/Users/Kevin/Documents/GitHub/Chap5/ResidualAnalysiswithR/alcotob2.jp
+eg>]
 Missing character: There is no â in font cmtt10!
 Missing character: There is no € in font cmtt10!
 Missing character: There is no ˜ in font cmtt10!
@@ -284,10 +285,10 @@ Missing character: There is no ˜ in font cmtt10!
 Missing character: There is no â in font cmtt10!
 Missing character: There is no € in font cmtt10!
 Missing character: There is no ™ in font cmtt10!
-
-[6] [7] <alcotob3.jpeg, id=33, 1445.4pt x 785.93625pt>
+ [5] [6] <alcotob3.jpeg, id=29, 1445.4pt x 785.93625pt>
 File: alcotob3.jpeg Graphic file (type jpg)
- <use alcotob3.jpeg>
+
+<use alcotob3.jpeg>
 Package pdftex.def Info: alcotob3.jpeg used on input line 227.
 (pdftex.def)             Requested size: 563.99857pt x 306.6698pt.
 
@@ -295,7 +296,7 @@ Overfull \hbox (93.99857pt too wide) in paragraph at lines 227--230
  [][] 
  []
 
-<alcotob4.jpeg, id=34, 1445.4pt x 785.93625pt>
+<alcotob4.jpeg, id=30, 1445.4pt x 785.93625pt>
 File: alcotob4.jpeg Graphic file (type jpg)
  <use alcotob4.jpeg>
 Package pdftex.def Info: alcotob4.jpeg used on input line 235.
@@ -305,24 +306,25 @@ Overfull \hbox (93.99857pt too wide) in paragraph at lines 235--238
  [][] 
  []
 
-[8] [9 <C:/Users/Kevin/Documents/GitHub/ResidualAnalysiswithR/alcotob3.jpeg>]
-[10 <C:/Users/Kevin/Documents/GitHub/ResidualAnalysiswithR/alcotob4.jpeg>]
-<alcotob6.jpeg, id=44, 1445.4pt x 785.93625pt>
+<alcotob6.jpeg, id=31, 1445.4pt x 785.93625pt>
 File: alcotob6.jpeg Graphic file (type jpg)
  <use alcotob6.jpeg>
 Package pdftex.def Info: alcotob6.jpeg used on input line 265.
 (pdftex.def)             Requested size: 328.99857pt x 178.89072pt.
- [11 <C:/Users/Kevin/Documents/GitHub/ResidualAnalysiswithR/alcotob6.jpeg>] [12
-] [13]
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\03-residualdiagnostics.a
-ux)
+ [7 <C:/Users/Kevin/Documents/GitHub/Chap5/ResidualAnalysiswithR/alcotob3.jpeg>
+] [8 <C:/Users/Kevin/Documents/GitHub/Chap5/ResidualAnalysiswithR/alcotob4.jpeg
+>] [9 <C:/Users/Kevin/Documents/GitHub/Chap5/ResidualAnalysiswithR/alcotob6.jpe
+g>] [10]
+[11]
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\03-residualdiagnos
+tics.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  2126 strings out of 493921
- 27383 string characters out of 3144875
+ 27437 string characters out of 3144875
  81105 words of memory out of 3000000
  5416 multiletter control sequences out of 15000+200000
  6031 words of font info for 22 fonts, out of 3000000 for 9000
@@ -335,9 +337,9 @@ Here is how much of TeX's memory you used:
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progr
 am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on 03-residualdiagnostics.pdf (13 pages, 634183 bytes).
+Output written on 03-residualdiagnostics.pdf (11 pages, 633290 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 71 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

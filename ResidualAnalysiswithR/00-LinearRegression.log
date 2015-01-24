@@ -1,7 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  28 OCT 2014 23:40
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.10.12)  24 JAN 2015 13:29
 entering extended mode
 **00-LinearRegression.tex
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\00-LinearRegression.tex
+
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\00-LinearRegressio
+n.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -22,7 +24,7 @@ Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@in@stream=\read1
 )
 Preamble taken from file `residuals.tex'
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\residuals.tex
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\residuals.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size10.clo"
@@ -151,7 +153,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\latex\subfiles\subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 )))
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\00-LinearRegression.aux)
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\00-LinearRegressio
+n.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
@@ -164,6 +167,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
 LaTeX Font Info:    ... okay on input line 2.
+
 (C:\Users\Kevin\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count100
@@ -182,19 +186,18 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <14.4> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
+ [1
 
-<resids1.jpg, id=1, 433.62pt x 289.08pt>
+{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+<resids1.jpg, id=11, 433.62pt x 289.08pt>
 File: resids1.jpg Graphic file (type jpg)
  <use resids1.jpg>
 Package pdftex.def Info: resids1.jpg used on input line 20.
 (pdftex.def)             Requested size: 422.99713pt x 282.01285pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -202,32 +205,32 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 26.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
-
-{C:/Users/Kevin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2 <C:/User
-s/Kevin/Documents/GitHub/ResidualAnalysiswithR/resids1.jpg>] [3] [4]
-(C:\Users\Kevin\Documents\GitHub\ResidualAnalysiswithR\00-LinearRegression.aux)
- ) 
+) [2 <C:/Users/Kevin/Documents/GitHub/Chap5/ResidualAnalysiswithR/resids1.jpg>]
+ [3] [4]
+(C:\Users\Kevin\Documents\GitHub\Chap5\ResidualAnalysiswithR\00-LinearRegressio
+n.aux) ) 
 Here is how much of TeX's memory you used:
- 2126 strings out of 493921
- 27452 string characters out of 3144875
+ 2150 strings out of 493921
+ 27756 string characters out of 3144875
  80057 words of memory out of 3000000
- 5412 multiletter control sequences out of 15000+200000
- 7857 words of font info for 30 fonts, out of 3000000 for 9000
+ 5429 multiletter control sequences out of 15000+200000
+ 12204 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,5n,28p,356b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 00-LinearRegression.pdf (4 pages, 162578 bytes).
+ 36i,5n,28p,354b,233s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti1
+0.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
+am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on 00-LinearRegression.pdf (4 pages, 179303 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
+ 60 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

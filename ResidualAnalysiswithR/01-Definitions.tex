@@ -14,7 +14,7 @@ To understand a diagnostic plot called the residual-leverage plot, we must under
 	\item Standardized residuals, and
 	\item Cook's distance.
 \end{itemize}
-\newpage
+
 %Move next bit to "Leverarge"
 
 % Standardization
@@ -34,28 +34,27 @@ Consider the plots associated with four different situations:
 	\item a dataset with a low-leverage, but high-standardized residual point
 	\item a dataset with a high-leverage, high-standardized residual point
 \end{enumerate}
-\newpage
+
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1.0\linewidth]{plots2}
 	\caption{}
 	\label{fig:plots2}
 \end{figure}
-\newpage
 \begin{figure}[h!]
 \centering
 \includegraphics[width=1.0\linewidth]{plots3}
 \caption{}
 \label{fig:plots3}
 \end{figure}
-\newpage
+
 \begin{itemize}
 \item The plots on the left show the data, the center of the data  with a blue dot, the underlying data generating process with a dashed gray line, the model fit with a blue line, and the special point with a red dot. 
 \item On the right are the corresponding residual-leverage plots; the special point is 21. 
 \item The model is badly distorted primarily in the fourth case where there is a point with high leverage and a large (negative) standardized residual. 
 
 \end{itemize}
-\newpage
+
 For reference, here are the values associated with the special points:
 \begin{verbatim}
                                leverage std.residual   cooks.d

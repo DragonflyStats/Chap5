@@ -1,28 +1,23 @@
-\indexentry {maximum likelihood}{13}
-\indexentry {restricted maximum likelihood}{13}
-\indexentry {likelihood distance}{13}
-\indexentry {local influence}{16}
-\indexentry {external studentization}{25}
-\indexentry {internally studentization}{25}
-\indexentry {studentized residual}{25}
-\indexentry {standardized residual}{26}
-\indexentry {studentized residual}{26}
-\indexentry {external studentization}{26}
-\indexentry {internally studentization}{26}
-\indexentry {studentized residual}{26}
-\indexentry {Pearson residual}{27}
-\indexentry {standardized residual}{28}
-\indexentry {studentized residual}{28}
-\indexentry {external studentization}{28}
-\indexentry {internally studentization}{28}
-\indexentry {studentized residual}{28}
-\indexentry {Pearson residual}{29}
+\indexentry {maximum likelihood}{14}
+\indexentry {restricted maximum likelihood}{14}
+\indexentry {likelihood distance}{14}
+\indexentry {local influence}{17}
+\indexentry {external studentization}{27}
+\indexentry {internally studentization}{27}
+\indexentry {studentized residual}{27}
+\indexentry {standardized residual}{29}
+\indexentry {studentized residual}{29}
+\indexentry {external studentization}{29}
+\indexentry {internally studentization}{29}
+\indexentry {studentized residual}{29}
 \indexentry {Pearson residual}{30}
-\indexentry {standardized residual}{32}
-\indexentry {studentized residual}{32}
-\indexentry {external studentization}{32}
-\indexentry {internally studentization}{32}
-\indexentry {studentized residual}{32}
+\indexentry {standardized residual}{31}
+\indexentry {studentized residual}{31}
+\indexentry {external studentization}{31}
+\indexentry {internally studentization}{31}
+\indexentry {studentized residual}{31}
+\indexentry {Pearson residual}{32}
+\indexentry {Pearson residual}{33}
 \indexentry {standardized residual}{35}
 \indexentry {studentized residual}{35}
 \indexentry {external studentization}{35}
@@ -33,23 +28,28 @@
 \indexentry {external studentization}{38}
 \indexentry {internally studentization}{38}
 \indexentry {studentized residual}{38}
-\indexentry {Pearson residual}{39}
-\indexentry {case deletion diagnostics}{53}
-\indexentry {Cook's distance}{53}
-\indexentry {local influence}{56}
-\indexentry {local influence}{57}
+\indexentry {standardized residual}{41}
+\indexentry {studentized residual}{41}
+\indexentry {external studentization}{41}
+\indexentry {internally studentization}{41}
+\indexentry {studentized residual}{41}
+\indexentry {Pearson residual}{42}
+\indexentry {case deletion diagnostics}{56}
+\indexentry {Cook's distance}{56}
 \indexentry {local influence}{59}
-\indexentry {standardized residual}{60}
-\indexentry {studentized residual}{60}
-\indexentry {case deletion diagnostics}{62}
-\indexentry {likelihood distance}{62}
-\indexentry {Cook-Weisberg statistic}{62}
-\indexentry {Andrews-Prebigon statistic}{62}
-\indexentry {iterative influence analysis}{67}
-\indexentry {non-iterative influence analysis}{67}
-\indexentry {maximum likelihood}{68}
-\indexentry {restricted maximum likelihood}{68}
-\indexentry {likelihood distance}{68}
+\indexentry {local influence}{60}
+\indexentry {local influence}{62}
+\indexentry {standardized residual}{63}
+\indexentry {studentized residual}{63}
+\indexentry {case deletion diagnostics}{65}
+\indexentry {likelihood distance}{65}
+\indexentry {Cook-Weisberg statistic}{65}
+\indexentry {Andrews-Prebigon statistic}{65}
+\indexentry {iterative influence analysis}{70}
+\indexentry {non-iterative influence analysis}{70}
+\indexentry {maximum likelihood}{71}
+\indexentry {restricted maximum likelihood}{71}
+\indexentry {likelihood distance}{71}
 \indexentry {iterative influence analysis}{2}
 \indexentry {non-iterative influence analysis}{2}
 \indexentry {case deletion diagnostics}{23}

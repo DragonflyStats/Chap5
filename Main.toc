@@ -1,127 +1,127 @@
 \contentsline {section}{Bibliography}{1}
-\contentsline {subsection}{\numberline {0.0.1}What is Influence}{11}
-\contentsline {section}{\numberline {0.1}Introduction}{11}
-\contentsline {subsection}{\numberline {0.1.1}What is Influence}{11}
-\contentsline {subsection}{\numberline {0.1.2}Quantifying Influence}{11}
-\contentsline {subsection}{\numberline {0.1.3}Model Data Agreement}{12}
-\contentsline {subsection}{\numberline {0.1.4}Influence Diagnostics: Basic Idea and Statistics}{12}
-\contentsline {subsection}{\numberline {0.1.5}Overall Influence}{12}
-\contentsline {subsection}{\numberline {0.1.6}Quantifying Influence}{13}
-\contentsline {subsection}{\numberline {0.1.7}Quantifying Influence}{13}
-\contentsline {subsection}{\numberline {0.1.8}Quantifying Influence}{14}
-\contentsline {subsection}{\numberline {0.1.9}Residual diagnostics}{15}
-\contentsline {subsection}{\numberline {0.1.10}Summary of Paper}{19}
-\contentsline {subsection}{\numberline {0.1.11}ITERATIVE VS. NONITERATIVE INFLUENCE ANALYSIS}{20}
-\contentsline {subsection}{\numberline {0.1.12}Residual Plots}{22}
-\contentsline {subsection}{\numberline {0.1.13}Introduction}{22}
-\contentsline {subsection}{\numberline {0.1.14}Residual}{23}
-\contentsline {subsection}{\numberline {0.1.15}Residual}{23}
-\contentsline {subsection}{\numberline {0.1.16}Influence Diagnostics: Basic Idea and Statistics}{24}
-\contentsline {subsection}{\numberline {0.1.17}Standardization}{24}
-\contentsline {subsection}{\numberline {0.1.18}Studentization}{24}
-\contentsline {subsection}{\numberline {0.1.19}Internal and External Studentization}{25}
-\contentsline {subsection}{\numberline {0.1.20}Computation}{25}
-\contentsline {subsection}{\numberline {0.1.21}Standardized and studentized residuals}{26}
-\contentsline {subsection}{\numberline {0.1.22}Standardization}{26}
-\contentsline {subsection}{\numberline {0.1.23}Studentization}{26}
-\contentsline {subsection}{\numberline {0.1.24}Internal and External Studentization}{26}
-\contentsline {subsection}{\numberline {0.1.25}Computation}{26}
-\contentsline {subsection}{\numberline {0.1.26}Pearson Residual}{27}
-\contentsline {subsection}{\numberline {0.1.27}Standardized and studentized residuals}{28}
-\contentsline {subsection}{\numberline {0.1.28}Standardization}{28}
-\contentsline {subsection}{\numberline {0.1.29}Studentization}{28}
-\contentsline {subsection}{\numberline {0.1.30}Internal and External Studentization}{28}
-\contentsline {subsection}{\numberline {0.1.31}Computation}{28}
-\contentsline {subsection}{\numberline {0.1.32}Pearson Residual}{29}
-\contentsline {subsection}{\numberline {0.1.33}Pearson Residual}{30}
-\contentsline {subsection}{\numberline {0.1.34}Covariance Parameters}{31}
-\contentsline {section}{\numberline {0.2}Standardized and studentized residuals}{32}
-\contentsline {subsection}{\numberline {0.2.1}Standardization}{32}
-\contentsline {subsection}{\numberline {0.2.2}Studentization}{32}
-\contentsline {subsection}{\numberline {0.2.3}Internal and External Studentization}{32}
-\contentsline {subsection}{\numberline {0.2.4}Computation}{32}
-\contentsline {subsection}{\numberline {0.2.5}Studentization}{34}
-\contentsline {section}{\numberline {0.3}Standardized and studentized residuals}{35}
-\contentsline {subsection}{\numberline {0.3.1}Standardization}{35}
-\contentsline {subsection}{\numberline {0.3.2}Studentization}{35}
-\contentsline {subsection}{\numberline {0.3.3}Internal and External Studentization}{35}
-\contentsline {subsection}{\numberline {0.3.4}Computation}{35}
-\contentsline {section}{\numberline {0.4}Covariance Parameters}{37}
-\contentsline {section}{\numberline {0.5}Standardized and studentized residuals}{38}
-\contentsline {subsection}{\numberline {0.5.1}Standardization}{38}
-\contentsline {subsection}{\numberline {0.5.2}Studentization}{38}
-\contentsline {subsection}{\numberline {0.5.3}Internal and External Studentization}{38}
-\contentsline {subsection}{\numberline {0.5.4}Computation}{38}
-\contentsline {subsection}{\numberline {0.5.5}Pearson Residual}{39}
-\contentsline {subsection}{\numberline {0.5.6}Marginal and Conditional Residuals}{41}
-\contentsline {subsection}{\numberline {0.5.7}Marginal Residuals}{41}
-\contentsline {subsection}{\numberline {0.5.8}Marginal and Conditional Residuals}{42}
-\contentsline {subsection}{\numberline {0.5.9}Marginal Residuals}{42}
-\contentsline {subsection}{\numberline {0.5.10}Marginal and Conditional Residuals}{42}
-\contentsline {section}{\numberline {0.6}Residual diagnostics}{46}
-\contentsline {subsection}{\numberline {0.6.1}Residuals diagnostics in mixed models}{46}
-\contentsline {subsection}{\numberline {0.6.2}Marginal and Conditional Residuals}{46}
-\contentsline {subsection}{\numberline {0.6.3}Marginal Residuals}{47}
-\contentsline {section}{\numberline {0.7}Conditional and Marginal Residuals}{47}
-\contentsline {section}{\numberline {0.8}Residual diagnostics}{49}
-\contentsline {subsection}{\numberline {0.8.1}Residuals diagnostics in mixed models}{50}
-\contentsline {subsection}{\numberline {0.8.2}Marginal and Conditional Residuals}{50}
-\contentsline {subsection}{\numberline {0.8.3}Marginal Residuals}{50}
-\contentsline {subsection}{\numberline {0.8.4}Confounded Residuals}{51}
-\contentsline {section}{\numberline {0.9}Case Deletion Diagnostics}{53}
-\contentsline {subsection}{\numberline {0.9.1}Deletion Diagnostics}{53}
-\contentsline {section}{\numberline {0.10}Effects on fitted and predicted values}{53}
-\contentsline {subsection}{\numberline {0.10.1}Influence Analysis for LME Models}{54}
-\contentsline {subsection}{\numberline {0.10.2}Influence Analysis for LME Models}{54}
-\contentsline {subsection}{\numberline {0.10.3}Influence Analysis for LME Models}{55}
-\contentsline {subsection}{\numberline {0.10.4}Extension of techniques to LME Models}{56}
-\contentsline {subsection}{\numberline {0.10.5}Extension of techniques to LME Models}{57}
-\contentsline {subsection}{\numberline {0.10.6}Influence Statistics for LME models}{58}
-\contentsline {subsection}{\numberline {0.10.7}Extension of techniques to LME Models}{59}
-\contentsline {subsection}{\numberline {0.10.8}Residuals diagnostics in mixed models}{59}
-\contentsline {subsection}{\numberline {0.10.9}Standardized and studentized residuals}{60}
-\contentsline {subsection}{\numberline {0.10.10}Residual Analysis for Linear Models, LME models and GLMs}{60}
-\contentsline {subsection}{\numberline {0.10.11}Identifying outliers with a LME model object}{61}
-\contentsline {subsection}{\numberline {0.10.12}Diagnostics for Random Effects}{61}
-\contentsline {subsection}{\numberline {0.10.13}Influence Diagnostics: Basic Idea and Statistics}{62}
-\contentsline {subsection}{\numberline {0.10.14}Case Deletion Diagnostics for Mixed Models}{62}
-\contentsline {subsection}{\numberline {0.10.15}Methods and Measures}{62}
-\contentsline {subsection}{\numberline {0.10.16}Cook's 1986 paper on Local Influence}{62}
-\contentsline {section}{\numberline {0.11}Leverage and Influence}{63}
-\contentsline {subsection}{\numberline {0.11.1}Influence}{63}
-\contentsline {subsection}{\numberline {0.11.2}Interpreting Cook's Distance}{63}
-\contentsline {subsection}{\numberline {0.11.3}Leverage}{63}
-\contentsline {subsubsection}{Calculation of Leverage (h)}{64}
-\contentsline {subsection}{\numberline {0.11.4}Summary of Influence Statistics}{64}
-\contentsline {section}{\numberline {0.12}Influence analysis}{66}
-\contentsline {section}{\numberline {0.13}Iterative and non-iterative influence analysis}{67}
-\contentsline {subsection}{\numberline {0.13.1}Iterative Influence Analysis}{67}
-\contentsline {section}{\numberline {0.14}Influence analysis}{68}
-\contentsline {subsection}{\numberline {0.14.1}Cook's 1986 paper on Local Influence}{68}
-\contentsline {subsection}{\numberline {0.14.2}Overall Influence}{68}
-\contentsline {subsection}{\numberline {0.14.3}Quantifying Influence}{73}
-\contentsline {section}{\numberline {0.15}Measures 2}{74}
-\contentsline {subsection}{\numberline {0.15.1}Cook's Distance}{74}
-\contentsline {subsection}{\numberline {0.15.2}Variance Ratio}{74}
-\contentsline {subsection}{\numberline {0.15.3}Variance Ratio}{74}
-\contentsline {subsection}{\numberline {0.15.4}Cook-Weisberg statistic}{74}
-\contentsline {subsection}{\numberline {0.15.5}Andrews-Pregibon statistic}{74}
-\contentsline {section}{\numberline {0.16}Measures 2}{75}
-\contentsline {subsection}{\numberline {0.16.1}Cook's Distance}{75}
-\contentsline {section}{\numberline {0.17}Zewotir Measures of Influence in LME Models}{75}
-\contentsline {subsubsection}{Random Effects}{76}
-\contentsline {subsubsection}{linear functions}{76}
-\contentsline {subsection}{\numberline {0.17.1}Information Ratio}{76}
-\contentsline {section}{\numberline {0.18}Computation and Notation }{77}
-\contentsline {section}{\numberline {0.19}Measures of Influence}{77}
-\contentsline {subsection}{\numberline {0.19.1}DFFITS}{77}
-\contentsline {subsection}{\numberline {0.19.2}Influence Statistics for LME models}{77}
-\contentsline {section}{\numberline {0.20}Measures of Influence}{78}
-\contentsline {subsection}{\numberline {0.20.1}DFBETA}{78}
-\contentsline {subsection}{\numberline {0.20.2}DFFITS}{78}
-\contentsline {subsection}{\numberline {0.20.3}PRESS}{79}
-\contentsline {subsection}{\numberline {0.20.4}DFBETA}{79}
-\contentsline {subsection}{\numberline {0.20.5}Influential Observations : DFBeta and DFBetas}{79}
+\contentsline {subsection}{\numberline {0.0.1}What is Influence}{12}
+\contentsline {section}{\numberline {0.1}Introduction}{12}
+\contentsline {subsection}{\numberline {0.1.1}What is Influence}{12}
+\contentsline {subsection}{\numberline {0.1.2}Quantifying Influence}{12}
+\contentsline {subsection}{\numberline {0.1.3}Model Data Agreement}{13}
+\contentsline {subsection}{\numberline {0.1.4}Influence Diagnostics: Basic Idea and Statistics}{13}
+\contentsline {subsection}{\numberline {0.1.5}Overall Influence}{13}
+\contentsline {subsection}{\numberline {0.1.6}Quantifying Influence}{14}
+\contentsline {subsection}{\numberline {0.1.7}Quantifying Influence}{14}
+\contentsline {subsection}{\numberline {0.1.8}Quantifying Influence}{15}
+\contentsline {subsection}{\numberline {0.1.9}Residual diagnostics}{16}
+\contentsline {subsection}{\numberline {0.1.10}Summary of Paper}{20}
+\contentsline {subsection}{\numberline {0.1.11}ITERATIVE VS. NONITERATIVE INFLUENCE ANALYSIS}{21}
+\contentsline {subsection}{\numberline {0.1.12}Residual Plots}{23}
+\contentsline {subsection}{\numberline {0.1.13}Introduction}{25}
+\contentsline {subsection}{\numberline {0.1.14}Residual}{25}
+\contentsline {subsection}{\numberline {0.1.15}Residual}{26}
+\contentsline {subsection}{\numberline {0.1.16}Influence Diagnostics: Basic Idea and Statistics}{27}
+\contentsline {subsection}{\numberline {0.1.17}Standardization}{27}
+\contentsline {subsection}{\numberline {0.1.18}Studentization}{27}
+\contentsline {subsection}{\numberline {0.1.19}Internal and External Studentization}{27}
+\contentsline {subsection}{\numberline {0.1.20}Computation}{27}
+\contentsline {subsection}{\numberline {0.1.21}Standardized and studentized residuals}{29}
+\contentsline {subsection}{\numberline {0.1.22}Standardization}{29}
+\contentsline {subsection}{\numberline {0.1.23}Studentization}{29}
+\contentsline {subsection}{\numberline {0.1.24}Internal and External Studentization}{29}
+\contentsline {subsection}{\numberline {0.1.25}Computation}{29}
+\contentsline {subsection}{\numberline {0.1.26}Pearson Residual}{30}
+\contentsline {subsection}{\numberline {0.1.27}Standardized and studentized residuals}{31}
+\contentsline {subsection}{\numberline {0.1.28}Standardization}{31}
+\contentsline {subsection}{\numberline {0.1.29}Studentization}{31}
+\contentsline {subsection}{\numberline {0.1.30}Internal and External Studentization}{31}
+\contentsline {subsection}{\numberline {0.1.31}Computation}{31}
+\contentsline {subsection}{\numberline {0.1.32}Pearson Residual}{32}
+\contentsline {subsection}{\numberline {0.1.33}Pearson Residual}{33}
+\contentsline {subsection}{\numberline {0.1.34}Covariance Parameters}{34}
+\contentsline {section}{\numberline {0.2}Standardized and studentized residuals}{35}
+\contentsline {subsection}{\numberline {0.2.1}Standardization}{35}
+\contentsline {subsection}{\numberline {0.2.2}Studentization}{35}
+\contentsline {subsection}{\numberline {0.2.3}Internal and External Studentization}{35}
+\contentsline {subsection}{\numberline {0.2.4}Computation}{35}
+\contentsline {subsection}{\numberline {0.2.5}Studentization}{37}
+\contentsline {section}{\numberline {0.3}Standardized and studentized residuals}{38}
+\contentsline {subsection}{\numberline {0.3.1}Standardization}{38}
+\contentsline {subsection}{\numberline {0.3.2}Studentization}{38}
+\contentsline {subsection}{\numberline {0.3.3}Internal and External Studentization}{38}
+\contentsline {subsection}{\numberline {0.3.4}Computation}{38}
+\contentsline {section}{\numberline {0.4}Covariance Parameters}{40}
+\contentsline {section}{\numberline {0.5}Standardized and studentized residuals}{41}
+\contentsline {subsection}{\numberline {0.5.1}Standardization}{41}
+\contentsline {subsection}{\numberline {0.5.2}Studentization}{41}
+\contentsline {subsection}{\numberline {0.5.3}Internal and External Studentization}{41}
+\contentsline {subsection}{\numberline {0.5.4}Computation}{41}
+\contentsline {subsection}{\numberline {0.5.5}Pearson Residual}{42}
+\contentsline {subsection}{\numberline {0.5.6}Marginal and Conditional Residuals}{44}
+\contentsline {subsection}{\numberline {0.5.7}Marginal Residuals}{44}
+\contentsline {subsection}{\numberline {0.5.8}Marginal and Conditional Residuals}{45}
+\contentsline {subsection}{\numberline {0.5.9}Marginal Residuals}{45}
+\contentsline {subsection}{\numberline {0.5.10}Marginal and Conditional Residuals}{45}
+\contentsline {section}{\numberline {0.6}Residual diagnostics}{49}
+\contentsline {subsection}{\numberline {0.6.1}Residuals diagnostics in mixed models}{49}
+\contentsline {subsection}{\numberline {0.6.2}Marginal and Conditional Residuals}{49}
+\contentsline {subsection}{\numberline {0.6.3}Marginal Residuals}{50}
+\contentsline {section}{\numberline {0.7}Conditional and Marginal Residuals}{50}
+\contentsline {section}{\numberline {0.8}Residual diagnostics}{52}
+\contentsline {subsection}{\numberline {0.8.1}Residuals diagnostics in mixed models}{53}
+\contentsline {subsection}{\numberline {0.8.2}Marginal and Conditional Residuals}{53}
+\contentsline {subsection}{\numberline {0.8.3}Marginal Residuals}{53}
+\contentsline {subsection}{\numberline {0.8.4}Confounded Residuals}{54}
+\contentsline {section}{\numberline {0.9}Case Deletion Diagnostics}{56}
+\contentsline {subsection}{\numberline {0.9.1}Deletion Diagnostics}{56}
+\contentsline {section}{\numberline {0.10}Effects on fitted and predicted values}{56}
+\contentsline {subsection}{\numberline {0.10.1}Influence Analysis for LME Models}{57}
+\contentsline {subsection}{\numberline {0.10.2}Influence Analysis for LME Models}{57}
+\contentsline {subsection}{\numberline {0.10.3}Influence Analysis for LME Models}{58}
+\contentsline {subsection}{\numberline {0.10.4}Extension of techniques to LME Models}{59}
+\contentsline {subsection}{\numberline {0.10.5}Extension of techniques to LME Models}{60}
+\contentsline {subsection}{\numberline {0.10.6}Influence Statistics for LME models}{61}
+\contentsline {subsection}{\numberline {0.10.7}Extension of techniques to LME Models}{62}
+\contentsline {subsection}{\numberline {0.10.8}Residuals diagnostics in mixed models}{62}
+\contentsline {subsection}{\numberline {0.10.9}Standardized and studentized residuals}{63}
+\contentsline {subsection}{\numberline {0.10.10}Residual Analysis for Linear Models, LME models and GLMs}{63}
+\contentsline {subsection}{\numberline {0.10.11}Identifying outliers with a LME model object}{64}
+\contentsline {subsection}{\numberline {0.10.12}Diagnostics for Random Effects}{64}
+\contentsline {subsection}{\numberline {0.10.13}Influence Diagnostics: Basic Idea and Statistics}{65}
+\contentsline {subsection}{\numberline {0.10.14}Case Deletion Diagnostics for Mixed Models}{65}
+\contentsline {subsection}{\numberline {0.10.15}Methods and Measures}{65}
+\contentsline {subsection}{\numberline {0.10.16}Cook's 1986 paper on Local Influence}{65}
+\contentsline {section}{\numberline {0.11}Leverage and Influence}{66}
+\contentsline {subsection}{\numberline {0.11.1}Influence}{66}
+\contentsline {subsection}{\numberline {0.11.2}Interpreting Cook's Distance}{66}
+\contentsline {subsection}{\numberline {0.11.3}Leverage}{66}
+\contentsline {subsubsection}{Calculation of Leverage (h)}{67}
+\contentsline {subsection}{\numberline {0.11.4}Summary of Influence Statistics}{67}
+\contentsline {section}{\numberline {0.12}Influence analysis}{69}
+\contentsline {section}{\numberline {0.13}Iterative and non-iterative influence analysis}{70}
+\contentsline {subsection}{\numberline {0.13.1}Iterative Influence Analysis}{70}
+\contentsline {section}{\numberline {0.14}Influence analysis}{71}
+\contentsline {subsection}{\numberline {0.14.1}Cook's 1986 paper on Local Influence}{71}
+\contentsline {subsection}{\numberline {0.14.2}Overall Influence}{71}
+\contentsline {subsection}{\numberline {0.14.3}Quantifying Influence}{76}
+\contentsline {section}{\numberline {0.15}Measures 2}{77}
+\contentsline {subsection}{\numberline {0.15.1}Cook's Distance}{77}
+\contentsline {subsection}{\numberline {0.15.2}Variance Ratio}{77}
+\contentsline {subsection}{\numberline {0.15.3}Variance Ratio}{77}
+\contentsline {subsection}{\numberline {0.15.4}Cook-Weisberg statistic}{77}
+\contentsline {subsection}{\numberline {0.15.5}Andrews-Pregibon statistic}{77}
+\contentsline {section}{\numberline {0.16}Measures 2}{78}
+\contentsline {subsection}{\numberline {0.16.1}Cook's Distance}{78}
+\contentsline {section}{\numberline {0.17}Zewotir Measures of Influence in LME Models}{78}
+\contentsline {subsubsection}{Random Effects}{79}
+\contentsline {subsubsection}{linear functions}{79}
+\contentsline {subsection}{\numberline {0.17.1}Information Ratio}{79}
+\contentsline {section}{\numberline {0.18}Computation and Notation }{80}
+\contentsline {section}{\numberline {0.19}Measures of Influence}{80}
+\contentsline {subsection}{\numberline {0.19.1}DFFITS}{80}
+\contentsline {subsection}{\numberline {0.19.2}Influence Statistics for LME models}{80}
+\contentsline {section}{\numberline {0.20}Measures of Influence}{81}
+\contentsline {subsection}{\numberline {0.20.1}DFBETA}{81}
+\contentsline {subsection}{\numberline {0.20.2}DFFITS}{81}
+\contentsline {subsection}{\numberline {0.20.3}PRESS}{82}
+\contentsline {subsection}{\numberline {0.20.4}DFBETA}{82}
+\contentsline {subsection}{\numberline {0.20.5}Influential Observations : DFBeta and DFBetas}{82}
 \contentsline {section}{\numberline {0.21}Iterative and non-iterative influence analysis}{2}
 \contentsline {subsection}{\numberline {0.21.1}Iterative Influence Analysis}{2}
 \contentsline {section}{\numberline {0.22}Efficient Updating Theorem}{2}
@@ -265,6 +265,6 @@
 \contentsline {subsection}{\numberline {3.30.5}Leverage in LME models}{78}
 \contentsline {section}{\numberline {3.31}Case Deletion Diagnostics for LME models}{79}
 \contentsline {section}{\numberline {3.32}Haslett's Analysis}{81}
-\contentsline {subsection}{\numberline {3.32.1}Residual Diagnostics in LME models}{81}
-\contentsline {section}{\numberline {3.33}Case Deletion Diagnostics for LME models}{82}
-\contentsline {section}{\numberline {3.34}Turkan's LMEs}{83}
+\contentsline {subsection}{\numberline {3.32.1}Residual Diagnostics in LME models}{83}
+\contentsline {section}{\numberline {3.33}Case Deletion Diagnostics for LME models}{84}
+\contentsline {section}{\numberline {3.34}Turkan's LMEs}{85}
