@@ -69,6 +69,58 @@
 %1.14 Matrix Notation of Case Deletion
 %1.15 CPJ's Three Propositions
 %1.16 Other measures of Influence
+
+%===========================================================================%
+
+
+In statistical modelling, the process of model validation is a critical step, but also a step that is too often overlooked. A very simple procedure is to remark upon commonly encountered
+metrics, such as the $R^2$ value. However, using a small handful of simple measures and methods is insufficient to properly assess the quality of a fitted model. To do so properly, a full and comprehensive
+analysis that tests of all of the assumptions, as far as possible, must be carried out.
+
+Residual analysis is a widely used model validation technique. A residual is simply the difference between an observed value and the corresponding fitted value, as predicted by the model. The rationale is that, if the model is properly fitted to the model, then the residuals would approximate the random errors that one should expect.
+that is to say, if the residuals behave randomly, with no discernible trend, the model has fitted the data well. If some sort of non-random trend is evident in the model, then the model can be considered to be poorly fitted.
+Statistical software environments, such as the \texttt{R} Programming language, provides a suite of tests and graphical procedure sfor appraising a fitted linear model, with several 
+of these procedures analysing the model residuals.
+
+Other considerations in model fitting must also be addressed. The question of whether or not a point should be considered an outlier. An Outlier is an observation whose true value is unusual given its value on the predictor variables.
+The question of leverage must also be addressed. Leverage describes an observation with an extreme value on a predictor variable is a
+point with high leverage. Leverage is a measure of how far an independent variable deviates from its mean. High leverage points can have a great
+amount of effect on the estimate of regression coefficients.
+
+Infl
+uence can be thought of as the product of leverage and outlierness.
+An observation is said to be in
+fluential if removing the observation substantially changes the estimate of the regression coefficients.
+
+The R programming language has a variety of methods used to study each of the aspects for a linear model.
+
+
+\subsection*{Cook's distance}
+In the study of Linear Model Diagnostics, Cook proposed a measure that combines the information of leverage and residual of the observation, now known simply as the Cook's Distance.
+\citet{CPJ92} have adapted this measure for the analysis of LME models.
+
+
+%--------------------------------------%
+
+\subsection*{Assumption of Normality}
+
+As with fitted models, the assumption of normality of residuals and homogeneity of variance is applicable to LMEs also. 
+
+%--------------------------------------%
+
+
+Homoscedascity is the technical term to describe the variance of the
+residuals being constant across the range of predicted values.
+Heteroscedascity is the converse scenario : the variance differs along
+the range of values.
+
+%--------------------------------------%
+%% Extension of Diagnostic Methods
+
+while Linear Models and GLMS can be studied with a wide range of diagnsotc technqiues, the choice of methodology is much more restricted for the case of LMEs.
+
+\citet{demidenk} extend several regression diagnostic techniques commonly used in linear regression, such as leverage, infinitesimal influence, case deletion diagnostics, Cook's distance, and local influence to the linear mixed-effects model. In each case, the proposed new measure has a direct interpretation in terms of the effects on a parameter of interest, and collapses to the familiar linear regression measure when there are no random effects. The new measures are explicitly defined functions and do not necessitate re-estimation of the model, especially for cluster deletion diagnostics. The basis for both the cluster deletion diagnostics and Cook's distance is a generalization of Miller's simple update formula for case deletion for linear models. Pregibon's infinitesimal case deletion diagnostics is adapted to the linear mixed-effects model. 
+A simple compact matrix formula is derived to assess the local influence of the fixed-effects regression coefficients. 
 %---------------------------------------------------------------------------%
 \newpage
 \section{Covariance Parameters} %1.5
