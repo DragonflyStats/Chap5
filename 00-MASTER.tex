@@ -3,6 +3,7 @@
 \usepackage{subfigure}
 %\usepackage{amscd}
 \usepackage{amssymb}
+\usepackage{subfiles}
 \usepackage{amsbsy}
 \usepackage{amsthm}
 %\usepackage[dvips]{graphicx}
@@ -120,142 +121,25 @@ while Linear Models and GLMS can be studied with a wide range of diagnsotc techn
 A simple compact matrix formula is derived to assess the local influence of the fixed-effects regression coefficients. 
 %---------------------------------------------------------------------------%
 \newpage
-\section{Measures of Influence} %1.16
-
-The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
-
-Influence arises at two stages of the LME model. Firstly when $V$ is estimated by $\hat{V}$, and subsequent
-estimations of the fixed and random regression coefficients $\beta$ and $u$, given $\hat{V}$.
-
-
-\subsection{DFFITS} %1.16.1
-DFFITS is a statistical measured designed to a show how influential an observation is in a statistical model. It is closely related to the studentized residual.
-\begin{displaymath} DFFITS = {\widehat{y_i} -
-		\widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} \end{displaymath}
-
-
-\subsection{PRESS} %1.16.2
-The prediction residual sum of squares (PRESS) is an value associated with this calculation. When fitting linear models, PRESS can be used as a criterion for model selection, with smaller values indicating better model fits.
-\begin{equation}
-	PRESS = \sum(y-y^{(k)})^2
-\end{equation}
-
-
-\begin{itemize}
-	\item $e_{-Q} = y_{Q} - x_{Q}\hat{\beta}^{-Q}$
-	\item $PRESS_{(U)} = y_{i} - x\hat{\beta}_{(U)}$
-\end{itemize}
-
-\subsection{DFBETA} %1.16.3
-\begin{eqnarray}
-	DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
-	&=& B(Y-Y_{\bar{a}}
-\end{eqnarray}
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-
-
 \newpage
-\section{Covariance Parameters} %1.5
-The unknown variance elements are referred to as the covariance parameters and collected in the vector $\theta$.
-% - where is this coming from?
-% - where is it used again?
-% - Has this got anything to do with CovTrace etc?
-%---------------------------------------------------------------------------%
-\newpage
-\subsection{Case Deletion Diagnostics}
+\section{Case Deletion Diagnostics}
 
-Since the pioneering work of Cook in 1977, deletion measures have been applied to many statistical models for identifying influential observations.
+Since the pioneering work of Cook in 1977, deletion measures have been applied to many statistical models for identifying influential observations. Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
 
-Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
+The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the $i-$th observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. However, this is rarely a reasonable assumption.
 
-The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
-
-
-
-%--------------------------------------------------------------------------%
-\newpage
-\section{Terminology for Case Deletion diagnostics} %1.8
+%\subsection{Terminology for Case Deletion diagnostics} %1.8
 
 \citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
-'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
-\subsection{Cook's Distance}%1.19.1 
-Cooks Distance ($D_{i}$) is an overall measure of the combined impact of the $i$th case of all estimated regression coefficients. It uses the same structure for measuring the combined impact of the differences in the estimated regression coefficients when the $k$th case is deleted. $D_{(k)}$ can be calculated without fitting
-a new regression coefficient each time an observation is deleted.
-
-
-\citet{cook77} greatly expanded the study of residuals and influence measures. Cook's key observation was the effects of deleting each observation in turn could be computed without undue additional computational expense. Consequently deletion diagnostics have become an integral part of assessing linear models.
-
-\index{Cook's distance}Cook's Distance is a well known diagnostic technique used in classical linear models, extended to LME models.  For LME models, two formulations exist; a \index{Cook's distance}Cook's distance that examines the change in fixed fixed parameter estimates, and another that examines the change in random effects parameter estimates. The outcome of either Cook's distance is a scaled change in either $\beta$ or $\theta$.
-
-\subsection{Cooks's Distance}%1.9.2
-\index{Cook's distance} Cook's $D$ statistics (i.e. colloquially Cook's Distance) is a measure of the influence of observations in subset $U$ on a vector of parameter estimates \citep{cook77}.
-
-\[ \delta_{(U)} = \hat{\beta} - \hat{\beta}_{(U)}\]
-
-If V is known, Cook's D can be calibrated according to a chi-square distribution with degrees of freedom equal to the rank of $\boldsymbol{X}$ \citep{cpj92}.
-
-
-\subsection{Cook's Distance}%1.9.3
-\index{Cook's Distance}
-In classical linear regression, a commonly used meausre of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
-
-For linear mixed effects models, Cook's distance can be extended to model influence diagnostics by definining.
-
-\[ C_{\beta i} = {(\hat{\beta} - \hat{\beta}_{[i]})^{T}(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}) (\hat{\beta} - \hat{\beta}_{[i]}) \over p}\]
-
-It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
+'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as `\textit{cluster-deletion}' diagnostics.
 
 
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Cook's Distance} %1.9
-
-\subsection{Cook's Distance}%1.19.1 
-Cooks Distance ($D_{i}$) is an overall measure of the combined impact of the $i$th case of all estimated regression coefficients. It uses the same structure for measuring the combined impact of the differences in the estimated regression coefficients when the $k$th case is deleted. $D_{(k)}$ can be calculated without fitting
-a new regression coefficient each time an observation is deleted.
+\subfile{CooksDistance.tex}
+\subfile{InfluenceforLMEs.tex}
 
 
-\citet{cook77} greatly expanded the study of residuals and influence measures. Cook's key observation was the effects of deleting each observation in turn could be computed without undue additional computational expense. Consequently deletion diagnostics have become an integral part of assessing linear models.
-
-\index{Cook's distance}Cook's Distance is a well known diagnostic technique used in classical linear models, extended to LME models.  For LME models, two formulations exist; a \index{Cook's distance}Cook's distance that examines the change in fixed fixed parameter estimates, and another that examines the change in random effects parameter estimates. The outcome of either Cook's distance is a scaled change in either $\beta$ or $\theta$.
-
-\subsection{Cooks's Distance}%1.9.2
-\index{Cook's distance} Cook's $D$ statistics (i.e. colloquially Cook's Distance) is a measure of the influence of observations in subset $U$ on a vector of parameter estimates \citep{cook77}.
-
-\[ \delta_{(U)} = \hat{\beta} - \hat{\beta}_{(U)}\]
-
-If $V$ is known, Cook's D can be calibrated according to a chi-square distribution with degrees of freedom equal to the rank of $\boldsymbol{X}$ \citep{cpj92}.
-
-
-\subsection{Cook's Distance}%1.9.3
-\index{Cook's Distance}
-In classical linear regression, a commonly used meausre of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
-
-For linear mixed effects models, Cook's distance can be extended to model influence diagnostics by definining.
-
-\[ C_{\beta i} = {(\hat{\beta} - \hat{\beta}_{[i]})^{T}(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}) (\hat{\beta} - \hat{\beta}_{[i]}) \over p}\]
-
-It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
-
-
-\section{Effects on fitted and predicted values}
-\begin{equation}
-	\hat{e_{i}}_{(U)} = y_{i} - x\hat{\beta}_{(U)}
-\end{equation}
-
-\subsection{Methods and Measures}
-The key to making deletion diagnostics useable is the development of efficient computational formulas, allowing one to obtain the \index{case deletion diagnostics} case deletion diagnostics by making use of basic building blocks, computed only once for the full model.
-
-\citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
-	\item Cook's distance for LME models,
-	\item \index{likelihood distance} likelihood distance,
-	\item the variance (information) ration,
-	\item the \index{Cook-Weisberg statistic} Cook-Weisberg statistic,
-	\item the \index{Andrews-Prebigon statistic} Andrews-Prebigon statistic.
-\end{itemize}
 %========================================================================================== %
 \section{Case Deletion Diagnostics for LME models} %1.6
 
@@ -269,55 +153,23 @@ The key to making deletion diagnostics useable is the development of efficient c
 Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
 
 
+\subsection{Methods and Measures}
+The key to making deletion diagnostics useable is the development of efficient computational formulas, allowing one to obtain the \index{case deletion diagnostics} case deletion diagnostics by making use of basic building blocks, computed only once for the full model.
+
+\citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
+	\item Cook's distance for LME models,
+	\item \index{likelihood distance} likelihood distance,
+	\item the variance (information) ration,
+	\item the \index{Cook-Weisberg statistic} Cook-Weisberg statistic,
+	\item the \index{Andrews-Prebigon statistic} Andrews-Prebigon statistic.
+\end{itemize}
 
 
 
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Influence analysis for LME Models} %1.7
-
-Likelihood based estimation methods, such as ML and REML, are sensitive to unusual observations. Influence diagnostics are formal techniques that assess the influence of observations on parameter estimates for $\beta$ and $\theta$. A common technique is to refit the model with an observation or group of observations omitted.
-
-\citet{west} examines a group of methods that examine various aspects of influence diagnostics for LME models.
-For overall influence, the most common approaches are the `likelihood distance' and the `restricted likelihood distance'.
-
-\subsection{Cook's 1986 paper on Local Influence}%1.7.1
-Cook 1986 introduced methods for local influence assessment. These methods provide a powerful tool for examining perturbations in the assumption of a model, particularly the effects of local perturbations of parameters of observations.
-
-The local-influence approach to influence assessment is quite different from the case deletion approach, comparisons are of interest.
 
 
-
-\subsection{Overall Influence}
-An overall influence statistic measures the change in the objective function being minimized. For example, in
-OLS regression, the residual sums of squares serves that purpose. In linear mixed models fit by
-\index{maximum likelihood} maximum likelihood (ML) or \index{restricted maximum likelihood} restricted maximum likelihood (REML), an overall influence measure is the \index{likelihood distance} likelihood distance [Cook and Weisberg ].
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Cook's Distance for LMEs} %1.10
-Diagnostic methods for fixed effects are generally analogues of methods used in classical linear models.
-Diagnostic methods for variance components are based on `one-step' methods. \citet{cook86} gives a completely general method for assessing the influence of local departures from assumptions in statistical models.
-
-For fixed effects parameter estimates in LME models, the \index{Cook's distance} Cook's distance can be extended to measure influence on these fixed effects.
-
-\[
-\mbox{CD}_{i}(\beta) = \frac{(c_{ii} - r_{ii}) \times t^2_{i}}{r_{ii} \times p}
-\]
-
-For random effect estimates, the \index{Cook's distance} Cook's distance is
-
-\[
-\mbox{CD}_{i}(b) = g{\prime}_{(i)} (I_{r} + \mbox{var}(\hat{b})D)^{-2}\mbox{var}(\hat{b})g_{(i)}.
-\]
-Large values for Cook's distance indicate observations for special attention.
-
-\subsection{Change in the precision of estimates}
-
-The effect on the precision of estimates is separate from the effect on the point estimates. Data points that
-have a small \index{Cook's distance}Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
 
 
 
@@ -387,22 +239,6 @@ Without loss of generality, matrices can be partitioned as if the $i-$th omitted
 \item likelihood function
 \end{itemize}
 
-\subsection{Cook's Distance for LMEs}
-\begin{itemize}
-\item For variance components $\gamma$: $CD(\gamma)_i$,
-\item For fixed effect parameters $\beta$: $CD(\beta)_i$,
-\item For random effect parameters $\boldsymbol{u}$: $CD(u)_i$,
-\item For linear functions of $\hat{beta}$: $CD(\psi)_i$
-\end{itemize}
-
-\newpage
-\subsubsection{Random Effects}
-
-A large value for $CD(u)_i$ indicates that the $i-$th observation is influential in predicting random effects.
-
-\subsubsection{linear functions}
-
-$CD(\psi)_i$ does not have to be calculated unless $CD(\beta)_i$ is large.
 
 
 \subsection{Information Ratio}
@@ -461,72 +297,6 @@ the fixed effects estimate of deleting each observation in turn could be cheaply
 % ---   \subsection{H-Likelihood}
 %-------------------------------------------------------------------------------------------------Chapter 4------------------------%
 %-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-
-The general idea of quantifying the influence of one or more observations relies on computing parameter estimates based on all data points, removing the cases in question from the data, refitting the model, and computing statistics based on the change between full-data and reduced-data estimation. 
-
-
-
-\subsection{Influence Analysis for LME Models} %1.1.3
-The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
-
-Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
-Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
-Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
-
-\subsection{Influence Statistics for LME models} %1.1.4
-Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
-\begin{itemize}
-	\item overall measures compare changes in objective functions: (restricted) likelihood distance (Cook and Weisberg 1982, Ch. 5.2)
-	\item influence on parameter estimates: Cook's  (Cook 1977, 1979), MDFFITS (Belsley, Kuh, and Welsch 1980, p. 32)
-	\item influence on precision of estimates: CovRatio and CovTrace
-	\item influence on fitted and predicted values: PRESS residual, PRESS statistic (Allen 1974), DFFITS (Belsley, Kuh, and Welsch 1980, p. 15)
-	\item outlier properties: internally and externally studentized residuals, leverage
-\end{itemize}
-%---------------------------------------------------------------------------%
-
-
-\subsection{What is Influence} %1.1.5
-
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-%-------%
-\subsection{Quantifying Influence}  %1.1.6
-
-The basic procedure for quantifying influence is simple as follows:
-
-\begin{itemize}
-	\item Fit the model to the data and obtain estimates of all parameters.
-	\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-	\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
-\end{itemize}
-
-\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Extension of techniques to LME Models} %1.2
-
-Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-
-Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-
-While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-
-If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-
-\begin{itemize}
-	\item the estimates of fixed effects,
-	\item the estimates of the precision of the fixed effects,
-	\item the estimates of the covariance parameters,
-	\item the estimates of the precision of the covariance parameters,
-	\item fitted and predicted values.
-\end{itemize}
-
 
 
 
@@ -666,6 +436,309 @@ D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
 \end{table}
 
 
+\chapter{Model Diagnostics}
+%---------------------------------------------------------------------------%
+%1.1 Introduction to Influence Analysis
+%1.2 Extension of techniques to LME Models
+%1.3 Residual Diagnostics
+%1.4 Standardized and studentized residuals
+%1.5 Covariance Parameters
+%1.6 Case Deletion Diagnostics
+%1.7 Influence Analysis
+%1.8 Terminology for Case Deletion
+%1.9 Cook's Distance (Classical Case)
+%1.10 Cook's Distance (LME Case)
+%1.11 Likelihood Distance
+%1.12 Other Measures
+%1.13 CPJ Paper
+%1.14 Matrix Notation of Case Deletion
+%1.15 CPJ's Three Propositions
+%1.16 Other measures of Influence
+
+%-------------------------------------------------------------------------------------------------------------------------------------%
+\section{Zewotir Measures of Influence in LME Models}%2.2
+%Zewotir page 161
+\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
+\begin{itemize}
+	\item Variance components
+	\item Fixed effects parameters
+	\item Prediction of the response variable and of random effects
+	\item likelihood function
+\end{itemize}
+
+\newpage
+\section{Measures 2} %2.4
+
+\subsection{Cook's Distance} %2.4.1
+\begin{itemize}
+	\item For variance components $\gamma$
+\end{itemize}
+
+Diagnostic tool for variance components
+\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
+
+\subsection{Variance Ratio} %2.4.2
+\begin{itemize}
+	\item For fixed effect parameters $\beta$.
+\end{itemize}
+
+\subsection{Cook-Weisberg statistic} %2.4.3
+\begin{itemize}
+	\item For fixed effect parameters $\beta$.
+\end{itemize}
+
+\subsection{Andrews-Pregibon statistic} %2.4.4
+\begin{itemize}
+	\item For fixed effect parameters $\beta$.
+\end{itemize}
+The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
+The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
+
+
+%---------------------------------------------------------------------------%
+% - 1. Model Diagnostics
+% - 2. Zewotir's paper (including Haslett)
+% - 3. Augmented GLMS
+% - 4. Applying Diagnostics to MCS
+% - 5. Extra Material
+%---------------------------------------------------------------------------%
+
+%---------------------------------------------------------------------------%
+
+
+%---------------------------------------------------------------------------%
+\newpage
+\section{Residual diagnostics} %1.3
+For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
+
+
+
+%--Marginal and Conditional Residuals
+
+\subsection{Residuals diagnostics in mixed models}
+
+%schabenberger
+The marginal and conditional means in the linear mixed model are
+$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
+$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
+
+A residual is the difference between an observed quantity and its estimated or predicted value. In the mixed
+model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
+
+
+\subsection{Marginal and Conditional Residuals}
+
+A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
+A conditional residual is the difference between the observed data and the predicted value of the observation,
+$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
+
+In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
+
+\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
+
+However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
+
+%1.5
+%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
+
+
+
+
+
+
+
+
+
+
+
+
+\chapter{Application to Method Comparison Studies} % Chapter 4
+
+
+
+
+%---------------------------------------------------------------------------%
+% - 1. Application to MCS
+% - 2. Grubbs' Data
+% - 3. R implementation
+% - 4. Influence measures using R
+%---------------------------------------------------------------------------%
+
+
+\section{Application to MCS} %4.1
+
+
+Let $\hat{\beta}$ denote the least square estimate of $\beta$
+based upon the full set of observations, and let
+$\hat{\beta}^{(k)}$ denoted the estimate with the $k^{th}$ case
+excluded.
+
+
+
+
+\section{Grubbs' Data} %4.2
+
+
+For the Grubbs data the $\hat{\beta}$ estimated are
+$\hat{\beta}_{0}$ and $\hat{\beta}_{1}$ respectively. Leaving the
+fourth case out, i.e. $k=4$ the corresponding estimates are
+$\hat{\beta}_{0}^{-4}$ and $\hat{\beta}_{1}^{-4}$
+
+
+
+
+\begin{equation}
+	Y^{-Q} = \hat{\beta}^{-Q}X^{-Q}
+\end{equation}
+
+
+When considering the regression of case-wise differences and averages, we write $D^{-Q} = \hat{\beta}^{-Q}A^{-Q}$
+
+
+
+
+\newpage
+
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{rrrrr}
+			\hline
+			& F & C & D & A \\
+			\hline
+			1 & 793.80 & 794.60 & -0.80 & 794.20 \\
+			2 & 793.10 & 793.90 & -0.80 & 793.50 \\
+			3 & 792.40 & 793.20 & -0.80 & 792.80 \\
+			4 & 794.00 & 794.00 & 0.00 & 794.00 \\
+			5 & 791.40 & 792.20 & -0.80 & 791.80 \\
+			6 & 792.40 & 793.10 & -0.70 & 792.75 \\
+			7 & 791.70 & 792.40 & -0.70 & 792.05 \\
+			8 & 792.30 & 792.80 & -0.50 & 792.55 \\
+			9 & 789.60 & 790.20 & -0.60 & 789.90 \\
+			10 & 794.40 & 795.00 & -0.60 & 794.70 \\
+			11 & 790.90 & 791.60 & -0.70 & 791.25 \\
+			12 & 793.50 & 793.80 & -0.30 & 793.65 \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+
+
+\newpage
+
+
+\begin{equation}
+	Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
+\end{equation}
+
+
+Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
+
+
+When considering the regression of case-wise differences and averages, we write
+
+
+\begin{equation}
+	D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
+\end{equation}
+Let $\hat{\beta}$ denote the least square estimate of $\beta$ based upon the full set of observations, and let $\hat{\beta}^{(k)}$ denoted the estimate with the $k^{th}$ case excluded.
+
+
+For the Grubbs data the $\hat{\beta}$ estimated are $\hat{\beta}_{0}$ and $\hat{\beta}_{1}$ respectively. Leaving the
+fourth case out, i.e. $k=4$ the corresponding estimates are $\hat{\beta}_{0}^{-4}$ and $\hat{\beta}_{1}^{-4}$
+
+
+\begin{equation}
+	Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
+\end{equation}
+
+
+Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
+
+
+\begin{verbatim}
+Call: lm(formula = D ~ A)
+
+
+Coefficients: (Intercept)            A
+-37.51896      0.04656
+
+
+\end{verbatim}
+
+
+
+
+
+
+
+
+When considering the regression of case-wise differences and averages, we write
+
+
+\begin{equation}
+	D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
+\end{equation}
+
+
+
+
+
+
+\subsection{Influence measures using R} %4.4
+\texttt{R} provides the following influence measures of each observation.
+
+
+%Influence measures: This suite of functions can be used to compute
+%some of the regression (leave-one-out deletion) diagnostics for
+%linear and generalized linear models discussed in Belsley, Kuh and
+% Welsch (1980), Cook and Weisberg (1982)
+
+
+
+
+
+
+\begin{table}[ht]
+	\begin{center}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			& dfb.1\_ & dfb.A & dffit & cov.r & cook.d & hat \\
+			\hline
+			1 & 0.42 & -0.42 & -0.56 & 1.13 & 0.15 & 0.18 \\
+			2 & 0.17 & -0.17 & -0.34 & 1.14 & 0.06 & 0.11 \\
+			3 & 0.01 & -0.01 & -0.24 & 1.17 & 0.03 & 0.08 \\
+			4 & -1.08 & 1.08 & 1.57 & 0.24 & 0.56 & 0.16 \\
+			5 & -0.14 & 0.14 & -0.24 & 1.30 & 0.03 & 0.13 \\
+			6 & -0.00 & 0.00 & -0.11 & 1.31 & 0.01 & 0.08 \\
+			7 & -0.04 & 0.04 & -0.08 & 1.37 & 0.00 & 0.11 \\
+			8 & 0.02 & -0.02 & 0.15 & 1.28 & 0.01 & 0.09 \\
+			9 & 0.69 & -0.68 & 0.75 & 2.08 & 0.29 & 0.48 \\
+			10 & 0.18 & -0.18 & -0.22 & 1.63 & 0.03 & 0.27 \\
+			11 & -0.03 & 0.03 & -0.04 & 1.53 & 0.00 & 0.19 \\
+			12 & -0.25 & 0.25 & 0.44 & 1.05 & 0.09 & 0.12 \\
+			\hline
+		\end{tabular}
+	\end{center}
+\end{table}
+
+
+
+
+
+%---------------------------------------------------------------------------%
+\newpage
+\section{Haslett's Analysis} %2.5
+For fixed effect linear models with correlated error structure Haslett (1999) showed that the effects on
+the fixed effects estimate of deleting each observation in turn could be cheaply computed from the fixed effects model predicted residuals.
+
+%-------------------------------------------------------------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------------------------Chapter 3------------------------%
+%-------------------------------------------------------------------------------------------------------------------------------------%
+%-------------------------------------------------------------------------------------------------------------------------------------%
 \printindex
 \bibliographystyle{chicago}
 \bibliography{DB-txfrbib}

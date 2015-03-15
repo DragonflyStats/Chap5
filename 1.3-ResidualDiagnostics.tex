@@ -18,15 +18,6 @@
 %1.15 CPJ's Three Propositions
 %1.16 Other measures of Influence
 
-	%---------------------------------------------------------------------------%
-	\subsection{Influence Analysis for LME Models} %1.1.3
-	The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{Christensen} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
-	
-	
-	Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
-	Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
-	Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
-	
 	
 	
 	\subsection{Influence Analysis for LME Models} %1.1.3
@@ -36,19 +27,12 @@
 	Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
 	Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
 	
-	
-	
-	\subsection{Influence Analysis for LME Models} %1.1.3
-	The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
-	
-	Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
-	Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
-	Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
+
 	
 		\newpage
 		\subsection{Extension of techniques to LME Models} %1.2
 		
-		Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
+		Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models. Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
 		
 		Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
 		
@@ -67,47 +51,6 @@
 		
 		
 		
-	
-	\newpage
-	\subsection{Extension of techniques to LME Models} %1.2
-	
-	Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-	
-	Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-	
-	While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-	
-	If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-	
-	\begin{itemize}
-		\item the estimates of fixed effects,
-		\item the estimates of the precision of the fixed effects,
-		\item the estimates of the covariance parameters,
-		\item the estimates of the precision of the covariance parameters,
-		\item fitted and predicted values.
-	\end{itemize}
-	
-%	
-%	%---------------------------------------------------------------------------%
-%	
-%	\newpage
-%	\subsection{Extension of techniques to LME Models} %1.2
-%	
-%	Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-%	
-%	Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-%	
-%	While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-%	
-%	If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-%	
-%	\begin{itemize}
-%		\item the estimates of fixed effects,
-%		\item the estimates of the precision of the fixed effects,
-%		\item the estimates of the covariance parameters,
-%		\item the estimates of the precision of the covariance parameters,
-%		\item fitted and predicted values.
-%	\end{itemize}
 	
 	
 	%---------------------------------------------------------------------------%
