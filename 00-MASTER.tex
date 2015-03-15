@@ -50,7 +50,7 @@
 %---------------------------------------------------------------------------%
 
 
-\addcontentsline{toc}{section}{Bibliography}
+%\addcontentsline{toc}{section}{Bibliography}
 
 \chapter{Model Diagnostics}
 %---------------------------------------------------------------------------%
@@ -72,8 +72,9 @@
 %1.16 Other measures of Influence
 \tableofcontents
 %===========================================================================%
+\newpage
 
-
+\section{Model Validation using Residual Diagnostics}
 In statistical modelling, the process of model validation is a critical step, but also a step that is too often overlooked. A very simple procedure is to remark upon commonly encountered
 metrics, such as the $R^2$ value. However, using a small handful of simple measures and methods is insufficient to properly assess the quality of a fitted model. To do so properly, a full and comprehensive
 analysis that tests of all of the assumptions, as far as possible, must be carried out.
@@ -83,14 +84,10 @@ that is to say, if the residuals behave randomly, with no discernible trend, the
 Statistical software environments, such as the \texttt{R} Programming language, provides a suite of tests and graphical procedure sfor appraising a fitted linear model, with several 
 of these procedures analysing the model residuals.
 
-Other considerations in model fitting must also be addressed. The question of whether or not a point should be considered an outlier. An Outlier is an observation whose true value is unusual given its value on the predictor variables.
-The question of leverage must also be addressed. Leverage describes an observation with an extreme value on a predictor variable is a
-point with high leverage. Leverage is a measure of how far an independent variable deviates from its mean. High leverage points can have a great
-amount of effect on the estimate of regression coefficients.
+Other considerations in model fitting must also be addressed. The question of whether or not a point should be considered an outlier. An outlier is an observation whose true value is unusual given its value on the predictor variables.
+The question of leverage must also be addressed. Leverage describes an observation with an extreme value on a predictor variable is a point with high leverage. Leverage is a measure of how far an independent variable deviates from its mean. High leverage points can have a great amount of effect on the estimate of regression coefficients.
 
-Influence can be thought of as the product of leverage and outlierness. An observation is said to be influential if removing the observation substantially changes the estimate of the regression coefficients.
-
-The R programming language has a variety of methods used to study each of the aspects for a linear model.
+Influence can be thought of as the product of leverage and outlierness. An observation is said to be influential if removing the observation substantially changes the estimate of the regression coefficients. The R programming language has a variety of methods used to study each of the aspects for a linear model.
 
 
 \subsection*{Cook's distance}
@@ -117,27 +114,26 @@ the range of values.
 
 while Linear Models and GLMS can be studied with a wide range of diagnsotc technqiues, the choice of methodology is much more restricted for the case of LMEs.
 
-\citet{demidenk} extend several regression diagnostic techniques commonly used in linear regression, such as leverage, infinitesimal influence, case deletion diagnostics, Cook's distance, and local influence to the linear mixed-effects model. In each case, the proposed new measure has a direct interpretation in terms of the effects on a parameter of interest, and collapses to the familiar linear regression measure when there are no random effects. The new measures are explicitly defined functions and do not necessitate re-estimation of the model, especially for cluster deletion diagnostics. The basis for both the cluster deletion diagnostics and Cook's distance is a generalization of Miller's simple update formula for case deletion for linear models. Pregibon's infinitesimal case deletion diagnostics is adapted to the linear mixed-effects model. 
+\citet{demidenko} extend several regression diagnostic techniques commonly used in linear regression, such as leverage, infinitesimal influence, case deletion diagnostics, Cook's distance, and local influence to the linear mixed-effects model. In each case, the proposed new measure has a direct interpretation in terms of the effects on a parameter of interest, and collapses to the familiar linear regression measure when there are no random effects. 
+
+The new measures are explicitly defined functions and do not necessitate re-estimation of the model, especially for cluster deletion diagnostics. The basis for both the cluster deletion diagnostics and Cook's distance is a generalization of Miller's simple update formula for case deletion for linear models. Pregibon's infinitesimal case deletion diagnostics is adapted to the linear mixed-effects model. 
 A simple compact matrix formula is derived to assess the local influence of the fixed-effects regression coefficients. 
 %---------------------------------------------------------------------------%
 \newpage
-\newpage
+
+
 \section{Case Deletion Diagnostics}
 
 Since the pioneering work of Cook in 1977, deletion measures have been applied to many statistical models for identifying influential observations. Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
+
+The key to making deletion diagnostics useable is the development of efficient computational formulas, allowing one to obtain the \index{case deletion diagnostics} case deletion diagnostics by making use of basic building blocks, computed only once for the full model.
 
 The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the $i-$th observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. However, this is rarely a reasonable assumption.
 
 %\subsection{Terminology for Case Deletion diagnostics} %1.8
 
 \citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
-'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as `\textit{cluster-deletion}' diagnostics.
-
-
-
-
-\subfile{CooksDistance.tex}
-\subfile{InfluenceforLMEs.tex}
+`\textit{observation-diagnostics}'. For multiple observations, Preisser describes the diagnostics as `\textit{cluster-deletion}' diagnostics.
 
 
 %========================================================================================== %
@@ -153,8 +149,11 @@ The computation of case deletion diagnostics in the classical model is made simp
 Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
 
 
-\subsection{Methods and Measures}
-The key to making deletion diagnostics useable is the development of efficient computational formulas, allowing one to obtain the \index{case deletion diagnostics} case deletion diagnostics by making use of basic building blocks, computed only once for the full model.
+\newpage
+
+\subfile{CooksDistance.tex}
+\subfile{InfluenceforLMEs.tex}
+
 
 \citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
 	\item Cook's distance for LME models,
@@ -166,22 +165,14 @@ The key to making deletion diagnostics useable is the development of efficient c
 
 
 
-
-
-
-
-
-
-
-
 %---------------------------------------------------------------------------%
 \newpage
 \section{Iterative and non-iterative influence analysis} %1.13
 \citet{schabenberger} highlights some of the issue regarding implementing mixed model diagnostics.
 
-A measure of total influence requires updates of all model parameters.
+% A measure of total influence requires updates of all model parameters.
+% however, this doesnt increase the procedures execution time by the same degree.
 
-however, this doesnt increase the procedures execution time by the same degree.
 \subsection{Iterative Influence Analysis}
 
 %----schabenberger page 8
@@ -202,32 +193,21 @@ This can only be achieved in general is by omitting observations, then refitting
 
 For notational simplicity, $\boldsymbol{A}(i)$ denotes an $n \times m$ matrix $\boldsymbol{A}$ with the $i$-th row
 removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes the $(i, j)-$th element of $\boldsymbol{A}$.
+%
+%\subsection{Partitioning Matrices} %1.14.2
+%Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
 
-\subsection{Partitioning Matrices} %1.14.2
-Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
-
-
-
-%-------------------------------------------------------------------------------------------------Chapter 2	------------------------%
 %-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-
-\chapter{Zewotir's Paper}
-
-% 2.1 Efficient Updating Theorem
-% 2.2 Zewotir Measures of Influence in LME Models (section 4 of paper)
-% 2.3 Computation and Notation 
-% 2.4 Measures 2
-%2.5 Haslett Analysis
-
-\section{Efficient Updating Theorem} %2.1
-\citet{Zewotir} describes the basic theorem of efficient updating.
+\section{Zewotir Measures of Influence in LME Models}%2.2
+%Zewotir page 161
+\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
 \begin{itemize}
-\item \[ m_i = {1 \over c_{ii}}\]
-%\item
-%item
-%\item
+	\item Variance components
+	\item Fixed effects parameters
+	\item Prediction of the response variable and of random effects
+	\item likelihood function
 \end{itemize}
+
 %-------------------------------------------------------------------------------------------------------------------------------------%
 \section{Zewotir Measures of Influence in LME Models}%2.2
 %Zewotir page 161
@@ -239,13 +219,6 @@ Without loss of generality, matrices can be partitioned as if the $i-$th omitted
 \item likelihood function
 \end{itemize}
 
-
-
-\subsection{Information Ratio}
-
-
-%--------------------------------------------------------------%
-\newpage
 \section{Computation and Notation } %2.3
 with $\boldsymbol{V}$ unknown, a standard practice for estimating $\boldsymbol{X \beta}$ is the estime the variance components $\sigma^2_j$,
 compute an estimate for $\boldsymbol{V}$ and then compute the projector matrix $A$, $\boldsymbol{X \hat{\beta}}  = \boldsymbol{AY}$.
@@ -392,13 +365,13 @@ Coefficients: (Intercept)            A
 \end{verbatim}
 
 
-
-
-When considering the regression of case-wise differences and averages, we write
-
-\begin{equation}
-D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
-\end{equation}
+%
+%
+%When considering the regression of case-wise differences and averages, we write
+%
+%\begin{equation}
+%D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
+%\end{equation}
 
 
 
@@ -455,16 +428,6 @@ D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
 %1.15 CPJ's Three Propositions
 %1.16 Other measures of Influence
 
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\section{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-	\item Variance components
-	\item Fixed effects parameters
-	\item Prediction of the response variable and of random effects
-	\item likelihood function
-\end{itemize}
 
 \newpage
 \section{Measures 2} %2.4
@@ -675,13 +638,14 @@ Coefficients: (Intercept)            A
 
 
 
-When considering the regression of case-wise differences and averages, we write
+%When considering the regression of case-wise differences and averages, we write
+%
+%
+%\begin{equation}
+%	D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
+%\end{equation}
 
-
-\begin{equation}
-	D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
-\end{equation}
-
+\newpage
 
 
 
