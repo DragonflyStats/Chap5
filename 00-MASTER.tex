@@ -75,7 +75,7 @@
 \newpage
 
 \section{Model Validation using Residual Diagnostics}
-In statistical modelling, the process of model validation is a critical step, but also a step that is too often overlooked. A very simple procedure is to remark upon commonly encountered
+In statistical modelling, the process of model validation is a critical step, but also a step that is too often overlooked. A very simple procedure is to examine commonly encountered
 metrics, such as the $R^2$ value. However, using a small handful of simple measures and methods is insufficient to properly assess the quality of a fitted model. To do so properly, a full and comprehensive
 analysis that tests of all of the assumptions, as far as possible, must be carried out.
 
@@ -84,43 +84,15 @@ that is to say, if the residuals behave randomly, with no discernible trend, the
 Statistical software environments, such as the \texttt{R} Programming language, provides a suite of tests and graphical procedure sfor appraising a fitted linear model, with several 
 of these procedures analysing the model residuals.
 
-Other considerations in model fitting must also be addressed. The question of whether or not a point should be considered an outlier. An outlier is an observation whose true value is unusual given its value on the predictor variables.
-The question of leverage must also be addressed. Leverage describes an observation with an extreme value on a predictor variable is a point with high leverage. Leverage is a measure of how far an independent variable deviates from its mean. High leverage points can have a great amount of effect on the estimate of regression coefficients.
+The question of whether or not a point should be considered an outlier must also be addressed. An outlier is an observation whose true value is unusual given its value on the predictor variables. The leverage of an observation is a further consideration. Leverage describes an observation with an extreme value on a predictor variable is a point with high leverage. High leverage points can have a great amount of effect on the estimate of regression coefficients.
+% - Leverage is a measure of how far an independent variable deviates from its mean.
 
-Influence can be thought of as the product of leverage and outlierness. An observation is said to be influential if removing the observation substantially changes the estimate of the regression coefficients. The R programming language has a variety of methods used to study each of the aspects for a linear model.
+Influence can be thought of as the product of leverage and outlierness. An observation is said to be influential if removing the observation substantially changes the estimate of the regression coefficients. The \texttt{R} programming language has a variety of methods used to study each of the aspects for a linear model. While linear Models and GLMS can be studied with a wide range of well-established diagnostic technqiues, the choice of methodology is much more restricted for the case of LMEs.
 
-
-\subsection*{Cook's distance}
-In the study of Linear Model Diagnostics, Cook proposed a measure that combines the information of leverage and residual of the observation, now known simply as the Cook's Distance.
-\citet{CPJ92} have adapted this measure for the analysis of LME models.
-
-
-%--------------------------------------%
-
-\subsection*{Assumption of Normality}
-
-As with fitted models, the assumption of normality of residuals and homogeneity of variance is applicable to LMEs also. 
-
-%--------------------------------------%
-
-
-Homoscedascity is the technical term to describe the variance of the
-residuals being constant across the range of predicted values.
-Heteroscedascity is the converse scenario : the variance differs along
-the range of values.
-
-%--------------------------------------%
-%% Extension of Diagnostic Methods
-
-while Linear Models and GLMS can be studied with a wide range of diagnsotc technqiues, the choice of methodology is much more restricted for the case of LMEs.
-
-\citet{demidenko} extend several regression diagnostic techniques commonly used in linear regression, such as leverage, infinitesimal influence, case deletion diagnostics, Cook's distance, and local influence to the linear mixed-effects model. In each case, the proposed new measure has a direct interpretation in terms of the effects on a parameter of interest, and collapses to the familiar linear regression measure when there are no random effects. 
-
-The new measures are explicitly defined functions and do not necessitate re-estimation of the model, especially for cluster deletion diagnostics. The basis for both the cluster deletion diagnostics and Cook's distance is a generalization of Miller's simple update formula for case deletion for linear models. Pregibon's infinitesimal case deletion diagnostics is adapted to the linear mixed-effects model. 
-A simple compact matrix formula is derived to assess the local influence of the fixed-effects regression coefficients. 
 %---------------------------------------------------------------------------%
-\newpage
-
+%\newpage
+%\section{Residual diagnostics} %1.3
+For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
 
 \section{Case Deletion Diagnostics}
 
@@ -135,25 +107,51 @@ The computation of case deletion diagnostics in the classical model is made simp
 \citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
 `\textit{observation-diagnostics}'. For multiple observations, Preisser describes the diagnostics as `\textit{cluster-deletion}' diagnostics.
 
+%--------------------------------------%
+\subsection{Extension of Diagnostic Methods to LME models}
+
+\citet{Christiansen} noted the case deletion diagnostics techniques have not been applied to linear mixed effects models and seeks to develop methodologies in that respect. \citet{Christiansen} develops these techniques in the context of REML.
+
+\citet{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components. Deletion diagnostics provide a means of assessing the influence of an observation (or groups of observations) on inference on the estimated parameters of LME models. We shall provide a fuller discussion of Cook's Distance in due course.
+
+
+\citet{Demi} extends several regression diagnostic techniques commonly used in linear regression, such as leverage, infinitesimal influence, case deletion diagnostics, Cook's distance, and local influence to the linear mixed-effects model. In each case, the proposed new measure has a direct interpretation in terms of the effects on a parameter of interest, and reduces to the familiar linear regression measure when there are no random effects. 
+
+The new measures that are proposed by \citet{Demi} are explicitly defined functions and do not require re-estimation of the model, especially for cluster deletion diagnostics. The basis for both the cluster deletion diagnostics and Cook's distance is a generalization of Miller's simple update formula for case deletion for linear models. Furthermore \citet{Demi} shows how Pregibon's infinitesimal case deletion diagnostics is adapted to the linear mixed-effects model. 
+%A simple compact matrix formula is derived to assess the local influence of the fixed-effects regression coefficients. 
+%---------------------------------------------------------------------------%
 
 %========================================================================================== %
 \section{Case Deletion Diagnostics for LME models} %1.6
-
-\citet{Christiansen} notes the case deletion diagnostics techniques have not been applied to linear mixed effects models and seeks to develop methodologies in that respect.
-
-\citet{Christiansen} develops these techniques in the context of REML.
-
-\citet{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components. Deletion diagnostics provide a means of assessing the influence of an observation (or groups of observations) on inference on the estimated parameters of LME models.
-
 
 Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
 
 
 \newpage
 
+\subsection*{Cook's distance}
+In the study of Linear Model Diagnostics, Cook proposed a measure that combines the information of leverage and residual of the observation, now known simply as the Cook's Distance. \citet{CPJ92} have adapted this measure for the analysis of LME models.
+
 \subfile{CooksDistance.tex}
 \subfile{InfluenceforLMEs.tex}
+% \subfile{ApplicationsToMCS.tex}  - Not Ready
+% \subfile{SideNotes.tex} - Pregibon etc
+% \subfile{HaslettHayes.tex} - Build this up 
+\subfile{LikelihoodDistances.tex}
+\section{Analyzing Influence in LME models}
 
+
+
+%-------------------------------------------------------------------------------------------------------------------------------------%
+\section{Zewotir Measures of Influence in LME Models}%2.2
+%Zewotir page 161
+\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
+\begin{itemize}
+	\item Variance components
+	\item Fixed effects parameters
+	\item Prediction of the response variable and of random effects
+	\item likelihood function
+\end{itemize}
 
 \citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
 	\item Cook's distance for LME models,
@@ -197,69 +195,7 @@ removed, $a_i$ denotes the $i$-th row of $\boldsymbol{A}$, and $a_{ij}$ denotes 
 %\subsection{Partitioning Matrices} %1.14.2
 %Without loss of generality, matrices can be partitioned as if the $i-$th omitted observation is the first row; i.e. $i=1$.
 
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\section{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-	\item Variance components
-	\item Fixed effects parameters
-	\item Prediction of the response variable and of random effects
-	\item likelihood function
-\end{itemize}
 
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\section{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-\item Variance components
-\item Fixed effects parameters
-\item Prediction of the response variable and of random effects
-\item likelihood function
-\end{itemize}
-
-\section{Computation and Notation } %2.3
-with $\boldsymbol{V}$ unknown, a standard practice for estimating $\boldsymbol{X \beta}$ is the estime the variance components $\sigma^2_j$,
-compute an estimate for $\boldsymbol{V}$ and then compute the projector matrix $A$, $\boldsymbol{X \hat{\beta}}  = \boldsymbol{AY}$.
-
-
-\citet{Zewotir} remarks that $\boldsymbol{D}$ is a block diagonal with the $i-$th block being $u \boldsymbol{I}$
-%--------------------------------------------------------------%
-\newpage
-\section{Measures 2} %2.4
-
-\subsection{Cook's Distance} %2.4.1
-\begin{itemize}
-\item For variance components $\gamma$
-\end{itemize}
-
-Diagnostic tool for variance components
-\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
-
-\subsection{Variance Ratio} %2.4.2
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Cook-Weisberg statistic} %2.4.3
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Andrews-Pregibon statistic} %2.4.4
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Haslett's Analysis} %2.5
-For fixed effect linear models with correlated error structure Haslett (1999) showed that the effects on
-the fixed effects estimate of deleting each observation in turn could be cheaply computed from the fixed effects model predicted residuals.
 
 %-------------------------------------------------------------------------------------------------------------------------------------%
 %-------------------------------------------------------------------------------------------------Chapter 3------------------------%
@@ -268,146 +204,6 @@ the fixed effects estimate of deleting each observation in turn could be cheaply
 
 % --- \subsection{Importance-Weighted Least-Squares (IWLS)}  %3.3
 % ---   \subsection{H-Likelihood}
-%-------------------------------------------------------------------------------------------------Chapter 4------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-
-
-
-\chapter{Application to Method Comparison Studies} % Chapter 4
-
-
-%---------------------------------------------------------------------------%
-% - 1. Application to MCS
-% - 2. Grubbs' Data
-% - 3. R implementation
-% - 4. Influence measures using R
-%---------------------------------------------------------------------------%
-
-\section{Application to MCS} %4.1
-
-Let $\hat{\beta}$ denote the least square estimate of $\beta$
-based upon the full set of observations, and let
-$\hat{\beta}^{(k)}$ denoted the estimate with the $k^{th}$ case
-excluded.
-
-
-\section{Grubbs' Data} %4.2
-
-For the Grubbs data the $\hat{\beta}$ estimated are
-$\hat{\beta}_{0}$ and $\hat{\beta}_{1}$ respectively. Leaving the
-fourth case out, i.e. $k=4$ the corresponding estimates are
-$\hat{\beta}_{0}^{-4}$ and $\hat{\beta}_{1}^{-4}$
-
-
-\begin{equation}
-Y^{-Q} = \hat{\beta}^{-Q}X^{-Q}
-\end{equation}
-
-When considering the regression of case-wise differences and averages, we write $D^{-Q} = \hat{\beta}^{-Q}A^{-Q}$
-
-
-\newpage
-
-\begin{table}[ht]
-\begin{center}
-\begin{tabular}{rrrrr}
-  \hline
- & F & C & D & A \\
-  \hline
-1 & 793.80 & 794.60 & -0.80 & 794.20 \\
-  2 & 793.10 & 793.90 & -0.80 & 793.50 \\
-  3 & 792.40 & 793.20 & -0.80 & 792.80 \\
-  4 & 794.00 & 794.00 & 0.00 & 794.00 \\
-  5 & 791.40 & 792.20 & -0.80 & 791.80 \\
-  6 & 792.40 & 793.10 & -0.70 & 792.75 \\
-  7 & 791.70 & 792.40 & -0.70 & 792.05 \\
-  8 & 792.30 & 792.80 & -0.50 & 792.55 \\
-  9 & 789.60 & 790.20 & -0.60 & 789.90 \\
-  10 & 794.40 & 795.00 & -0.60 & 794.70 \\
-  11 & 790.90 & 791.60 & -0.70 & 791.25 \\
-  12 & 793.50 & 793.80 & -0.30 & 793.65 \\
-   \hline
-\end{tabular}
-\end{center}
-\end{table}
-
-
-\newpage
-
-\begin{equation}
-Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
-\end{equation}
-
-Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
-
-When considering the regression of case-wise differences and averages, we write
-
-\begin{equation}
-D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
-\end{equation}
-Let $\hat{\beta}$ denote the least square estimate of $\beta$ based upon the full set of observations, and let $\hat{\beta}^{(k)}$ denoted the estimate with the $k^{th}$ case excluded.
-
-For the Grubbs data the $\hat{\beta}$ estimated are $\hat{\beta}_{0}$ and $\hat{\beta}_{1}$ respectively. Leaving the
-fourth case out, i.e. $k=4$ the corresponding estimates are $\hat{\beta}_{0}^{-4}$ and $\hat{\beta}_{1}^{-4}$
-
-\begin{equation}
-Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
-\end{equation}
-
-Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
-
-\begin{verbatim}
-Call: lm(formula = D ~ A)
-
-Coefficients: (Intercept)            A
-  -37.51896      0.04656
-
-\end{verbatim}
-
-
-%
-%
-%When considering the regression of case-wise differences and averages, we write
-%
-%\begin{equation}
-%D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
-%\end{equation}
-
-
-
-\subsection{Influence measures using R} %4.4
-\texttt{R} provides the following influence measures of each observation.
-
-%Influence measures: This suite of functions can be used to compute
-%some of the regression (leave-one-out deletion) diagnostics for
-%linear and generalized linear models discussed in Belsley, Kuh and
-% Welsch (1980), Cook and Weisberg (1982)
-
-
-
-\begin{table}[ht]
-\begin{center}
-\begin{tabular}{|c|c|c|c|c|c|c|}
-  \hline
- & dfb.1\_ & dfb.A & dffit & cov.r & cook.d & hat \\
-  \hline
-1 & 0.42 & -0.42 & -0.56 & 1.13 & 0.15 & 0.18 \\
-  2 & 0.17 & -0.17 & -0.34 & 1.14 & 0.06 & 0.11 \\
-  3 & 0.01 & -0.01 & -0.24 & 1.17 & 0.03 & 0.08 \\
-  4 & -1.08 & 1.08 & 1.57 & 0.24 & 0.56 & 0.16 \\
-  5 & -0.14 & 0.14 & -0.24 & 1.30 & 0.03 & 0.13 \\
-  6 & -0.00 & 0.00 & -0.11 & 1.31 & 0.01 & 0.08 \\
-  7 & -0.04 & 0.04 & -0.08 & 1.37 & 0.00 & 0.11 \\
-  8 & 0.02 & -0.02 & 0.15 & 1.28 & 0.01 & 0.09 \\
-  9 & 0.69 & -0.68 & 0.75 & 2.08 & 0.29 & 0.48 \\
-  10 & 0.18 & -0.18 & -0.22 & 1.63 & 0.03 & 0.27 \\
-  11 & -0.03 & 0.03 & -0.04 & 1.53 & 0.00 & 0.19 \\
-  12 & -0.25 & 0.25 & 0.44 & 1.05 & 0.09 & 0.12 \\
-   \hline
-\end{tabular}
-\end{center}
-\end{table}
-
 
 \chapter{Model Diagnostics}
 %---------------------------------------------------------------------------%
@@ -428,37 +224,19 @@ Coefficients: (Intercept)            A
 %1.15 CPJ's Three Propositions
 %1.16 Other measures of Influence
 
+%--------------------------------------%
 
-\newpage
-\section{Measures 2} %2.4
+\subsection{Further Assumptions of Linear Models}
 
-\subsection{Cook's Distance} %2.4.1
-\begin{itemize}
-	\item For variance components $\gamma$
-\end{itemize}
+As with fitted models, the assumption of normality of residuals and homogeneity of variance is applicable to LMEs also. 
 
-Diagnostic tool for variance components
-\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
-
-\subsection{Variance Ratio} %2.4.2
-\begin{itemize}
-	\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Cook-Weisberg statistic} %2.4.3
-\begin{itemize}
-	\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Andrews-Pregibon statistic} %2.4.4
-\begin{itemize}
-	\item For fixed effect parameters $\beta$.
-\end{itemize}
-The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
+%--------------------------------------%
 
 
-%---------------------------------------------------------------------------%
+Homoscedascity is the technical term to describe the variance of the
+residuals being constant across the range of predicted values.
+Heteroscedascity is the converse scenario : the variance differs along
+the range of values.
 % - 1. Model Diagnostics
 % - 2. Zewotir's paper (including Haslett)
 % - 3. Augmented GLMS
@@ -469,10 +247,7 @@ The larger this statistic is for observation $i$, the stronger the influence tha
 %---------------------------------------------------------------------------%
 
 
-%---------------------------------------------------------------------------%
-\newpage
-\section{Residual diagnostics} %1.3
-For classical linear models, residual diagnostics are typically implemented as a plot of the observed residuals and the predicted values. A visual inspection for the presence of trends inform the analyst on the validity of distributional assumptions, and to detect outliers and influential observations.
+
 
 
 
@@ -515,194 +290,6 @@ However, using conditional residuals for diagnostics presents difficulties, as t
 
 
 
-\chapter{Application to Method Comparison Studies} % Chapter 4
-
-
-
-
-%---------------------------------------------------------------------------%
-% - 1. Application to MCS
-% - 2. Grubbs' Data
-% - 3. R implementation
-% - 4. Influence measures using R
-%---------------------------------------------------------------------------%
-
-
-\section{Application to MCS} %4.1
-
-
-Let $\hat{\beta}$ denote the least square estimate of $\beta$
-based upon the full set of observations, and let
-$\hat{\beta}^{(k)}$ denoted the estimate with the $k^{th}$ case
-excluded.
-
-
-
-
-\section{Grubbs' Data} %4.2
-
-
-For the Grubbs data the $\hat{\beta}$ estimated are
-$\hat{\beta}_{0}$ and $\hat{\beta}_{1}$ respectively. Leaving the
-fourth case out, i.e. $k=4$ the corresponding estimates are
-$\hat{\beta}_{0}^{-4}$ and $\hat{\beta}_{1}^{-4}$
-
-
-
-
-\begin{equation}
-	Y^{-Q} = \hat{\beta}^{-Q}X^{-Q}
-\end{equation}
-
-
-When considering the regression of case-wise differences and averages, we write $D^{-Q} = \hat{\beta}^{-Q}A^{-Q}$
-
-
-
-
-\newpage
-
-
-\begin{table}[ht]
-	\begin{center}
-		\begin{tabular}{rrrrr}
-			\hline
-			& F & C & D & A \\
-			\hline
-			1 & 793.80 & 794.60 & -0.80 & 794.20 \\
-			2 & 793.10 & 793.90 & -0.80 & 793.50 \\
-			3 & 792.40 & 793.20 & -0.80 & 792.80 \\
-			4 & 794.00 & 794.00 & 0.00 & 794.00 \\
-			5 & 791.40 & 792.20 & -0.80 & 791.80 \\
-			6 & 792.40 & 793.10 & -0.70 & 792.75 \\
-			7 & 791.70 & 792.40 & -0.70 & 792.05 \\
-			8 & 792.30 & 792.80 & -0.50 & 792.55 \\
-			9 & 789.60 & 790.20 & -0.60 & 789.90 \\
-			10 & 794.40 & 795.00 & -0.60 & 794.70 \\
-			11 & 790.90 & 791.60 & -0.70 & 791.25 \\
-			12 & 793.50 & 793.80 & -0.30 & 793.65 \\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
-
-
-
-
-\newpage
-
-
-\begin{equation}
-	Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
-\end{equation}
-
-
-Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
-
-
-When considering the regression of case-wise differences and averages, we write
-
-
-\begin{equation}
-	D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
-\end{equation}
-Let $\hat{\beta}$ denote the least square estimate of $\beta$ based upon the full set of observations, and let $\hat{\beta}^{(k)}$ denoted the estimate with the $k^{th}$ case excluded.
-
-
-For the Grubbs data the $\hat{\beta}$ estimated are $\hat{\beta}_{0}$ and $\hat{\beta}_{1}$ respectively. Leaving the
-fourth case out, i.e. $k=4$ the corresponding estimates are $\hat{\beta}_{0}^{-4}$ and $\hat{\beta}_{1}^{-4}$
-
-
-\begin{equation}
-	Y^{(k)} = \hat{\beta}^{(k)}X^{(k)}
-\end{equation}
-
-
-Consider two sets of measurements , in this case F and C , with the vectors of case-wise averages $A$ and case-wise differences $D$ respectively. A regression model of differences on averages can be fitted with the view to exploring some characteristics of the data.
-
-
-\begin{verbatim}
-Call: lm(formula = D ~ A)
-
-
-Coefficients: (Intercept)            A
--37.51896      0.04656
-
-
-\end{verbatim}
-
-
-
-
-
-
-
-
-%When considering the regression of case-wise differences and averages, we write
-%
-%
-%\begin{equation}
-%	D^{-Q} = \hat{\beta}^{-Q}A^{-Q}
-%\end{equation}
-
-\newpage
-
-
-
-
-
-\subsection{Influence measures using R} %4.4
-\texttt{R} provides the following influence measures of each observation.
-
-
-%Influence measures: This suite of functions can be used to compute
-%some of the regression (leave-one-out deletion) diagnostics for
-%linear and generalized linear models discussed in Belsley, Kuh and
-% Welsch (1980), Cook and Weisberg (1982)
-
-
-
-
-
-
-\begin{table}[ht]
-	\begin{center}
-		\begin{tabular}{|c|c|c|c|c|c|c|}
-			\hline
-			& dfb.1\_ & dfb.A & dffit & cov.r & cook.d & hat \\
-			\hline
-			1 & 0.42 & -0.42 & -0.56 & 1.13 & 0.15 & 0.18 \\
-			2 & 0.17 & -0.17 & -0.34 & 1.14 & 0.06 & 0.11 \\
-			3 & 0.01 & -0.01 & -0.24 & 1.17 & 0.03 & 0.08 \\
-			4 & -1.08 & 1.08 & 1.57 & 0.24 & 0.56 & 0.16 \\
-			5 & -0.14 & 0.14 & -0.24 & 1.30 & 0.03 & 0.13 \\
-			6 & -0.00 & 0.00 & -0.11 & 1.31 & 0.01 & 0.08 \\
-			7 & -0.04 & 0.04 & -0.08 & 1.37 & 0.00 & 0.11 \\
-			8 & 0.02 & -0.02 & 0.15 & 1.28 & 0.01 & 0.09 \\
-			9 & 0.69 & -0.68 & 0.75 & 2.08 & 0.29 & 0.48 \\
-			10 & 0.18 & -0.18 & -0.22 & 1.63 & 0.03 & 0.27 \\
-			11 & -0.03 & 0.03 & -0.04 & 1.53 & 0.00 & 0.19 \\
-			12 & -0.25 & 0.25 & 0.44 & 1.05 & 0.09 & 0.12 \\
-			\hline
-		\end{tabular}
-	\end{center}
-\end{table}
-
-
-
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Haslett's Analysis} %2.5
-For fixed effect linear models with correlated error structure Haslett (1999) showed that the effects on
-the fixed effects estimate of deleting each observation in turn could be cheaply computed from the fixed effects model predicted residuals.
-
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------Chapter 3------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
-%-------------------------------------------------------------------------------------------------------------------------------------%
 \printindex
 \bibliographystyle{chicago}
 \bibliography{DB-txfrbib}
