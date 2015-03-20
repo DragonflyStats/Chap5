@@ -22,11 +22,11 @@
 	$CD(\psi)_i$ does not have to be calculated unless $CD(\beta)_i$ is large.
 	
 	
-	\subsection{Information Ratio}
-	
-	\newpage
-	\section*{Cook's Distance} %1.9
-	
+%	\subsection{Information Ratio}
+%	
+%	\newpage
+%	\section*{Cook's Distance} %1.9
+%	
 	%Cook (1977)
 	\textit{Cook (1977)} greatly expanded the study of residuals and influence measures. Cook's key observation was the effects of deleting each observation in turn could be computed without undue additional computational expense. Consequently deletion diagnostics have become an integral part of assessing linear models.
 	
@@ -34,11 +34,22 @@
 	Cook (1986) gave a completely general method for assessing influence of local departures from
 	assumptions in statistical models.
 	
-	
-	\subsection*{Cook's Distance}%1.9.3
-	\index{Cook's Distance}
-	In classical linear regression, a commonly used meausre of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
-	
+		
+		\subsection{Cook's Distance}%1.9.3
+		\index{Cook's Distance}
+		In classical linear regression, a commonly used meausre of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
+		
+		For linear mixed effects models, Cook's distance can be extended to model influence diagnostics by definining.
+		
+		\[ C_{\beta i} = {(\hat{\beta} - \hat{\beta}_{[i]})^{T}(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}) (\hat{\beta} - \hat{\beta}_{[i]}) \over p}\]
+		
+		It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
+		
+		
+		
+		
+		
+		
 	\subsection*{Cook's Distance}%1.19.1 
 	Cooks Distance ($D_{i}$) is an overall measure of the combined impact of the $i$th case of all estimated regression coefficients. It uses the same structure for measuring the combined impact of the differences in the estimated regression coefficients when the $i-$th case is deleted.
 	
@@ -64,10 +75,6 @@
 	
 	It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
 	
-	%---------------------------------------------------------------------------%
-	\newpage
-	%---------------------------------------------------------------------------%
-	\newpage
 	\section{Cook's Distance for LMEs} %1.10
 	Diagnostic methods for fixed effects are generally analogues of methods used in classical linear models.
 	Diagnostic methods for variance components are based on `one-step' methods. Cook (1986) gives a completely general method for assessing the influence of local departures from assumptions in statistical models.
@@ -84,11 +91,7 @@
 	\mbox{CD}_{i}(b) = g{\prime}_{(i)} (I_{r} + \mbox{var}(\hat{b})D)^{-2}\mbox{var}(\hat{b})g_{(i)}.
 	\]
 	Large values for Cook's distance indicate observations for special attention.
-	
-	\section{Cook's Distance for LMEs} %1.10
-	Diagnostic methods for fixed effects are generally analogues of methods used in classical linear models.
-	Diagnostic methods for variance components are based on `one-step' methods. \emph{cook86} gives a completely general method for assessing the influence of local departures from assumptions in statistical models.
-	
+
 	
 	
 	\subsection{Cook's Distance}%1.19.1
@@ -113,28 +116,7 @@
 	
 	If V is known, Cook's D can be calibrated according to a chi-square distribution with degrees of freedom equal to the rank of $\boldsymbol{X}$ \citep{cpj92}.
 	
-	
-	
-	%---------------------------------------------------------------------------%
-	
-	%\subsection{Cook's Distance}%1.9.3
-	\index{Cook's Distance}
-	In classical linear regression, a commonly used measure of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
-	
-	
-	For linear mixed effects models, Cook's distance can be extended to model influence diagnostics by defining.
-	
-	
-	\[ C_{\beta i} = {(\hat{\beta} - \hat{\beta}_{[i]})^{T}(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}) (\hat{\beta} - \hat{\beta}_{[i]}) \over p}\]
-	
-	
-	It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
-	
-	
-	
-	
-	
-	%---------------------------------------------------------------------------%
+
 	
 	
 	
@@ -160,19 +142,6 @@
 	have a small \index{Cook's distance}Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
 	
 	
-	%---------------------------------------------------------------------------%
-	
-	\subsection{Change in the precision of estimates}
-	
-	
-	The effect on the precision of estimates is separate from the effect on the point estimates. Data points that
-	have a small \index{Cook's distance}Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
-	
-	\newpage
-	
-	%---------------------------------------------------------------------------%
-	\newpage
-	\section{Cook's Distance} %1.9
 	
 	\subsection{Cook's Distance}%1.19.1 
 	Cooks Distance ($D_{i}$) is an overall measure of the combined impact of the $i$th case of all estimated regression coefficients. It uses the same structure for measuring the combined impact of the differences in the estimated regression coefficients when the $k$th case is deleted. $D_{(k)}$ can be calculated without fitting
@@ -184,16 +153,7 @@
 	\index{Cook's distance}Cook's Distance is a well known diagnostic technique used in classical linear models, extended to LME models.  For LME models, two formulations exist; a \index{Cook's distance}Cook's distance that examines the change in fixed fixed parameter estimates, and another that examines the change in random effects parameter estimates. The outcome of either Cook's distance is a scaled change in either $\beta$ or $\theta$.
 	
 	
-	\subsection{Cook's Distance}%1.9.3
-	\index{Cook's Distance}
-	In classical linear regression, a commonly used meausre of influence is Cook's distance. It is used as a measure of influence on the regression coefficients.
-	
-	For linear mixed effects models, Cook's distance can be extended to model influence diagnostics by definining.
-	
-	\[ C_{\beta i} = {(\hat{\beta} - \hat{\beta}_{[i]})^{T}(\boldsymbol{X}^{\prime}\boldsymbol{V}^{-1}\boldsymbol{X}) (\hat{\beta} - \hat{\beta}_{[i]}) \over p}\]
-	
-	It is also desirable to measure the influence of the case deletions on the covariance matrix of $\hat{\beta}$.
-	
+
 	
 	\subsection{Cooks's Distance}%1.9.2
 	\index{Cook's distance} Cook's $D$ statistics (i.e. colloquially Cook's Distance) is a measure of the influence of observations in subset $U$ on a vector of parameter estimates \citep{cook77}.
