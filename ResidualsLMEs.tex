@@ -1,5 +1,33 @@
-\documentclass[main.tex]{subfiles}
+\documentclass[Main.tex]{subfiles}
 \begin{document}
+	
+	
+	%--Marginal and Conditional Residuals
+	
+	%========================================================================================== %
+	\subsection{Residuals diagnostics in LME Models}
+	
+	
+	A residual is the difference between an observed quantity and its
+	estimated or predicted value. In LME models, there are two types
+	of residuals, marginal residuals and conditional residuals. 
+	In a model without random effects, both sets of residuals coincide.
+	\citet{schabenberger} provides a useful summary. 
+	% \subsection{Marginal and Conditional Residuals}
+	
+	\begin{itemize}
+		\item A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
+		\item A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $,
+		\[r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}\]
+	\end{itemize} 
+	
+	%schabenberger
+	The marginal and conditional means in the linear mixed model are
+	$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
+	$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
+	%1.5
+	%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
+	
 	\subsection{Marginal and Conditional Residuals}
 	
 	A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
@@ -12,8 +40,6 @@
 	
 	However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
 	
-	%1.5
-	%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
 	
 	
 	
@@ -52,6 +78,13 @@
 	
 	
 	
+	\subsection{Residuals diagnostics in LME Models}
+	
+	%schabenberger
+	The marginal and conditional means in the linear mixed model are
+	$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
+	$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
+	
 	
 	
 	
@@ -76,33 +109,6 @@
 	
 	
 	
-	%--Marginal and Conditional Residuals
-	
-	
-	
-	
-	%--Marginal and Conditional Residuals
-	
-	
-	\subsection{Marginal and Conditional Residuals}
-	
-	A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-	A conditional residual is the difference between the observed data and the predicted value of the observation,
-	$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-	
-	In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-	
-	\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-	
-	However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-	
-	%1.5
-	%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-	
-	
-	
-	
-	
 	%------------------------------------------------------------%
 	\section*{Residuals}
 	
@@ -114,8 +120,6 @@
 		\item Marginal Residuals $r_{mi}$
 		\item 
 	\end{itemize}
-	%------------------------------------------------------------%
-	\subsection*{Conditional Residuals}
 	
 	\subsection*{Marginal Residuals}
 	
@@ -186,20 +190,6 @@
 	model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
 	
 	
-	\subsection{Marginal and Conditional Residuals}
-	
-	A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-	A conditional residual is the difference between the observed data and the predicted value of the observation,
-	$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-	
-	In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-	
-	\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-	
-	However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-	
-	%1.5
-	%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
 	
 	
 	
@@ -328,20 +318,6 @@ A residual is the difference between an observed quantity and its estimated or p
 model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
 
 
-\subsection{Marginal and Conditional Residuals}
-
-A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-A conditional residual is the difference between the observed data and the predicted value of the observation,
-$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-
-In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-
-\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-
-However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-
-%1.5
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
 
 
 
