@@ -1,10 +1,9 @@
-	\documentclass[Main.tex]{subfiles}
-	\begin{document}
-		
+\documentclass[00-MASTER.tex]{subfiles}
+\begin{document}
 		%---------------------------------------------------------------------------%
 		\newpage
 		\section{Iterative and non-iterative influence analysis} %1.13
-		\citet{schabenberger} highlights some of the issue regarding implementing mixed model diagnostics.
+		\citet{schab} highlights some of the issue regarding implementing mixed model diagnostics.
 		
 		% A measure of total influence requires updates of all model parameters.
 		% however, this doesnt increase the procedures execution time by the same degree.
@@ -16,25 +15,9 @@
 		However, for LME models, the process is more complex. Update formulas for the fixed effects are available only when the covariance parameters are assumed to be known. A measure of total influence requires updates of all model parameters.
 		This can only be achieved in general is by omitting observations, then refitting the model.
 		
-		\citet{schabenberger} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
+		\citet{schab} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
 		
-		
-		
-		%---------------------------------------------------------------------------%
-		\newpage
-		\section{Iterative and non-iterative influence analysis} %1.13
-		\citet{schabenberger} highlights some of the issue regarding implementing mixed model diagnostics.
-		A measure of total influence requires updates of all model parameters.
-		
-		however, this doesnt increase the procedures execution time by the same degree.
-	\subsection{Iterative Influence Analysis}
-	
-	%----schabenberger page 8
-	For linear models, the implementation of influence analysis is straightforward.
-	However, for LME models, the process is more complex. Update formulas for the fixed effects are available only when the covariance parameters are assumed to be known. A measure of total influence requires updates of all model parameters.
-	This can only be achieved in general is by omitting observations, then refitting the model.
-	
-	\citet{schabenberger} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
+
 	
 	
 	
