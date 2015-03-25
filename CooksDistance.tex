@@ -4,7 +4,7 @@
 %
 %\citet{cook77} greatly expanded the study of residuals and influence measures. Cook's key observation was the effects of deleting each observation in turn could be computed without undue additional computational expense. Consequently deletion diagnostics have become an integral part of assessing linear models.
 %---------------------------------------------------------------------------%
-\citet{cook77} greatly expanded the study of residuals and influence measures. \index{Cook's distance}Cook's Distance , denoted as$D_{(i)}$, is a well known diagnostic technique used in classical linear models, used as an overall measure of the combined impact of the $i-$th case of all estimated regression coefficients. Cook's key observation was the effects of deleting each observation in turn could be calculated with little additional computation. That is to say, $D_{(i)}$ can be calculated without fitting a new regression coefficient each time an observation is deleted.  Consequently deletion diagnostics have become an integral part of assessing linear models. 
+\citet{cook77} greatly expanded the study of residuals and influence measures.  Cook's key observation was the effects of deleting each observation in turn could be calculated with little additional computation. That is to say, $D_{(i)}$ can be calculated without fitting a new regression coefficient each time an observation is deleted.  Consequently deletion diagnostics have become an integral part of assessing linear models. Cook proposed a measure that combines the information of leverage and residual of the observation, now known simply as the Cook's Distance. \index{Cook's distance}Cook's Distance , denoted as$D_{(i)}$, is a well known diagnostic technique used in classical linear models, used as an overall measure of the combined impact of the $i-$th case of all estimated regression coefficients.
 
 The focus of this analysis is related to the estimation of point estimates (i.e. regression coefficients). It must be pointed out that the effect on the precision of estimates is separate from the effect on the point estimates. Data points that
 have a small \index{Cook's distance}Cook's distance, for example, can still greatly affect hypothesis tests and confidence intervals, if their  influence on the precision of the estimates is large.
@@ -16,6 +16,7 @@ As well as individual observations, Cook's Distance can be used to analyse the i
 \delta_{(U)} = \hat{\beta} - \hat{\beta}_{(U)}
 \end{eqnarray}
 %It uses the same structure for measuring the combined impact of the differences in the estimated regression coefficients when the $k$th case is deleted. 
+
 
 %======================================================= %
 % EXTENSION TO LMEs
@@ -86,7 +87,7 @@ For random effect estimates, the \index{Cook's distance} Cook's distance is
 \]
 Large values for Cook's distance indicate observations for special attention.
 
-\newpage
+
 \subsubsection{Random Effects}
 
 A large value for $CD(u)_i$ indicates that the $i-$th observation is influential in predicting random effects.
@@ -104,7 +105,6 @@ For LME models, two formulations exist; a \index{Cook's distance}Cook's distance
 
 
 %---------------------------------------------------------------------------%
-\newpage
 \section{Cook's Distance for LMEs} %1.10
 Diagnostic methods for fixed effects are generally analogues of methods used in classical linear models.
 Diagnostic methods for variance components are based on `one-step' methods. \citet{cook86} gives a completely general method for assessing the influence of local departures from assumptions in statistical models.
