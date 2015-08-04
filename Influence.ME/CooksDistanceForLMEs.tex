@@ -8,16 +8,20 @@ An example model:
 
 library(lme4)
 model <- lmer(mpg ~ disp + (1 | cyl), mtcars)
+
 The function influence is the basis for all further steps:
 
 library(influence.ME)
 infl <- influence(model, obs = TRUE)
+
 Calculate Cook's distance:
 
 cooks.distance(infl)
+
 Plot Cook's distance:
 
 plot(infl, which = "cook")
+
 enter image description here
 
 %================================================================================%
