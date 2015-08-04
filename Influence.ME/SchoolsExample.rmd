@@ -3,6 +3,10 @@ library(influence.ME)
 data(school23)
 ```
 
+```{r}
+
+dim(school23)
+```
 
 ```{r}
 model.a <- lmer(math ~ structure + SES + (1 | school.ID), data=school23)
