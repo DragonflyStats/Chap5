@@ -1,26 +1,40 @@
 \documentclass[Main.tex]{subfiles}
 \begin{document}
 	
+
+Influence arises at two stages of the LME model. Firstly when $\mathbf{V}$ is estimated by $\hat{V}$, and subsequent
+estimations of the fixed and random regression coefficients $\mathbf{\beta}$ and $u$, given $\mathbf{\hat{V}}$.
+
+	
 \section{Measures of Influence} %1.16
 
-The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
-
-Influence arises at two stages of the LME model. Firstly when $V$ is estimated by $\hat{V}$, and subsequent
-estimations of the fixed and random regression coefficients $\beta$ and $u$, given $\hat{V}$.
+The impact of an observation, or a case with multiple obverations, on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. The measure DFBETA is the studentized value of this difference.
 
 
+
+%-------------------------------------------------------------------------------------------------------------------------------------%
+\subsection{Influential Observations : DFBeta and DFBetas}
+% http://stats.stackexchange.com/questions/22161/how-to-read-cooks-distance-plots
+% Cook's distance refers to how far, on average, predicted y-values will move if the observation in question is dropped from the data set. 
+The dfbeta refers to how much a parameter estimate changes if the observation or case in question is dropped from the data set.  Cook's distance is presumably more important to you if you are doing predictive modeling, whereas dfbeta is more important in explanatory modeling.
+\subsection{DFBETA} %1.16.3
+DFBETAS (standardized difference of the beta) is a measure that standardizes the absolute difference in parameter estimates between a (mixed effects) regression model based on a full set of data, and a model from which a (potentially influential) subset of data is removed.
 \subsection{DFBETA} %1.16.3
 \begin{eqnarray}
 DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
 &=& B(Y-Y_{\bar{a}}
 \end{eqnarray}
+In the case of method comparison studies, there are two covariates, and one can construct catterplots of the pairs of dfbeta values accordingly, both for LOO and LSO calculations. Furthermore 95\% confidence ellipse can be constructed around these scatterplots.
+Note that with k covariates, there will be $k+1$ dfbetas (the intercept,$\beta_0$, and 1 $\beta$ for each covariate). For example there would be 2 sets of of dfbeta, 510 valoues for each in the case of LOO, and 85 for LSO diagnostics.
+
+
 %-------------------------------------------------------------------------------------------------------------------------------------%
 
 \subsection{DFFITS} %1.16.1
-DFFITS is a statistical measured designed to a show how influential an observation is in a statistical model. It is closely related to the studentized residual.
+DFFITS is a statistical measured designed to a show how influential an observation is in a statistical model. 
 \begin{displaymath} DFFITS = {\widehat{y_i} -
 	\widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} \end{displaymath}
-
+It is closely related to the studentized residual. For the sake of brevity, we will concentrate on the Studentized Residuals.
 %===================================================================================== %
 \subsection{PRESS} %1.16.2
 The prediction residual sum of squares (PRESS) is an value associated with this calculation. When fitting linear models, PRESS can be used as a criterion for model selection, with smaller values indicating better model fits.
@@ -33,17 +47,6 @@ The prediction residual sum of squares (PRESS) is an value associated with this 
 	\item $e_{-Q} = y_{Q} - x_{Q}\hat{\beta}^{-Q}$
 	\item $PRESS_{(U)} = y_{i} - x\hat{\beta}_{(U)}$
 \end{itemize}
-
-\subsection{DFBETA} %1.16.3
-\begin{eqnarray}
-	DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
-	&=& B(Y-Y_{\bar{a}}
-\end{eqnarray}
-
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\subsection{Influential Observations : DFBeta and DFBetas}
-% http://stats.stackexchange.com/questions/22161/how-to-read-cooks-distance-plots
-Cook's distance refers to how far, on average, predicted y-values will move if the observation in question is dropped from the data set. dfbeta refers to how much a parameter estimate changes if the observation in question is dropped from the data set. Note that with k covariates, there will be k+1 dfbetas (the intercept,$\beta_0$, and 1 $\beta$ for each covariate). Cook's distance is presumably more important to you if you are doing predictive modeling, whereas dfbeta is more important in explanatory modeling.
 
 
 %-------------------------------------------------------------------------------------------------------------------------------------%
