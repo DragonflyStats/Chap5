@@ -24,30 +24,6 @@
 	
 	%============================================================================================================================ %
 	
-	\section{Measures of Influence} 
-	% DFBETA
-	% DFFITS
-	% PRESS
-	The impact of an observation on a regression fitting can be determined by the difference between the estimated regression coefficient of a model with all observations and the estimated coefficient when the particular observation is deleted. DFBETA and DFFITS are well known measures of influenc. The measure DFBETA is the studentized value of this difference.	DFFITS is a statistical measured designed to a show how influential an observation is in a statistical model. DFFITS is closely related to the studentized residual.
-
-		\begin{eqnarray}
-		DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
-		&=& B(Y-Y_{\bar{a}}
-		\\ DFFITS = {\widehat{y_i} -
-		\widehat{y_{i(k)}} \over s_{(k)} \sqrt{h_{ii}}} 
-	\end{eqnarray}
-	
-	The prediction residual sum of squares (PRESS) is an value associated with this calculation. When fitting linear models, PRESS can be used as a criterion for model selection, with smaller values indicating better model fits.
-%\begin{displaymath}
-%	PRESS = \sum(y-y^{(k)})^2
-%
-%\end{displaymath}
-%	
-%	\begin{itemize}
-%		\item $e_{-Q} = y_{Q} - x_{Q}\hat{\beta}^{-Q}$
-%		\item $PRESS_{(U)} = y_{i} - x\hat{\beta}_{(U)}$
-%	\end{itemize}
-%	
 	
 	\subsection{Influence Analysis for LME Models} %1.1.3
 	The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.

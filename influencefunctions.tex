@@ -44,16 +44,4 @@ The DFBETAS statistics are the scaled measures of the change in each parameter e
 where  is the th element of .
 In general, large values of DFBETAS indicate observations that are influential in estimating a given parameter. Belsley, Kuh, and Welsch (1980) recommend 2 as a general cutoff value to indicate influential observations and  as a size-adjusted cutoff.
 
-%---------------------------------------------------------------------------% 
-Probably the most popular 
-tools is DFBETA. DFBETA is a measure found for each observation in a dataset. The DFBETA for a 
-particular observation is the difference between the regression coefficient for an included variable (say 
-age, or education in our well-worn salary example) calculated for all of the data and the regression 
-coefficient calculated with the observation deleted, scaled by the standard error calculated with the 
-observation deleted. The cut-off value for DFBETAs is 2/sqrt(n), where n is the number of observations. 
-However, another cut-off is to look for observations with a value greater than 1.00. Here cutoff means, 
-“this observation could be overly influential on the estimated coefficient.” 
-%==========================================================================%
-%WIKIPEDIA
-DFFITS is a diagnostic meant to show how influential a point is in a statistical regression. It was proposed in 1980.[1] It is defined as the change ("DFFIT"), in the predicted value for a point, obtained when that point is left out of the regression, "Studentized" by dividing by the estimated standard deviation of the fit at that point:
-\[ \text{DFFITS} = {\widehat{y_i} - \widehat{y_{i(i)}} \over s_{(i)} \sqrt{h_{ii}}}\]
+

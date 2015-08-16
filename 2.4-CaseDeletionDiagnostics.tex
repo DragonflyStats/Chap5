@@ -71,15 +71,15 @@
  
  
  
- A residual is the difference between an observed quantity and its
- estimated or predicted value. In LME models, there are two types
- of residuals, marginal residuals and conditional residuals. A
- marginal residual is the difference between the observed data and
- the estimated marginal mean. A conditional residual is the
- difference between the observed data and the predicted value of
- the observation. In a model without random effects, both sets of
- residuals coincide.
- 
+% A residual is the difference between an observed quantity and its
+% estimated or predicted value. In LME models, there are two types
+% of residuals, marginal residuals and conditional residuals. A
+% marginal residual is the difference between the observed data and
+% the estimated marginal mean. A conditional residual is the
+% difference between the observed data and the predicted value of
+% the observation. In a model without random effects, both sets of
+% residuals coincide.
+% 
  \citet{schabenberger} notes that it is not always possible to
  derive influence statistics necessary for comparing full- and
  reduced-data parameter estimates. \citet{HaslettDillane} offers an
@@ -100,19 +100,19 @@
  
  
  
- 
- In LME models, fitted by either ML or REML, an important overall
- influence measure is the likelihood distance \citep{cook82}. The
- procedure requires the calculation of the full data estimates
- $\hat{\psi}$ and estimates based on the reduced data set
- $\hat{\psi}_{(U)}$. The likelihood distance is given by
- determining
- 
- 
- \begin{eqnarray}
- 	LD_{(U)} &=& 2\{l(\hat{\psi}) - l( \hat{\psi}_{(U)}) \}\\
- 	RLD_{(U)} &=& 2\{l_{R}(\hat{\psi}) - l_{R}(\hat{\psi}_{(U)})\}
- \end{eqnarray}
+% 
+% In LME models, fitted by either ML or REML, an important overall
+% influence measure is the likelihood distance \citep{cook82}. The
+% procedure requires the calculation of the full data estimates
+% $\hat{\psi}$ and estimates based on the reduced data set
+% $\hat{\psi}_{(U)}$. The likelihood distance is given by
+% determining
+% 
+% 
+% \begin{eqnarray}
+% 	LD_{(U)} &=& 2\{l(\hat{\psi}) - l( \hat{\psi}_{(U)}) \}\\
+% 	RLD_{(U)} &=& 2\{l_{R}(\hat{\psi}) - l_{R}(\hat{\psi}_{(U)})\}
+% \end{eqnarray}
  
  
 
@@ -236,9 +236,9 @@ Deletion diagnostics provide a means of assessing the influence of an observatio
 
 Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
 
-Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
-
-The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
+%Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
+%
+%The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
 
 
 \subsection{Terminology for Case Deletion diagnostics} %1.8
