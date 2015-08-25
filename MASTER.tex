@@ -37,65 +37,6 @@ data, and a model from which a (potentially influential) subset of data is remov
 DFBETAS is calculated for each parameter in the model separately.
 \end{description}
 
-\subsection{Overview of R implementations}
-Further to previous material, an appraisal of the current state of development (or lack thereof) for current implemenations for LME models, particularly for \texttt{nlme} and \texttt{lme4} fitted models.
-
-Crucially, a review of internet resources indicates that almost all of the progress in this regard has been done for \texttt{lme4} fitted models, specifically the \textit{Influence.ME} \texttt{R} package. (Nieuwenhuis et al 2014)
-Conversely there is very little for \texttt{nlme} models. One would immediately look at the current development workflow for both packages.
- 
-%======================%
-% Douglas Bates
-
-As an aside, Douglas Bates was arguably the most prominent \texttt{R} developer working in the LME area. 
-However Bates has now prioritised the development of LME models in another computing environment , i.e Julia. 
-% The current version of this is XXXX
-
-%======================%
-% nlme
-
-With regards to \texttt{nlme}, the package is now maintained by the \texttt{R} core development team. The most recent major text is by Galecki \& Burzykowski, who have published \textit{ Linear Mixed Effects Models using \texttt{R}. }
-Also, the accompanying \texttt{R} package, nlmeU package is under current development, with a version being released $0.70-3$.
-
-
-%======================%
-% lme4 and influence.ME
-
-The \textbf{lme4} pacakge is used to fit linear and generalized linear mixed-effects models in the R environment.
-The \textbf{lme4} package is also under active development, under the leadership of Ben Bolker (McMaster Uni., Canada).
-
-
-%=====================%
-\subsection{Important Consideration for MCS}
-
-The key issue is that \texttt{nlme} allows for the particular specification of Roy's Model, speciifically direct specification of the VC matrices for within subject and between subject residuals.
-The \texttt{lme4} package does not allow for Roy's Model, for reasons that will identified shortly.
-To advance the ideas that eminate from Roys' paper, one is required to use the \texttt{nlme} context. However, to take advantage of the infrastructure already provided for \texttt{lme4} models, one may change the research question away from that of Roy's paper. 
-To this end, an exploration of what textbf{influence.ME} can accomplished is merited.
-
-
-%==========================================================================%
-\newpage
-
-
-%============================================================%
-\newpage
-\section{Diagnostic Tools for the nlme package}
-
-
-With the nlme package, the generic function \texttt{lme()} fits a linear mixed-effects model in the formulation described in Laird and Ware (1982) but allowing for nested random effects. 
-
-The within-group errors are allowed to be correlated and/or have unequal variances, which is very important in fitting the models for Roy's Tests
-
-The nlme package has a limited set of diagnostic tools that can be used to assess the model fit. A review of the package manual is sufficient to get a sense of the package's capability in that regard.
-
-\begin{description}
-\item[residuals.lme] 
-The residuals at level $i$ are obtained by subtracting the fitted levels at that level from the response
-vector (and dividing by the estimated within-group standard error, if \texttt{type="pearson")}. The fitted
-values at level $i$ are obtained by adding together the population fitted values (based only on the
-fixed effects estimates) and the estimated contributions of the random effects to the fitted values at
-grouping levels less or equal to $i$.
-\end{description}
 
 %================================================================== %
 \newpage
