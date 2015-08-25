@@ -45,40 +45,10 @@
  \end{eqnarray}
  
  
- \citet{schabenberger} examines the use and implementation of
- influence measures in LME models.
- 
- Influence is understood to be the ability of a single or multiple
- data points, through their presences or absence in the data, to
- alter important aspects of the analysis, yield qualitatively
- different inferences, or violate assumptions of the statistical
- model \citep{schabenberger}.
- 
- Outliers are the most noteworthy data points in an analysis, and
- an objective of influence analysis is how influential they are,
- and the manner in which they are influential.
- 
- \citet{schabenberger} describes a simple procedure for quantifying
- influence. Firstly a model should be fitted to the data, and
- estimates of the parameters should be obtained. The second step is
- that either single of multiple data points, specifically outliers,
- should be omitted from the analysis, with the original parameter
- estimates being updated. This is known as `leave one out \ leave k
- out' analysis. The final step of the procedure is comparing the
- sets of estimates computed from the entire and reduced data sets
- to determine whether the absence of observations changed the
- analysis.
  
  
  
-% A residual is the difference between an observed quantity and its
-% estimated or predicted value. In LME models, there are two types
-% of residuals, marginal residuals and conditional residuals. A
-% marginal residual is the difference between the observed data and
-% the estimated marginal mean. A conditional residual is the
-% difference between the observed data and the predicted value of
-% the observation. In a model without random effects, both sets of
-% residuals coincide.
+
 % 
  \citet{schabenberger} notes that it is not always possible to
  derive influence statistics necessary for comparing full- and
@@ -203,6 +173,8 @@ Without loss of generality, matrices can be partitioned as if the $i-$th omitted
 %---------------------------------------------------------------------------%
 
 
+
+
 \subsection{Case Deletion Diagnostics} %1.6
 
 \citet{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components.
@@ -216,35 +188,15 @@ Without loss of generality, matrices can be partitioned as if the $i-$th omitted
 \citet{Christiansen} develops these techniques in the context of REML
 
 
-%--------------------------------------------------------------------------%
-\newpage
-\subsection{Terminology for Case Deletion diagnostics} %1.8
-
-\citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
-'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
 
 
-\subsection{Case Deletion Diagnostics} %1.6
-
-\citet{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components.
-
-\subsection{Deletion Diagnostics}
-
-Since the pioneering work of Cook in 1977, deletion measures have been applied to many statistical models for identifying influential observations.
-
-Deletion diagnostics provide a means of assessing the influence of an observation (or groups of observations) on inference on the estimated parameters of LME models.
-
-Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
-
-%Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
-%
-%The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
 
 
-\subsection{Terminology for Case Deletion diagnostics} %1.8
-% \citet{preisser}
-Preisser(19XX) describes two type of diagnostics. When the set consists of only one observation, the type is called
-'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
+
+
+
+
+
 
 
 
