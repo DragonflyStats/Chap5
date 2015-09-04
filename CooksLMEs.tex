@@ -1,3 +1,6 @@
+%% Stack Overflow  Question
+%% - http://stats.stackexchange.com/questions/54818/how-to-extract-compute-leverage-and-cooks-distances-for-linear-mixed-effects-mo
+
 How to extract/compute leverage and Cook's distances for linear mixed effects models
 
 Does anyone know how to compute (or extract) leverage and Cook's distances for a mer class object (obtained through lme4 package)? I'd like to plot these for a residuals analysis.
@@ -6,10 +9,14 @@ You should have a look at the R package influence.ME. It allows you to compute m
 
 An example model:
 
+\begin{verbatim}
 library(lme4)
 model <- lmer(mpg ~ disp + (1 | cyl), mtcars)
+\end{verbatim}
+
 The function influence is the basis for all further steps:
 
+\begin{verbatim}
 library(influence.ME)
 infl <- influence(model, obs = TRUE)
 Calculate Cook's distance:
@@ -18,7 +25,7 @@ cooks.distance(infl)
 Plot Cook's distance:
 
 plot(infl, which = "cook")
-enter image description here
-
+\end{verbatim}
+\end{document}
 %================================================================================%
 
