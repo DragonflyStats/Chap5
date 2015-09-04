@@ -77,7 +77,7 @@
 \subsection*{Abstract}
 This chapter is broken into two parts. The first part is a review of diagnostics methods for linear models, intended to acquaint the reader with the subject, and also to provide a basis for material covered in the second part. Particular attention is drawn to graphical methods.
 
-<<<<<<< HEAD
+
 \section{Framework for Model Validation using Residual Diagnostics}
 In statistical modelling, the process of model validation is a critical step, but also a step that is too often overlooked. A very simple procedure is to examine commonly encountered
 metrics, such as the $R^2$ value. However, using a small handful of simple measures and methods is insufficient to properly assess the quality of a fitted model. To do so properly, a full and comprehensive
@@ -102,7 +102,7 @@ Statistical software environments, such as the \texttt{R} Programming language, 
 of these procedures analysing the model residuals.
 
 In classical linear models, an examination of model-data agreement has traditionally revolved around
-=======
+
 The second part of the chapter looks at diagnostics techniques for LME models, firsly covering the theory, then proceeding to a discussion on 
 implementing these using \texttt{R} code.
 
@@ -202,7 +202,7 @@ of these procedures analysing the model residuals.
 %========================================================================================================= %
 \subsection{Outliers and Leverage}
 
->>>>>>> origin/master
+
 
 The question of whether or not a point should be considered an outlier must also be addressed. An outlier is an observation whose true value is unusual given its value on the predictor variables. The leverage of an observation is a further consideration. Leverage describes an observation with an extreme value on a predictor variable is a point with high leverage. High leverage points can have a great amount of effect on the estimate of regression coefficients.
 % - Leverage is a measure of how far an independent variable deviates from its mean.
@@ -288,60 +288,31 @@ The new measures that are proposed by \citet{Demi} are explicitly defined functi
 
 \newpage
 
-\subsection*{Cook's distance}
-In the study of Linear model diagnostics, Cook proposed a measure that combines the information of leverage and residual of the observation, now known simply as the Cook's Distance. \citet{CPJ} would later adapt the Cook's distance measure for the analysis of LME models.
+
 
 \subfile{CooksDistance.tex}
 
-%---------------------------------------------------------------------------%
-
-<<<<<<< HEAD
 
 
 =======
 \section{Analysis of  Influence}
 
-\subsection{Influence Analysis for LME Models} %1.1.3
-The linear mixed effects model is a useful methodology for fitting a wide range of models. However, linear mixed effects models are known to be sensitive to outliers. \citet{CPJ} advises that identification of outliers is necessary before conclusions may be drawn from the fitted model.
 
-Standard statistical packages concentrate on calculating and testing parameter estimates without considering the diagnostics of the model.The assessment of the effects of perturbations in data, on the outcome of the analysis, is known as statistical influence analysis. Influence analysis examines the robustness of the model. Influence analysis methodologies have been used extensively in classical linear models, and provided the basis for methodologies for use with LME models.
-Computationally inexpensive diagnostics tools have been developed to examine the issue of influence \citep{Zewotir}.
-%Studentized residuals, error contrast matrices and the inverse of the response variance covariance matrix are regular components of these tools.
 >>>>>>> origin/master
 
-\subfile{InfluenceforLMEs.tex}
+%%\subfile{InfluenceforLMEs.tex}
 % \subfile{ApplicationsToMCS.tex}  - Not Ready
 % \subfile{SideNotes.tex} - Pregibon etc
 % \subfile{HaslettHayes.tex} - Build this up 
-\subfile{LikelihoodDistances.tex}
-<<<<<<< HEAD
+%%\subfile{LikelihoodDistances.tex}
+%%<<<<<<< HEAD
 
 
-
-=======
-\subfile{Influence}
-\subfile{ResidualsLMEs.tex}
-\subfile{iterativemethods.tex}
->>>>>>> origin/master
-
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\section{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-	\item Variance components
-	\item Fixed effects parameters
-	\item Prediction of the response variable and of random effects
-	\item likelihood function
-\end{itemize}
-
-\citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
-	\item Cook's distance for LME models,
-	\item \index{likelihood distance} likelihood distance,
-	\item the variance (information) ration,
-	\item the \index{Cook-Weisberg statistic} Cook-Weisberg statistic,
-	\item the \index{Andrews-Prebigon statistic} Andrews-Prebigon statistic.
-\end{itemize}
+%
+%=======
+%\subfile{Influence}
+%\subfile{ResidualsLMEs.tex}
+%\subfile{iterativemethods.tex}
 
 
 
