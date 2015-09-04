@@ -4,6 +4,7 @@
 
 		%---------------------------------------------------------------------------%
 \tableofcontents
+\newpage
 \section{Introduction to Influence analysis} %1.7
 Model diagnostic techniques determine whether or not the distributional assumptions are satisfied, and to assess the influence of unusual observations. In classical linear models model diagnostics have been become a required part of any statistical analysis, and the methods are commonly available in statistical packages and standard textbooks on applied regression. However it has been noted by several papers that model diagnostics do not often accompany LME model analyses.
 For linear models for uncorrelated data, it is not necessary to refit the model after removing a data point in order to measure the impact of an observation on the model. The change in fixed effect estimates, residuals, residual sums of squares, and the variance-covariance matrix of the fixed effects can be computed based on the fit to the full data alone. By contrast, in mixed models several important complications arise. Data points can affect not only the fixed effects but also the covariance parameter estimates on which the fixed-effects estimates depend. 
@@ -24,9 +25,26 @@ Likelihood based estimation methods, such as ML and REML, are sensitive to unusu
 	\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
 	\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
 \end{enumerate}	
-	\newpage
-	\section{Introduction and Classical Approach}
-	%-----------------------------------------------------------------%
+
+	%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
+
+
+%===================================================================================================
+\subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
+Broadly defined, ``\textit{influence}” is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or
+violate assumptions of the statistical model. 
+
+
+The goal of influence analysis is not primarily to mark data
+points for deletion so that a better model fit can be achieved for the reduced data, although this might be a
+result of influence analysis. The goal is rather to determine which cases are influential and the manner in
+which they are important to the analysis. Outliers, for example, may be the most noteworthy data points in
+an analysis. They can point to a model breakdown and lead to development of a better model.
+
+%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
+
+The general idea of quantifying the influence of one or more observations relies on computing parameter estimates based on all data points, removing the cases in question from the data, refitting the model, and computing statistics based on the change between full-data and reduced-data estimation. 
+
 	\subsection{Diagnostic Methods for OLS models}
 	% Cook's Distance for OLS models
 	% http://www.amstat.org/meetings/jsm/2012/onlineprogram/AbstractDetails.cfm?abstractid=305411
@@ -60,8 +78,6 @@ Cook 1986 introduced methods for local influence assessment. These methods provi
 \citet{cook77} greatly expanded the study of residuals and influence measures.  Cook's key observation was the effects of deleting each observation in turn could be calculated with little additional computation. That is to say, $D_{(i)}$ can be calculated without fitting a new regression coefficient each time an observation is deleted.  Consequently deletion diagnostics have become an integral part of assessing linear models. Cook proposed a measure that combines the information of leverage and residual of the observation, now known simply as the Cook's Distance. \index{Cook's distance}Cook's Distance , denoted as$D_{(i)}$, is a well known diagnostic technique used in classical linear models, used as an overall measure of the combined impact of the $i-$th case of all estimated regression coefficients.
 
 
-\subsection{Cook's 1986 paper on Local Influence}%1.7.1
-Cook 1986 introduced methods for local influence assessment. These methods provide a powerful tool for examining perturbations in the assumption of a model, particularly the effects of local perturbations of parameters of observations.
 
 The local-influence approach to influence assessment is quitedifferent from the case deletion approach, comparisons are of
 interest.
@@ -78,29 +94,9 @@ interest.
 	% fitted using the lme() function from the nlme package. 
 	% The use of the new function is illustrated using data from a randomized clinical trial.
 	
-	%---------------------------------------------------------------%
-	
-	\subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
-	%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-	
-	The general idea of quantifying the influence of one or more observations relies on computing parameter estimates based on all data points, removing the cases in question from the data, refitting the model, and computing statistics based on the change between full-data and reduced-data estimation. 
-	
 
-	\subsection{Case Deletion Diagnostics} %1.6
-	
-	\textbf{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components.
-	
-	
-	
-	
-	
-	
-	%--------------------------------------------------------------------------%
-	\newpage
-	\section{Terminology for Case Deletion diagnostics} %1.8
-	
-	\citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
-	'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
+
+
 	
 	
 	\subsection{Deletion Diagnostics}
@@ -110,48 +106,68 @@ interest.
 	Deletion diagnostics provide a means of assessing the influence of an observation (or groups of observations) on inference on the estimated parameters of LME models.
 	
 	Data from single individuals, or a small group of subjects may influence non-linear mixed effects model selection. Diagnostics routinely applied in model building may identify such individuals, but these methods are not specifically designed for that purpose and are, therefore, not optimal. We describe two likelihood-based diagnostics for identifying individuals that can influence the choice between two competing models.
-	
+		\subsection{Case Deletion Diagnostics} %1.6
 	Case-deletion diagnostics provide a useful tool for identifying influential observations and outliers.
 	
-	The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the ith observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
+	The computation of case deletion diagnostics in the classical model is made simple by the fact that estimates of $\beta$ and $\sigma^2$, which exclude the $i-$th observation, can be computed without re-fitting the model. Such update formulas are available in the mixed model only if you assume that the covariance parameters are not affected by the removal of the observation in question. This is rarely a reasonable assumption.
+
 	
+	\textbf{CPJ} develops \index{case deletion diagnostics} case deletion diagnostics, in particular the equivalent of \index{Cook's distance} Cook's distance, for diagnosing influential observations when estimating the fixed effect parameters and variance components.
+	
+	\subsection{Terminology for Case Deletion diagnostics} %1.8
+	
+	\citet{preisser} describes two type of diagnostics. When the set consists of only one observation, the type is called
+	'observation-diagnostics'. For multiple observations, Preisser describes the diagnostics as 'cluster-deletion' diagnostics.
+		
 	\subsubsection{Effects on fitted and predicted values}
 	\begin{equation}
 	\hat{e_{i}}_{(U)} = y_{i} - x\hat{\beta}_{(U)}
 	\end{equation}
 	\newpage
 	
-%===================================================================================================
-\subsection{Influence Diagnostics: Basic Idea and Statistics} %1.1.2
-Broadly defined, ``\textit{influence}” is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or
-		violate assumptions of the statistical model. 
-		
-		
-		The goal of influence analysis is not primarily to mark data
-		points for deletion so that a better model fit can be achieved for the reduced data, although this might be a
-		result of influence analysis. The goal is rather to determine which cases are influential and the manner in
-		which they are important to the analysis. Outliers, for example, may be the most noteworthy data points in
-		an analysis. They can point to a model breakdown and lead to development of a better model.
-		
-		%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-		
-		The general idea of quantifying the influence of one or more observations relies on computing parameter estimates based on all data points, removing the cases in question from the data, refitting the model, and computing statistics based on the change between full-data and reduced-data estimation. 
-
-			%---------------------------------------------------------------------------%
-			\newpage
-
-\subsection{What is Influence} %1.1.5
-
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-
 
 %---------------------------------------------------------------------------%
 \newpage
+	
+\section{A Procedure for Quantifying Influence}  %1.1.6
 
 
+The basic procedure for quantifying influence is simple:
 
+\begin{enumerate}
+	\item Fit the model to the data and obtain estimates of all parameters.
+	\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
+	\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence
+	of the observations changes the analysis.
+\end{enumerate}
+We use the subscript (U) to denote quantities obtained without the observations in the set U. For example,
+%βb
+(U) denotes the fixed-effects “\textit{\textbf{leave-U-out}}” estimates. Note that the set U can contain multiple observations.
+
+
+%===================================================================================
+If the global measure suggests that the points in U are influential, you should next determine the nature of
+that influence. In particular, the points can affect
+\begin{itemize}
+	\item the estimates of fixed effects
+	\item the estimates of the precision of the fixed effects
+	\item the estimates of the covariance parameters
+	\item the estimates of the precision of the covariance parameters
+	\item fitted and predicted values
+\end{itemize}
+
+It is important to further decompose the initial finding to determine whether data points are actually troublesome.
+Simply because they are influential “somehow”, should not trigger their removal from the analysis or
+a change in the model. For example, if points primarily affect the precision of the covariance parameters
+without exerting much influence on the fixed effects, then their presence in the data may not distort hypothesis
+tests or confidence intervals about $\beta$.
+%They will only do so if your inference depends on an estimate of the
+%precision of the covariance parameter estimates, as is the case for the Satterthwaite and Kenward-Roger
+%degrees of freedom methods and the standard error adjustment associated with the DDFM=KR option.
+
+%================================================ %
+
+\newpage	
 			\section{Influence analysis for LME Models} %1.7
 
 				
@@ -333,8 +349,6 @@ points for deletion so that a better model fit can be achieved for the reduced d
 	\citet{schabenberger} describes the choice between \index{iterative influence analysis} iterative influence analysis and \index{non-iterative influence analysis} non-iterative influence analysis.
 		
 		
-		
-				\subsection{Iterative Influence Analysis}
 				
 				%----schabenberger page 8
 				For linear models, the implementation of influence analysis is straightforward.
@@ -393,44 +407,7 @@ however, this doesnt increase the procedures execution time by the same degree.
 			
 			
 			
-\newpage		
-			\section{A Procedure for Quantifying Influence}  %1.1.6
 
-		
-		The basic procedure for quantifying influence is simple:
-		
-		\begin{enumerate}
-			\item Fit the model to the data and obtain estimates of all parameters.
-			\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-			\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence
-			of the observations changes the analysis.
-		\end{enumerate}
-		We use the subscript (U) to denote quantities obtained without the observations in the set U. For example,
-		%βb
-		(U) denotes the fixed-effects “\textit{\textbf{leave-U-out}}” estimates. Note that the set U can contain multiple observations.
-		
-		
-		%===================================================================================
-		If the global measure suggests that the points in U are influential, you should next determine the nature of
-		that influence. In particular, the points can affect
-		\begin{itemize}
-			\item the estimates of fixed effects
-			\item the estimates of the precision of the fixed effects
-			\item the estimates of the covariance parameters
-			\item the estimates of the precision of the covariance parameters
-			\item fitted and predicted values
-		\end{itemize}
-		
-		It is important to further decompose the initial finding to determine whether data points are actually troublesome.
-		Simply because they are influential “somehow”, should not trigger their removal from the analysis or
-		a change in the model. For example, if points primarily affect the precision of the covariance parameters
-		without exerting much influence on the fixed effects, then their presence in the data may not distort hypothesis
-		tests or confidence intervals about $\beta$.
-		%They will only do so if your inference depends on an estimate of the
-		%precision of the covariance parameter estimates, as is the case for the Satterthwaite and Kenward-Roger
-		%degrees of freedom methods and the standard error adjustment associated with the DDFM=KR option.
-
-%================================================ %
 		
 			\section{Influence Statistics for LME models} %1.1.4
 			Influence statistics can be coarsely grouped by the aspect of estimation that is their primary target:
@@ -473,16 +450,7 @@ however, this doesnt increase the procedures execution time by the same degree.
 		\item likelihood function
 	\end{itemize}
 	
-%-------------------------------------------------------------------------------------------------------------------------------------%
-\subsection{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-	\item Variance components
-	\item Fixed effects parameters
-	\item Prediction of the response variable and of random effects
-	\item likelihood function
-\end{itemize}
+
 
 \citet{Zewotir} lists several established methods of analyzing influence in LME models. These methods include \begin{itemize}
 	\item Cook's distance for LME models,
