@@ -78,44 +78,7 @@ Model diagnostic techniques determine whether or not the distributional assumpti
 
 
 
-\subsection{What is Influence} %1.1.5
 
-Broadly defined, influence is understood as the ability of a single or multiple data points, through their presence or absence in the data, to alter important aspects of the analysis, yield qualitatively different inferences, or violate assumptions of the statistical model. The goal of influence analysis is not primarily to mark data
-points for deletion so that a better model fit can be achieved for the reduced data, although this might be a result of influence analysis \citep{schabenberger}.
-
-%-------%
-\subsection{Quantifying Influence}  %1.1.6
-
-The basic procedure for quantifying influence is simple as follows:
-
-\begin{itemize}
-\item Fit the model to the data and obtain estimates of all parameters.
-\item Remove one or more data points from the analysis and compute updated estimates of model parameters.
-\item Based on full- and reduced-data estimates, contrast quantities of interest to determine how the absence of the observations changes the analysis.
-\end{itemize}
-
-\citet{cook86} introduces powerful tools for local-influence assessment and examining perturbations in the assumptions of a model. In particular the effect of local perturbations of parameters or observations are examined.
-
-
-%---------------------------------------------------------------------------%
-\newpage
-\section{Extension of techniques to LME Models} %1.2
-
-Model diagnostic techniques, well established for classical models, have since been adapted for use with linear mixed effects models.Diagnostic techniques for LME models are inevitably more difficult to implement, due to the increased complexity.
-
-Beckman, Nachtsheim and Cook (1987) \citet{Beckman} applied the \index{local influence}local influence method of Cook (1986) to the analysis of the linear mixed model.
-
-While the concept of influence analysis is straightforward, implementation in mixed models is more complex. Update formulae for fixed effects models are available only when the covariance parameters are assumed to be known.
-
-If the global measure suggests that the points in $U$ are influential, the nature of that influence should be determined. In particular, the points in $U$ can affect the following
-
-\begin{itemize}
-\item the estimates of fixed effects,
-\item the estimates of the precision of the fixed effects,
-\item the estimates of the covariance parameters,
-\item the estimates of the precision of the covariance parameters,
-\item fitted and predicted values.
-\end{itemize}
 
 
 %---------------------------------------------------------------------------%
@@ -508,35 +471,6 @@ DFBETA_{a} &=& \hat{\beta} - \hat{\beta}_{(a)} \\
 %\item
 \end{itemize}
 %-------------------------------------------------------------------------------------------------------------------------------------%
-\section{Zewotir Measures of Influence in LME Models}%2.2
-%Zewotir page 161
-\citet{Zewotir} describes a number of approaches to model diagnostics, investigating each of the following;
-\begin{itemize}
-\item Variance components
-\item Fixed effects parameters
-\item Prediction of the response variable and of random effects
-\item likelihood function
-\end{itemize}
-
-\subsection{Cook's Distance}
-\begin{itemize}
-\item For variance components $\gamma$: $CD(\gamma)_i$,
-\item For fixed effect parameters $\beta$: $CD(\beta)_i$,
-\item For random effect parameters $\boldsymbol{u}$: $CD(u)_i$,
-\item For linear functions of $\hat{beta}$: $CD(\psi)_i$
-\end{itemize}
-
-\newpage
-\subsubsection{Random Effects}
-
-A large value for $CD(u)_i$ indicates that the $i-$th observation is influential in predicting random effects.
-
-\subsubsection{linear functions}
-
-$CD(\psi)_i$ does not have to be calculated unless $CD(\beta)_i$ is large.
-
-
-\subsection{Information Ratio}
 
 
 %--------------------------------------------------------------%
@@ -547,34 +481,7 @@ compute an estimate for $\boldsymbol{V}$ and then compute the projector matrix $
 
 
 \citet{zewotir} remarks that $\boldsymbol{D}$ is a block diagonal with the $i-$th block being $u \boldsymbol{I}$
-%--------------------------------------------------------------%
-\newpage
-\section{Measures 2} %2.4
 
-\subsection{Cook's Distance} %2.4.1
-\begin{itemize}
-\item For variance components $\gamma$
-\end{itemize}
-
-Diagnostic tool for variance components
-\[ C_{\theta i} =(\hat(\theta)_{[i]} - \hat(\theta))^{T}\mbox{cov}( \hat(\theta))^{-1}(\hat(\theta)_{[i]} - \hat(\theta))\]
-
-\subsection{Variance Ratio} %2.4.2
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Cook-Weisberg statistic} %2.4.3
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-
-\subsection{Andrews-Pregibon statistic} %2.4.4
-\begin{itemize}
-\item For fixed effect parameters $\beta$.
-\end{itemize}
-The Andrews-Pregibon statistic $AP_{i}$ is a measure of influence based on the volume of the confidence ellipsoid.
-The larger this statistic is for observation $i$, the stronger the influence that observation will have on the model fit.
 
 
 %-------------------------------------------------------------------------------------------------Chapter 3------------------------%
