@@ -26,49 +26,7 @@
 
 	%--Marginal and Conditional Residuals
 	
-\subsection{Residuals diagnostics in mixed models}
 
-%schabenberger
-The marginal and conditional means in the linear mixed model are
-$E[\boldsymbol{Y}] = \boldsymbol{X}\boldsymbol{\beta}$ and
-$E[\boldsymbol{Y|\boldsymbol{u}}] = \boldsymbol{X}\boldsymbol{\beta} + \boldsymbol{Z}\boldsymbol{u}$, respectively.
-
-A residual is the difference between an observed quantity and its estimated or predicted value. In the mixed
-model you can distinguish marginal residuals $r_m$ and conditional residuals $r_c$. 
-
-
-%\subsection{Marginal and Conditional Residuals}
-%
-%A marginal residual is the difference between the observed data and the estimated (marginal) mean, $r_{mi} = y_i - x_0^{\prime} \hat{b}$
-%A conditional residual is the difference between the observed data and the predicted value of the observation,
-%$r_{ci} = y_i - x_i^{\prime} \hat{b} - z_i^{\prime} \hat{\gamma}$
-%
-%In linear mixed effects models, diagnostic techniques may consider `conditional' residuals. A conditional residual is the difference between an observed value $y_{i}$ and the conditional predicted value $\hat{y}_{i} $.
-%
-%\[ \hat{epsilon}_{i} = y_{i} - \hat{y}_{i} = y_{i} - ( X_{i}\hat{beta} + Z_{i}\hat{b}_{i}) \]
-%
-%However, using conditional residuals for diagnostics presents difficulties, as they tend to be correlated and their variances may be different for different subgroups, which can lead to erroneous conclusions.
-
-%1.5
-%http://support.sas.com/documentation/cdl/en/statug/63033/HTML/default/viewer.htm#statug_mixed_sect024.htm
-
-
-
-
-
-
-\begin{equation}
-r_{mi}=x^{T}_{i}\hat{\beta}
-\end{equation}
-
-\subsection{Marginal Residuals}
-\begin{eqnarray}
-\hat{\beta} &=& (X^{T}R^{-1}X)^{-1}X^{T}R^{-1}Y \nonumber \\
-&=& BY \nonumber
-\end{eqnarray}
-
-
-\newpage
 \section{Covariance Parameters} %1.5
 The unknown variance elements are referred to as the covariance parameters and collected in the vector $\theta$.
 % - where is this coming from?
@@ -382,41 +340,7 @@ H_{0}: \rho_{XY} = 0 \nonumber \\
 H_{A}: \rho_{XY} \ne 0 \nonumber \\
 \end{eqnarray}
 
-%---------------------------------------------------------%
-\newpage
-\section{Lesaffre's paper.} %5.6
 
-Lesaffre considers the case-weight perturbation approach.
-
-
-%\citep{cook86}
-Cook's 86 describes a local approach wherein each case is given a weight $w_{i}$ and the effect on the parameter estimation is measured by perturbing these weights. Choosing weights close to zero or one corresponds to the global case-deletion approach.
-
-Lesaffre  describes the displacement in log-likelihood as a useful metric to evaluate local influence %\citep{cook86}.
-
-
-%\citet{lesaffre}
-Lesaffre describes a framework to detect outlying observations that matter in an LME model. Detection should be carried out by evaluating diagnostics $C_{i}$ , $C_{i}(\alpha)$ and $C_{i}(D,\sigma^2)$.
-
-
-Lesaffre defines the total local influence of individual $i$ as
-\begin{equation}
-C_{i} = 2 | \triangle \prime _{i} L^{-1} \triangle_{i}|.
-\end{equation}
-
-
-The influence function of the MLEs evaluated at the $i$th point $IF_{i}$, given by
-\begin{equation}
-IF_{i} = -L^{-1}\triangle _{i}
-\end{equation}
-can indicate how $\hat{theta}$ changes as the weight of the $i$th
-subject changes.
-
-The manner by which influential observations distort the estimation process can be determined by inspecting the
-interpretable components in the decomposition of the above measures of local influence.
-
-
-Lesaffre comments that there is no clear way of interpreting the information contained in the angles, but that this doesn't mean the information should be ignored.
 
 
 \end{document}
